@@ -3,12 +3,16 @@ __includes ["initialize-world.nls"
 breed [forklifts forklift]
 breed [bays bay]
 breed [shelves shelf]
-breed [collectable]
+breed [collectables collectable]
 
-turtles-own [classifier]
+turtles-own [id]
 
 to begin
   begin-init
+end
+
+to reset
+  clear-all
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
@@ -45,6 +49,23 @@ BUTTON
 153
 Run
 begin
+NIL
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
+BUTTON
+158
+119
+228
+152
+reset
+reset
 NIL
 1
 T

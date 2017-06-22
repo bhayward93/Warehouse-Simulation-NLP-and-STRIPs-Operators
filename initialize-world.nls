@@ -1,6 +1,36 @@
 to begin-init
   ask patches [ 
     set pcolor gray - 1
-    if is-multiple-of pxcor 4 and not is-edge-patch self [set pcolor red]
+    if is-multiple-of pxcor 4 and 
+       not is-edge-patch self 
+       [sprout-bays 1]
+  ]
+  
+  spawn-shelves
+  spawn-objects
+  set-shapes
+  set-colors
+end
+
+
+to spawn-shelves
+  ask bays [hatch-shelves 5]
+end
+
+to spawn-objects
+  ask shelves [
+    if random 10 > 5[
+      hatch-collectables 1 
+    ]
   ]
 end
+;Sets up the shapes of the objects - this has to be done after the objects have been created.
+to set-shapes
+  ask bays [set shape "square"]
+end
+
+to set-colors
+  ask bays [set color orange - 1]
+  ask shelves [set color orange - 1] ; hide this at a later date rather than blending in?
+end
+
