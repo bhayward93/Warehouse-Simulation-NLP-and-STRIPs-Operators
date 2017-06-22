@@ -1,0 +1,6 @@
+to begin-init
+  ask patches [ 
+    set pcolor gray - 1
+    if is-multiple-of pxcor 4 and not is-edge-patch self [set pcolor red]
+  ]
+end
