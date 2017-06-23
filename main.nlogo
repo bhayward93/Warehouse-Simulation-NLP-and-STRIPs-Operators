@@ -3,9 +3,13 @@ __includes ["initialize-world.nls"
 breed [forklifts forklift]
 breed [bays bay]
 breed [shelves shelf]
-breed [collectables collectable]
+breed [collectables collectable] ; rather than cluttering code, ids are assigned
 
-turtles-own [id]
+;turtles-own []
+collectables-own [at-shelf id]
+shelves-own [at-bay]
+;bays-own []
+
 
 to begin
   begin-init
@@ -18,11 +22,11 @@ end
 GRAPHICS-WINDOW
 295
 10
-725
-461
+694
+430
 -1
 -1
-12.76
+22.9
 1
 10
 1
@@ -33,9 +37,9 @@ GRAPHICS-WINDOW
 1
 1
 0
-32
+16
 0
-32
+16
 0
 0
 1
@@ -60,12 +64,29 @@ NIL
 1
 
 BUTTON
-158
-119
-228
-152
+149
+120
+222
+153
+Reset
 reset
-reset
+NIL
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
+BUTTON
+86
+153
+223
+186
+Spawn Forklift
+spawn-forklift\n
 NIL
 1
 T

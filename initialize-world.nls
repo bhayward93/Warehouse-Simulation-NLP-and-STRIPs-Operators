@@ -5,32 +5,57 @@ to begin-init
        not is-edge-patch self 
        [sprout-bays 1]
   ]
-  
   spawn-shelves
   spawn-objects
   set-shapes
   set-colors
 end
 
-
 to spawn-shelves
-  ask bays [hatch-shelves 5]
-end
-
-to spawn-objects
-  ask shelves [
-    if random 10 > 5[
-      hatch-collectables 1 
+;  let this-bay self
+  ask bays [
+    hatch-shelves 5[
+      set at-bay myself
     ]
   ]
 end
+
+to spawn-objects
+  ask shelves[
+    hatch-collectables 1 [
+      set id one-of all-collectables
+      set at-shelf myself
+    ]
+  ]
+end
+
+;Try and make this dynamic enough to not 
+to spawn-forklift
+  let px 6
+  loop [
+    ifelse (not any? turtles-on patch-at px 0)[ 
+       ask patch-at px 0[
+          sprout-forklifts 1[
+      
+          ]
+        ]
+    ]
+    [set px (px + 1)]
+  ]  
+end
+
 ;Sets up the shapes of the objects - this has to be done after the objects have been created.
 to set-shapes
-  ask bays [set shape "square"]
+  ask bays [set shape "square 2"]
+    ask collectables [set shape "square"]
 end
 
 to set-colors
   ask bays [set color orange - 1]
-  ask shelves [set color orange - 1] ; hide this at a later date rather than blending in?
+  ask shelves [set color orange - 1]
+  ask collectables [set color orange]
+
+   ; hide this at a later date rather than blending in?
+  ;ask all-collectables [set color orange - 1]
 end
 

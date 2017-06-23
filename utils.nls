@@ -5,22 +5,45 @@ to-report is-even [x]
   [report false]
 end
 
-;x is the initial number
-;y is the multiplication number
-to-report is-multiple-of [x y]
-  ifelse x mod 4 = 0 [report true]
+;x is the base number.
+;y is the factor.
+to-report is-multiple-of [base factor]
+  ifelse base mod factor = 0 [report true]
                      [report false]
 end
 
+;reports if the patch fed in is at the edge boundary of the screen (as defined below)
 to-report is-edge-patch [p]
   let is-edge false ;Used as a boolean 
   ask p[
+    show pxcor show pycor
     if pxcor = 0 or pycor = 0 or
-       pxcor = 1 or pycor = 1 or
-       pxcor = 32 or pycor = 32 or
-       pxcor = 31 or pycor = 31
+       ;pxcor = 1 or pycor = 1 or
+       pxcor = 16 or pycor = 16 ;or
+       ;pxcor = 15 or pycor = 15
        [set is-edge 1]    
   ]
   ifelse is-edge = 1 [report true]
                      [report false]
+end
+
+;Reports strings of all collectables; useful for assigning IDs randomly, 
+;with one-of all-collectables.
+to-report all-collectables
+ report ( list
+   "pistons-crate"
+   "circular-saws-crate"
+   "engines-crate"
+   "nails-crate"
+   "bolts-crate"
+   "screws-crate"
+   "lights-crate" ;Could implement this as delicate
+   "compressors-crate"
+   "wheels-crate"
+   "tyres-crate"
+   "girders-crate"
+   "wooden-planks-crate"
+   "grates-crate"
+   "jacks-crate"
+ )
 end
