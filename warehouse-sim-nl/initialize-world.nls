@@ -31,18 +31,13 @@ end
 
 ;Try and make this dynamic enough to not 
 to spawn-forklift
-  ask patch-at 6 0 [  
-  if not any? turtles-at 6 0[
-        hatch-forklifts 1[
-          set color red
-          print"forklift made"
-          set xcor 6
-          set ycor 0
-      ]
-    ]
-    print"skipped?"
-  ]    
-  
+  let px 6
+  loop[
+    ifelse not any? turtles-on patch px 0
+      [ask patch px 0 [sprout-forklifts 1] stop]
+      [set px px + 1]
+    
+  ]
 end
 
 ;Sets up the shapes of the objects - this has to be done after the objects have been created.

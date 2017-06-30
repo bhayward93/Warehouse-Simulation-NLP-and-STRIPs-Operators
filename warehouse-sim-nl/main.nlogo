@@ -1,5 +1,8 @@
+extensions [ sock2 ]
 __includes ["initialize-world.nls"
-            "utils.nls"]
+            "utils.nls"
+            "sock2.nls"
+]
 breed [forklifts forklift]
 breed [bays bay]
 breed [shelves shelf]
@@ -443,6 +446,13 @@ NetLogo 6.0.1
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
+<experiments>
+  <experiment name="experiment" repetitions="1" runMetricsEveryStep="true">
+    <setup>setup</setup>
+    <go>go</go>
+    <metric>count turtles</metric>
+  </experiment>
+</experiments>
 @#$#@#$#@
 @#$#@#$#@
 default
