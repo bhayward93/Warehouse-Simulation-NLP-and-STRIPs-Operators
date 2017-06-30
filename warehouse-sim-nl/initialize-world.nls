@@ -9,6 +9,7 @@ to begin-init
   spawn-objects
   set-shapes
   set-colors
+  connect-clojure
 end
 
 to spawn-shelves
@@ -53,8 +54,4 @@ to set-colors
 
    ; hide this at a later date rather than blending in?
   ;ask all-collectables [set color orange - 1]
-end
-
-to new-forklift [px]
- 
 end

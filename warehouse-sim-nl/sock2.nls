@@ -1,0 +1,23 @@
+to connect-clojure
+  sock2:connect-local 2222
+end
+
+to read
+  let text sock2:read
+  show (text)
+end
+
+to send [message]
+    sock2:write (word message)
+end
+
+to send-world-state
+
+  let wh_floor 1
+  let wh_bay 2
+  ask patches[
+    send (word "{ :px " pxcor " py " turtles-here)
+  ]
+
+
+end

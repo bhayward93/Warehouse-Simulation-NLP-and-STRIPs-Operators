@@ -25,8 +25,8 @@ end
 GRAPHICS-WINDOW
 295
 10
-692
-408
+694
+430
 -1
 -1
 22.9
@@ -52,10 +52,10 @@ ticks
 BUTTON
 86
 120
-149
+160
 153
-Run
-begin
+Setup
+begin  print \"World set up and\"
 NIL
 1
 T
@@ -67,9 +67,9 @@ NIL
 1
 
 BUTTON
-149
+160
 120
-222
+233
 153
 Reset
 reset
@@ -86,10 +86,27 @@ NIL
 BUTTON
 86
 153
-223
+233
 186
 Spawn Forklift
 spawn-forklift\n
+NIL
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
+BUTTON
+88
+223
+224
+256
+Send World
+send-world-state print \"Sending world state...\"
 NIL
 1
 T
@@ -441,8 +458,9 @@ false
 0
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
+
 @#$#@#$#@
-NetLogo 6.0.1
+NetLogo 5.3.1
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
@@ -465,6 +483,7 @@ true
 0
 Line -7500403 true 150 150 90 180
 Line -7500403 true 150 150 210 180
+
 @#$#@#$#@
 0
 @#$#@#$#@
