@@ -13,11 +13,11 @@ end
 
 to send-world-state
 
-  let wh_floor 1
-  let wh_bay 2
+  send (word "{")
   ask patches[
-    send (word "{ :px " pxcor " py " turtles-here)
+    send (word "{at '("pxcor " " pycor ")" turtles-here "}")
   ]
+  send (word "}")
 
 
 end

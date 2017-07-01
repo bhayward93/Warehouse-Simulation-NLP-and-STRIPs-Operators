@@ -1,4 +1,4 @@
-(ns sock2.socket
+(ns sock2.socket_utils
   (require [sock2.socket :refer :all]))
 
 (defn open-socket

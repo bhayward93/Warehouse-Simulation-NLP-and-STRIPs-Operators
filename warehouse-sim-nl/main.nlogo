@@ -106,7 +106,7 @@ BUTTON
 224
 256
 Send World
-send-world-state print \"Sending world state...\"
+send-world-state
 NIL
 1
 T
