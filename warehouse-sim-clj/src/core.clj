@@ -8,21 +8,29 @@
   (:require [sock2.socket_utils :refer :all]
             [ops_search.ops_search :refer :all]
             [ops :refer :all]
-            [cgsx.tools.matcher :refer :all]))
+            [cgsx.tools.matcher :refer :all]
+            [clojure.string :as str]))
 ; ([sock2.socket :refer :all]))
-
-    (defn -main
-      [& args]
-      (def s25 (open-socket 2222))
-      (println "awaiting new world setup commands...")
-      (def world-state (receive-state s25 '#{}))
+    (defn -main [port]
+      (def s25 (open-socket port))
+      (def world-state
+                          (clojure.string/replace
+                          (receive-state s25 '#{})
+                          (#"\(quote ")
+                          ("'"))
+                         )                  ;starts with literal paren + quote + space
       (print world-state)
-    ;nnm  (println "awaiting new state setup commands...")
-    ;  (  def current-state (receive-state s25 '#{}))
-    ;  (def initial-state (union world current-state))
-    )
+      )
+
 
 (defn hello-world []
   println ("hello, world!"))
 
-;DESIGN THE OPS NEXT THEN STRUCTURE NL OUTPUT. < NOTE TO SELF
+
+;Sample
+
+;(clojure.string/replace "[[at (quote (11 9)) (agentset 0 turtles)] [at (quote (1 8)) (agentset 0 turtles)]]" #"^\(quote/s" "'")
+
+
+;(def mock-input
+;[(at (quote (2 12)) pistons-crate) (at (quote (2 12)) circular-saws-crate) (at (quote (2 12)) engines-crate) (at (quote (2 12)) nails-crate) (at (quote (2 12)) bolts-crate) (at (quote (2 12)) screws-crate) (at (quote (2 12)) lights-crate) (at (quote (2 12)) compressors-crate) (at (quote (2 12)) wheels-crate) (at (quote (2 12)) tyres-crate) (at (quote (2 12)) girders-crate) (at (quote (2 12)) wooden-planks-crate) (at (quote (2 12)) grates-crate) (at (quote (2

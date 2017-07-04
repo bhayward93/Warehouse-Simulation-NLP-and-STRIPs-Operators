@@ -12,12 +12,11 @@ to send [message]
 end
 
 to send-world-state
-
-  send (word "{")
+  send (word "[")
   ask patches[
-    send (word "{at '("pxcor " " pycor ")" turtles-here "}")
+    send (word "(at '("pxcor " " pycor ")"turtles-here ")")
   ]
-  send (word "}")
-
+  send (word "]")
+  
 
 end
