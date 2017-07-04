@@ -14,7 +14,16 @@ end
 to send-world-state
   send (word "[")
   ask patches[
-    send (word "(at '("pxcor " " pycor ")"turtles-here ")")
+    ask turtles-here[
+      ifelse is-collectable? self
+        [send (word "(at '("pxcor " " pycor ")" id ")")]
+        [send (word "(at '("pxcor " " pycor ")" self ")")]
+      let originalx xcor
+      let originaly ycor
+      ask neighbors4[
+        send (word "(connects '("originalx" "originaly") '("pxcor" "pycor"))")
+      ]
+    ]
   ]
   send (word "]")
   
