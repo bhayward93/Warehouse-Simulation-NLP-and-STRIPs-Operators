@@ -8,9 +8,10 @@ breed [bays bay]
 breed [shelves shelf]
 breed [collectables collectable] ; rather than cluttering code, ids are assigned
 
-;turtles-own []
-collectables-own [at-shelf id]
+turtles-own [id]
+collectables-own [at-shelf item-type]
 shelves-own [at-bay]
+patches-own [visited-by-clojure]
 ;bays-own []
 
 
@@ -101,10 +102,10 @@ NIL
 1
 
 BUTTON
-88
-223
-224
-256
+86
+245
+233
+278
 Send World
 send-world-state
 NIL
@@ -116,6 +117,17 @@ NIL
 NIL
 NIL
 1
+
+INPUTBOX
+85
+186
+233
+246
+port-number
+2222
+1
+0
+Number
 
 @#$#@#$#@
 ## WHAT IS IT?

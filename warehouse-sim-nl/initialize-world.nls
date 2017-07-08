@@ -24,7 +24,7 @@ end
 to spawn-objects
   ask shelves[
     hatch-collectables 1 [
-      set id one-of all-collectables
+      set item-type one-of all-collectables
       set at-shelf myself
     ]
   ]

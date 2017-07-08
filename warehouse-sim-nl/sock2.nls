@@ -1,5 +1,5 @@
 to connect-clojure
-  sock2:connect-local 2222
+  sock2:connect-local port-number
 end
 
 to read
@@ -12,20 +12,37 @@ to send [message]
 end
 
 to send-world-state
-  send (word "[")
+  let world-state ""
+  let dynamic-state "" 
+
   ask patches[
-    ask turtles-here[
-      ifelse is-collectable? self
-        [send (word "(at '("pxcor " " pycor ")" id ")")]
-        [send (word "(at '("pxcor " " pycor ")" self ")")]
-      let originalx xcor
-      let originaly ycor
-      ask neighbors4[
-        send (word "(connects '("originalx" "originaly") '("pxcor" "pycor"))")
+    
+    ifelse (count turtles-here != 0)[
+      ask turtles-here[
+         if (is-bay? self or is-shelf? self)  ;send worldstate here
+           [set world-state (word world-state "(at '("pxcor " " pycor ")" self ")")]
+         if is-collectable? self
+           [set dynamic-state (word dynamic-state "(at '("pxcor " " pycor ")" item-type" "who")")]  
+         if is-forklift? self
+           [set dynamic-state (word dynamic-state "(at '("pxcor " " pycor ")" self ")")]
+        ]
       ]
-    ]
-  ]
-  send (word "]")
+      [set dynamic-state (word dynamic-state "(at '("pxcor " " pycor ") none)")]
+    
+    
+    
+      let originalpx pxcor
+      let originalpy pycor
+    
+;could create an agentset(?) of neighbors
+      ask neighbors4[ ;connections
+          set world-state (word world-state "(connects '("originalpx" "originalpy") '("pxcor" "pycor"))")
+      ]
+   ]
+   
+   send world-state ;INTERLEAVING!!
+   wait 5.0
+   send dynamic-state
   
 
 end

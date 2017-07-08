@@ -1,32 +1,63 @@
 (ns ops)
 ;on minor goal, e.g. traveling to a destination succesfuly, remove unavailable status.
+;split into states - :world (unchangable) and another
 
+;(ops-search mock-dyn '((at '(1 1) forklift 497)) state-ops :world mock-world :debug true)
 ;key ?forklift was ?w
+
+
+;USE AN OR GUARD TO HALF THE CONNECTS! X Y DX DY OR DX DY X Y
+
 (def state-ops
   '{:move
-    {:name move
-     :pre  ((at '(?new-x ?new-y) ?none)
-             (at '(?x ?y) ?forklift)
+    {
+     :pre  (
+             (at '(quote(?dx ?dy)) none)                   ;?none should be changed to nil (Check for this on NL side with turtles-here).
+             (at '(?x ?y) ?forklift ?n)
              (connects '(?x ?y) '(?new-x ?new-y))
-             (unavailable '(?new-x, ?new-y)))
-     :del  ((at '(?x ?y) ?forklift)
-             (at '(?new-x ?new-y) ?none))
 
-     :add  ((at '(?new-x ?new-y) ?forklift)
-             (unavailable '(?x, ?y)))
-     ;:cmd  ;(move ?w '(?dx ?dy))
-     :txt  (?forklift moved to '(?new-x ?new-y))
+             ;(:not (unavailable (?dx, ?dy))) ;Use a guard to ensure that this is NOT true.
+             ;(:guard (util/within-one-patch? (? x) (? y) (? dx)(? dy))
+
+
+            ;   )
+             )
+     :del  ((at '(?x ?y) ?forklift ?n)
+             (at '(?dx ?dy) ?none))
+
+     :add  ((at '(?dx ?dy) ?forklift ?n)
+             (unavailable '(?x  ?y)))
+     :cmd  (print ?forklift "moved to ("dx" "dy") ")
+     :txt  (?forklift ?n moved to '(?new-x ?new-y))
      }
 
-    :move-back
-    {:name move-back}
+
     }
   )
 
-(def test-goal-1
-  '(at '(10 16) forklift)
-  )
 
-(def test-goal-2
-  '(at '(10 16) forklift)
-  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
