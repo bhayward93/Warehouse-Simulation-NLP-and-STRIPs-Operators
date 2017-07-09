@@ -107,7 +107,7 @@ BUTTON
 233
 278
 Send World
-send-world-state
+send-world-state\nsend-dynamic-state
 NIL
 1
 T

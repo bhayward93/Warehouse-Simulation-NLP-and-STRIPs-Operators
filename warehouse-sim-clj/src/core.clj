@@ -13,7 +13,7 @@
             [ops :refer :all]
             [cgsx.tools.matcher :refer :all]
             [clojure.string :as str]
-         ;   [nl-injector :refer :all]
+            [nl-injector :refer :all]
             [util :refer :all]
             )) ;remove. testing purposes (nl-injector)
 ; ([sock2.socket :refer :all]))
@@ -26,7 +26,7 @@
       (println "Awaiting Dynamic State...")
       (def dynamic-state (receive-state s25 '#{}))
       (print world-state)
-      (print "-------------------------")
+      (println "-------------------------")
       (print dynamic-state)
       )
 ;(ops-search nl-injector/mock-dyn '(at '(1 1) forklift) ops/state-ops :world nl-injector/mock-world)

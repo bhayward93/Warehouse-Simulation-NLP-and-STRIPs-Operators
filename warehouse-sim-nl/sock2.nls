@@ -11,38 +11,46 @@ to send [message]
     sock2:write (word message)
 end
 
+
+;Not optimized! this has a huge body.
 to send-world-state
-  let world-state ""
+let world-state ""
+ask patches with [pxcor mod 2 = 0][
+  let originalpx pxcor 
+  let originalpy pycor
+  
+  if (is-multiple-of pxcor 2)[
+    ask patch (pxcor + 1) pycor[          
+      set world-state (word world-state "(connects '("originalpx" "originalpy") '("pxcor" "pycor"))")]
+    ask patch (pxcor - 1) pycor[          
+      set world-state (word world-state "(connects '("originalpx" "originalpy") '("pxcor" "pycor"))")]
+  ]
+  if (is-multiple-of pycor 2)[
+    ask patch pxcor (pycor + 1)[          
+      set world-state (word world-state "(connects '("originalpx" "originalpy") '("pxcor" "pycor"))")]
+    ask patch pxcor (pycor - 1)[          
+      set world-state (word world-state "(connects '("originalpx" "originalpy") '("pxcor" "pycor"))")]
+  ]
+
+]
+  send world-state
+
+
+end
+to send-dynamic-state
   let dynamic-state "" 
 
   ask patches[
-    
-    ifelse (count turtles-here != 0)[
+    if (count turtles-here != 0)[
       ask turtles-here[
-         if (is-bay? self or is-shelf? self)  ;send worldstate here
-           [set world-state (word world-state "(at '("pxcor " " pycor ")" self ")")]
-         if is-collectable? self
-           [set dynamic-state (word dynamic-state "(at '("pxcor " " pycor ")" item-type" "who")")]  
-         if is-forklift? self
-           [set dynamic-state (word dynamic-state "(at '("pxcor " " pycor ")" self ")")]
-        ]
-      ]
-      [set dynamic-state (word dynamic-state "(at '("pxcor " " pycor ") none)")]
-    
-    
-    
-      let originalpx pxcor
-      let originalpy pycor
-    
-;could create an agentset(?) of neighbors
-      ask neighbors4[ ;connections
-          set world-state (word world-state "(connects '("originalpx" "originalpy") '("pxcor" "pycor"))")
-      ]
-   ]
-   
-   send world-state ;INTERLEAVING!!
-   wait 5.0
+         if is-collectable? self[
+           set dynamic-state (word dynamic-state "(at '("pxcor " " pycor ")" item-type" "who")")
+         ]  
+         if is-forklift? self[
+           set dynamic-state (word dynamic-state "(at '("pxcor " " pycor ")" self ")")
+         ]
+         if (turtles-here = 0)[
+           set dynamic-state (word dynamic-state "(at '("pxcor " " pycor ") none)")
+         ]]]]
    send dynamic-state
-  
-
 end

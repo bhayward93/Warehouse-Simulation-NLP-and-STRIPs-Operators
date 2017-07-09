@@ -12,10 +12,11 @@
   '{:move
     {
      :pre  (
-             (at '(quote(?dx ?dy)) none)                   ;?none should be changed to nil (Check for this on NL side with turtles-here).
              (at '(?x ?y) ?forklift ?n)
-             (connects '(?x ?y) '(?new-x ?new-y))
-
+             (:guard (or
+                       '(connects '(?x ?y) '(?dx ?dy)))
+                       '(connects '(?dx ?dy) '(?x ?y)))
+             (:not (at '(?dx ?dy) ?anything))
              ;(:not (unavailable (?dx, ?dy))) ;Use a guard to ensure that this is NOT true.
              ;(:guard (util/within-one-patch? (? x) (? y) (? dx)(? dy))
 
