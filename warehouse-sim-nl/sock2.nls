@@ -21,15 +21,15 @@ ask patches with [pxcor mod 2 = 0][
   
   if (is-multiple-of pxcor 2)[
     ask patch (pxcor + 1) pycor[          
-      set world-state (word world-state "(connects '("originalpx" "originalpy") '("pxcor" "pycor"))")]
+      set world-state (word world-state "(connects ("originalpx" "originalpy") ("pxcor" "pycor"))")]
     ask patch (pxcor - 1) pycor[          
-      set world-state (word world-state "(connects '("originalpx" "originalpy") '("pxcor" "pycor"))")]
+      set world-state (word world-state "(connects ("originalpx" "originalpy") ("pxcor" "pycor"))")]
   ]
   if (is-multiple-of pycor 2)[
     ask patch pxcor (pycor + 1)[          
-      set world-state (word world-state "(connects '("originalpx" "originalpy") '("pxcor" "pycor"))")]
+      set world-state (word world-state "(connects ("originalpx" "originalpy") ("pxcor" "pycor"))")]
     ask patch pxcor (pycor - 1)[          
-      set world-state (word world-state "(connects '("originalpx" "originalpy") '("pxcor" "pycor"))")]
+      set world-state (word world-state "(connects ("originalpx" "originalpy") ("pxcor" "pycor"))")]
   ]
 
 ]
@@ -41,16 +41,17 @@ to send-dynamic-state
   let dynamic-state "" 
 
   ask patches[
+    ifelse (count turtles-here = 0)[
+      set dynamic-state (word dynamic-state "(at ("pxcor " " pycor ") none)")
+    ][
+    
     if (count turtles-here != 0)[
       ask turtles-here[
          if is-collectable? self[
-           set dynamic-state (word dynamic-state "(at '("pxcor " " pycor ")" item-type" "who")")
+           set dynamic-state (word dynamic-state "(at ("pxcor " " pycor ")" item-type" "who")")
          ]  
          if is-forklift? self[
-           set dynamic-state (word dynamic-state "(at '("pxcor " " pycor ")" self ")")
-         ]
-         if (turtles-here = 0)[
-           set dynamic-state (word dynamic-state "(at '("pxcor " " pycor ") none)")
-         ]]]]
+           set dynamic-state (word dynamic-state "(at ("pxcor " " pycor ")" self")")  
+           set dynamic-state (word dynamic-state "(isa forklift " self")")]]]]]
    send dynamic-state
 end

@@ -27,14 +27,11 @@
 
 
   (defn within-one-patch? [x y dx dy]
-    (print "x:"x "y:"y "dx:"dx "dy: "dy )
+    (println "x:"x "y:"y "dx:"dx "dy: "dy )
     (let [this-x  (int  x)
           this-y  (int  y)
           this-dx (int dx)
           this-dy (int dy)]
-
-
-
       (and
         (or
           (= (+ this-x 1) this-dx)
@@ -45,4 +42,14 @@
           (= (- this-y 1) this-dy)
           (= this-dy this-y)))
       ))
+
+;A defined use of clojure.string/replace, specifically for
+; quickly uncommenting large blocks of code, and printing the
+; output to console. This is useful because intellij can
+; sometimes get confused when trying to use ctrl+/ , and comments a second time.
+
+(defn uncomment-string [base-string]
+  (println (clojure.string/replace
+              base-string   ";"    ""))
+  )
 
