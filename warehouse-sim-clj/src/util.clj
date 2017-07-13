@@ -1,4 +1,4 @@
-(ns     util)
+(ns util)
 
 
 ;x:  quote
@@ -26,22 +26,23 @@
 ;    ))
 
 
-  (defn within-one-patch? [x y dx dy]
-    (println "x:"x "y:"y "dx:"dx "dy: "dy )
-    (let [this-x  (int  x)
-          this-y  (int  y)
-          this-dx (int dx)
-          this-dy (int dy)]
-      (and
-        (or
-          (= (+ this-x 1) this-dx)
-          (= (- this-x 1) this-dx)
-          (= this-dx this-x))
-        (or
-          (= (+ this-y 1) this-dy)
-          (= (- this-y 1) this-dy)
-          (= this-dy this-y)))
-      ))
+;unused
+;  (defn within-one-patch? [x y dx dy]
+;    (println "x:"x "y:"y "dx:"dx "dy: "dy )
+;    (let [this-x  (int  x)
+;          this-y  (int  y)
+;          this-dx (int dx)
+;          this-dy (int dy)]
+;      (and
+;        (or
+;          (= (+ this-x 1) this-dx)
+;          (= (- this-x 1) this-dx)
+;          (= this-dx this-x))
+;        (or
+;          (= (+ this-y 1) this-dy)
+;          (= (- this-y 1) this-dy)
+;          (= this-dy this-y)))
+;      ))
 
 ;A defined use of clojure.string/replace, specifically for
 ; quickly uncommenting large blocks of code, and printing the
@@ -52,4 +53,3 @@
   (println (clojure.string/replace
               base-string   ";"    ""))
   )
-

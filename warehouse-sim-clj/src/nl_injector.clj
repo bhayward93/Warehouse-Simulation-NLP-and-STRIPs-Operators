@@ -487,7 +487,8 @@
                  (at (4 5) tyres-crate 390)
                  (at (4 5) wheels-crate 477)
                  (at (4 5) bolts-crate 421)
-                 (at (4 5) circular-saws-crate 271) (at (12 15) pistons-crate 392)
+                 (at (4 5) circular-saws-crate 271)
+                 (at (12 15) pistons-crate 392)
                  (at (12 15) lights-crate 454)
                  (at (12 15) jacks-crate 372)
                  (at (12 15) engines-crate 296)
@@ -518,3 +519,4 @@
                  (at (12 13) circular-saws-crate 366)
                  (at (12 13) girders-crate 352)
                   })
+

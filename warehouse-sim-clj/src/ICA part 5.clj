@@ -938,11 +938,11 @@
 ;; Simons LMG
 (defn traverse-lmg [state]
   (remove nil? ;remove nils: see documentation
-    (for [rule bens-platform-rules2]
-      (apply-rule rule state)
+    (for [rule apply-rule8]
+      (apply-rule8 rule state)
       )))
 
-(defn apply-rule [rule state]
+(defn apply-rule8 [rule state]
   (mlet ['[?ante :=> ?consq] rule]
     (mif [(? ante) state]
       (mout (? consq))

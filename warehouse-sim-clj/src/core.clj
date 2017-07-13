@@ -2,6 +2,8 @@
 
 ;run, load this file in the *ns* then enter in repl (-main) - should make this a config
 ;press setup in nl
+;wait for the world state and dyn state to populate
+;run (fwd-chain rule-set mock-world)
 
 (ns core
   (:gen-class)
@@ -12,7 +14,10 @@
             [clojure.string :as str]
             [nl-injector :refer :all]
             [util :refer :all]
-            ))
+            [rules :refer :all]
+            [clojure.math.combinatorics])
+            (:refer clojure.math.combinatorics :rename {update, combin-update})
+            )
 
 (defn -main [port]
       (def s25 (open-socket port))
