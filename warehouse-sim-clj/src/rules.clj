@@ -9,7 +9,8 @@
 ;A defined rule set
 (def rule-set
   '( (rule 1 (connects (?x ?y) (?dx ?dy))
-           :=> (connects (?dx ?dy) (?x ?y)))))
+           :=> (connects (?dx ?dy) (?x ?y))) ;Mirroring the connection statements
+     ))
 
 ;The below are slight modifications of Dr Ian Wood/Simon Lynch's functions.
 
@@ -17,14 +18,15 @@
 (defmatch apply-single-rule [facts]
           ((rule ?n ??ante :=> ??cons)   ;Destructuring the rule.
             :=> (mfor* [(? ante) facts]
-                       (mout (? cons)))) ;out the consequents
-          )
+                       (mout (? cons))
+                       ))) ;out the consequents.)
 
 ;Applies all rules
 (defn apply-all-rules [rules facts]
-  (reduce concat ;concats the output from the map anon function below..
+  (reduce concat ;concats the output from the map anon function below.
           (map #(apply-single-rule % facts) rules)
           ))
+
 
 ;Forward chaining to apply the rules
 (defn fwd-chain [rules facts]
@@ -34,5 +36,3 @@
       (recur rules (clojure.set/union facts new-facts))
       )))
 
-
-;(fwd-chain rule-set mock-world)

@@ -10,30 +10,21 @@
 
 (def state-ops
   '{move {
-          :pre (
-                 (isa forklift (?forklift ?n))
-                 (on (?x ?y) (?forklift ?n))
-                 (is floor (?dx ?dy))              ;this will cause it to work, taking away the below statement.
-                 ;if the logic there is valid though why is it not working?g
-
-                 (:guard
-                   (or                       ;LOGIC HERE IS VALID (or atleast it is when fed through REPL.
-                     (= (? dx) (+ (? x) 1)) ;Try find a way to see these variables??? print in ops-search perhaps?
-                     (= (? dx) (- (? x) 1)) ;(is floor) was added in to try and give the matcher something initial about dx dy
-                     (= (? dx) (? y)))     ;  the implication of this; because without the guard the, ops work,
-                   (or (= (? dy) (+ (? y) 1)) ;  is that the guard is causing the fault; perhaps something minor syntactical that i am missing?
-                       (= (? dy) (- (? y) 1))
-                       (= (? dy) (? y)))
-                   )
+          :pre        (
+                        (isa forklift (?forklift ?n))
+                        (on (?x ?y) (?forklift ?n))
+                ;        (is floor (?dx ?dy))              ;this will cause it to work, taking away the below statement.
+                        (connects (?x ?y) (?dx ?dy))
 
 
-                 ;                  (:not (unavailable (?dx ?dy)))) ;THis should work fine, but temporarily taking it out to be safe whilst debugging guard
+
+                                   (:not (unavailable (?dx ?dy)))) ;THis should work fine, but temporarily taking it out to be safe whilst debugging guard
                  :add ((on (?dx ?dy) (?forklift ?n)) ;Not added? implies the operator is never triggered
                         (unavailable (?x ?y)))
                  :del ((on (?x ?y) (?forklift ?n))) ;I believe this worked fine last time it was tested? double check by commenting the guard out.
                  :txt (forklift ?n moves to (?dx ?dy)) ;should be fine, possibly a slight text error but thats fine
                  :cmd (move forklift) ;should be fine
-                 )}
+                 }
           })
 
 

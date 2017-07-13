@@ -5,6 +5,7 @@
 ;wait for the world state and dyn state to populate
 ;run (fwd-chain rule-set mock-world)
 
+
 (ns core
   (:gen-class)
   (:require [sock2.socket_utils :refer :all]
@@ -29,3 +30,7 @@
       (println "-------------------------")
       (println dynamic-state)
       )
+
+
+;Notes-
+;13/7/17 current issues could be a case of

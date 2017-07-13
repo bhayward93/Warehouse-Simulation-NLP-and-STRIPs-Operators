@@ -477,10 +477,6 @@
 ; TODO: ADD IS A FORKLIFT IN NL, ITS CURRENTLY IN DYN STATE
 ;FORKLIFT NOW ON, NOT AT.
 (def mock-dyn '#{
-                 (is floor (5 0))
-                 (is floor (6 0))
-                 (is floor (7 0))
-                 (is floor (8 0))
                  (isa forklift (forklift 495))
                  (on (6 0) (forklift 495))
                  (at (4 5) screws-crate 490)
