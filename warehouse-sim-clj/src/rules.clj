@@ -9,8 +9,24 @@
 ;A defined rule set
 (def rule-set
   '( (rule 1 (connects (?x ?y) (?dx ?dy))
-           :=> (connects (?dx ?dy) (?x ?y))) ;Mirroring the connection statements
+           :=> (connects (?dx ?dy) (?x ?y))
+               (is floor (?dx ?dy))) ;Mirroring the connection statements
+
      ))
+
+
+(def directional-conflict-resolver '((rule 1 ())))
+
+
+
+
+
+
+
+
+
+
+
 
 ;The below are slight modifications of Dr Ian Wood/Simon Lynch's functions.
 
