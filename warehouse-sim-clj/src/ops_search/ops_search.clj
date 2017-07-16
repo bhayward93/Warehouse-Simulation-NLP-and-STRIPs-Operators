@@ -5,6 +5,8 @@
 (require '[cgsx.tools.matcher :refer :all])
 (require '[clojure.set :refer :all])
 (require '[clojure.pprint :refer :all])
+(require '[util :refer :all]
+         '[nl-injector :refer :all])
 
 (declare finalise-results update-state-map apply-op apply-all)
 
@@ -13,6 +15,11 @@
   [start goal ops & {:keys [world debug]
                      :or {debug  false
                           world  #{}}}]
+
+  (when (not(contains? start goal))
+    (do (conj start goal)
+       (println "GOAL" goal "START" start))) ;I added this to keep track of the goal state
+
   ; using sets for state tuples...
   (let [start {:state (set start) :path () :cmds () :txt ()}
         world (set world)

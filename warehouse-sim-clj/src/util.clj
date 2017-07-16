@@ -27,22 +27,21 @@
 
 
 ;unused
-;  (defn within-one-patch? [x y dx dy]
-;    (println "x:"x "y:"y "dx:"dx "dy: "dy )
-;    (let [this-x  (int  x)
-;          this-y  (int  y)
-;          this-dx (int dx)
-;          this-dy (int dy)]
-;      (and
-;        (or
-;          (= (+ this-x 1) this-dx)
-;          (= (- this-x 1) this-dx)
-;          (= this-dx this-x))
-;        (or
-;          (= (+ this-y 1) this-dy)
-;          (= (- this-y 1) this-dy)
-;          (= this-dy this-y)))
-;      ))
+  (defn within-one-patch? [x y dx dy]
+    (let [this-x  (int  x)
+          this-y  (int  y)
+          this-dx (int dx)
+          this-dy (int dy)]
+      (and
+        (or
+          (= (+ this-x 1) this-dx)
+          (= (- this-x 1) this-dx)
+          (= this-dx this-x))
+        (or
+          (= (+ this-y 1) this-dy)
+          (= (- this-y 1) this-dy)
+          (= this-dy this-y)))
+      ))
 
 ;A defined use of clojure.string/replace, specifically for
 ; quickly uncommenting large blocks of code, and printing the
@@ -53,3 +52,23 @@
   (println (clojure.string/replace
               base-string   ";"    ""))
   )
+
+;TEMP DEVELOPMENT FUNCTION. this needs to be switched to work with the actual dynamic state when it is complete.
+(defn add-goal-state [goal-state mock]
+  (conj mock goal-state)
+  )
+
+;https://stackoverflow.com/questions/5057047/how-to-do-exponentiation-in-clojure
+(defn exp
+  [x n]
+  (if (zero? n) 1
+                (* x (exp x (dec n)))
+                ))
+
+(defn distance?
+  [x y dx dy]
+  (
+      (Math/sqrt (+ (exp (- dy x) 2) (exp (- dy y) 2)))
+      )
+  )
+

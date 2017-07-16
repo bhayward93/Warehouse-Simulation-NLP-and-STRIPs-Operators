@@ -13,13 +13,23 @@
                (is floor (?dx ?dy))) ;Mirroring the connection statements
 
      ))
-
-
-(def directional-conflict-resolver '((rule 1 ())))
-
-
-
-
+;
+;(def dyn-rules
+;  (let [x ?x]
+;  '(rule 1
+;         (on (?x ?y) (?forklift ?n))
+;         :=>
+;         (adjacent ~(+ x 1 )))))
+;
+;(defn closest-direction-to-goal [state goal]
+;  )
+;
+;(def directional-conflict-resolver '((rule 1 )
+;                                           :=> (adjacent-patch)))
+;
+;
+;
+;
 
 
 

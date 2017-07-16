@@ -5,6 +5,7 @@
 ;wait for the world state and dyn state to populate
 ;run (fwd-chain rule-set mock-world)
 
+;(ops-search mock-dyn '((on (6 16) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))
 
 (ns core
   (:gen-class)
@@ -19,7 +20,7 @@
             [clojure.math.combinatorics])
             (:refer clojure.math.combinatorics :rename {update, combin-update})
             )
-
+;(ops-search mock-dyn '((on (6 16) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))
 (defn -main [port]
       (def s25 (open-socket port))
       (println "Awaiting World State")
@@ -31,7 +32,26 @@
       (println dynamic-state)
       )
 
+(defn run []
+  (ops-search
+    mock-dyn
+    '((on (5 0) forklift ?))
+    state-ops
+    :debug true
+    :world (apply-all-rules rule-set mock-world))
+  )
 
+;(defn run []
+;  (ops-search
+;    (conj mock-dyn (apply-all-rules rule-set mock-world))
+;    '((on (5 0) forklift ?))
+;    state-ops
+;    :debug true
+;    :world (apply-all-rules rule-set mock-world)
+;    ;(ops-search mock-dyn '((on (6 16) (forklift 495)))
+;    ;state-ops :debug true :world (apply-all-rules rule-set mock-world))
+;    )
+;  )
 ;Notes-
 ;13/7/17 current issues could be a case of
 
