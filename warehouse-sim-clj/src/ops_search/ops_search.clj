@@ -16,10 +16,13 @@
                      :or {debug  false
                           world  #{}}}]
 
-  (when (not(contains? start goal))
-    (do (conj start goal)
-       (println "GOAL" goal "START" start))) ;I added this to keep track of the goal state
-
+  ;(when (not(contains? start goal))
+  ;  (let [goal (cons (cons 'goal (rest goal))start)]
+  (print goal)
+  (let [
+        ;(remove 'on goal)
+        goal-added (cons (cons 'goal (drop 1 (first goal))) start ) ;Cheap override.
+        start goal-added]
   ; using sets for state tuples...
   (let [start {:state (set start) :path () :cmds () :txt ()}
         world (set world)
@@ -46,7 +49,7 @@
                                              (recur
                                                (concat waiting (map #(update-state-map next %) succs))
                                                (conj visited state) ))
-                                       )))))
+                                       ))))))
           ))))
 
 

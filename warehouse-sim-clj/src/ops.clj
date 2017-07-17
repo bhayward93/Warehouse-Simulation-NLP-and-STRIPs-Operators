@@ -9,24 +9,32 @@
 ;MATCHER DOCS http://s573859921.websitehome.co.uk/pub/clj/matcher/user%20guide.htm#_:not_and_:guard
 
 (def state-ops
-  (let [floor '(? dx)]
   '{move {
           :pre (
-                ; (adjacent (?forklift ?n) (?dx ?dy))
+                 (adjacent (?forklift ?n) (?dx ?dy))
                  (isa forklift (?forklift ?n))
                  (on (?x ?y) (?forklift ?n))
                  (connects (?x ?y) (?dx ?dy)) ;going to need to implement conflict resolution
                  (is floor (?dx ?dy))
                  (:not (unavailable (?dx ?dy))) ;THis should work fine, but temporarily taking it out to be safe whilst debugging guard
-                 (:guard  (do (println "HELLO FROM THE GUARD INSIDE")(and ;this println works! TODO Start here tomorrow.
-                            (or
-                              (= (+ (? dx) 1) (? dx)) ;this should be native clojure; need to check the variables using the above.
-                              (= (- (? dx) 1) (? dx)) ;Also try EAP builds for cursive to see if the debugger works!
-                              (= (? dx)(? dx)))
-                            (or
-                              (= (? dy) (? dy))
-                              (= (? dy) (? dy))
-                              (= (? dy)(? dy))))))
+                 ;(:guard  (do (println "HELLO FROM THE GUARD INSIDE")(and ;this println works! TODO Start here tomorrow.
+                 ;           (or
+                 ;             (= (+ (? dx) 1) (? dx)) ;this should be native clojure; need to check the variables using the above.
+                 ;             (= (- (? dx) 1) (? dx)) ;Also try EAP builds for cursive to see if the debugger works!
+                 ;             (= (? dx)(? dx)))
+                 ;           (or
+                 ;             (= (? dy) (? dy))
+                 ;             (= (? dy) (? dy))
+                 ;             (= (? dy)(? dy))))))
+                ; (:guard (do (println (+(? dx) 1)))(= (+ (? dy) 1) (? dy)))   ;can do addition here!!!
+
+                 ;(:guard ())
+                 ;possibly protect?
+                 (goal (?gx ?gy) (?forklift ?n)) ;Got hold of the goal!
+                 (:guard (println "GX :"(? gx) "  |  GY: "(? gy)))
+
+                 (:guard (do (println "X: "(? x) "  | Y: " (? y)"  |  DX: "(? dx) "  | DY: " (? dy))))
+
                  )
 
 
@@ -39,9 +47,9 @@
                  (on (?x ?y) (?forklift ?n)
                  (adjacent (?forklift ?n) (?dx ?dy)))
                  )
-          :txt (forklift ?n moves to (?dx ?dy))
+          :txt (forklift moves to (?dx ?dy))
           :cmd (+ 1 1)
-          }}))
+          }})
     ;init {
     ;      :pre ((?anything)) ;should be able to do things before operating (e.g. adding a goal in; but how? Can I get hold of the goal arg from ops-search.
     ;      :add ((init-lock))

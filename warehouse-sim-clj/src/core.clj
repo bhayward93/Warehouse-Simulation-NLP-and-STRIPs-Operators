@@ -7,6 +7,9 @@
 
 ;(ops-search mock-dyn '((on (6 16) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))
 
+
+;Res
+;https://jafingerhut.github.io/cheatsheet/grimoire/cheatsheet-tiptip-cdocs-summary.html
 (ns core
   (:gen-class)
   (:require [sock2.socket_utils :refer :all]

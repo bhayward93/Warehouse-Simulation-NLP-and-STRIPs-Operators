@@ -71,4 +71,5 @@
       (Math/sqrt (+ (exp (- dy x) 2) (exp (- dy y) 2)))
       )
   )
-
+;https://stackoverflow.com/questions/15003103/clojure-form-to-string
+(defmacro string-it [x] (str x))
