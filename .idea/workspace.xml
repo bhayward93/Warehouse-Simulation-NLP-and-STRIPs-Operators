@@ -7,6 +7,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/core.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/core.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/rules.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/rules.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/util.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/util.clj" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,27 +23,27 @@
     <favorites_list name="warehouse-sim" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.5326316">
+    <splitter split-orientation="vertical" split-proportion="0.43894738">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="ops_search.clj" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj">
+          <file leaf-file-name="ops.clj" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="154">
-                  <caret line="23" column="84" lean-forward="false" selection-start-line="23" selection-start-column="84" selection-end-line="23" selection-end-column="84" />
-                  <folding />
+                <state relative-caret-position="310">
+                  <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+                  <folding>
+                    <element signature="e#0#80#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ops.clj" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj">
+          <file leaf-file-name="ops_search.clj" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="392">
-                  <caret line="32" column="71" lean-forward="false" selection-start-line="32" selection-start-column="71" selection-end-line="32" selection-end-column="71" />
-                  <folding>
-                    <element signature="e#0#80#0" expanded="false" />
-                  </folding>
+                <state relative-caret-position="154">
+                  <caret line="32" column="8" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -60,8 +61,8 @@
           <file leaf-file-name="util.clj" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/util.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="380">
-                  <caret line="73" column="1" lean-forward="false" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
+                <state relative-caret-position="1526">
+                  <caret line="109" column="45" lean-forward="false" selection-start-line="109" selection-start-column="45" selection-end-line="109" selection-end-column="45" />
                   <folding />
                 </state>
               </provider>
@@ -70,8 +71,8 @@
           <file leaf-file-name="nl_injector.clj" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nl_injector.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3878">
-                  <caret line="277" column="43" lean-forward="true" selection-start-line="277" selection-start-column="43" selection-end-line="277" selection-end-column="43" />
+                <state relative-caret-position="6958">
+                  <caret line="497" column="22" lean-forward="false" selection-start-line="497" selection-start-column="18" selection-end-line="497" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -81,21 +82,31 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="rules.clj" pinned="false" current-in-tab="false">
+          <file leaf-file-name="rules.clj" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/rules.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="182">
-                  <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+                <state relative-caret-position="168">
+                  <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="core.clj" pinned="false" current-in-tab="true">
+          <file leaf-file-name="core.clj" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/core.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="56">
-                  <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+                <state relative-caret-position="91">
+                  <caret line="33" column="43" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="set.clj" pinned="false" current-in-tab="false">
+            <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.8.0/clojure-1.8.0.jar!/clojure/set.clj">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="546">
+                  <caret line="39" column="33" lean-forward="false" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
@@ -114,22 +125,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rule</find>
-      <find>single</find>
-      <find>apply</find>
-      <find>apply-rule</find>
-      <find>rules</find>
-      <find>apply-all</find>
-      <find>fwd</find>
-      <find>(connects (7 0</find>
-      <find>(connects (11</find>
-      <find>(at (7 0) fork</find>
-      <find>(on (7 0) fork</find>
-      <find>5 0</find>
-      <find>forklift</find>
-      <find>(on (5</find>
-      <find>init</find>
-      <find>on (</find>
       <find>unav</find>
       <find>16</find>
       <find>(is floor (16</find>
@@ -137,13 +132,29 @@
       <find>6 16</find>
       <find>(on</find>
       <find>fork</find>
-      <find>on</find>
       <find>(6 0)</find>
       <find>cmd</find>
       <find>ad</find>
       <find>adj</find>
       <find>oal</find>
+      <find>go</find>
+      <find>isa</find>
+      <find>issor</find>
+      <find>sor</find>
+      <find>world</find>
+      <find>on (6 0</find>
+      <find>sort</find>
+      <find>contains?</find>
+      <find>{</find>
+      <find>issorted</find>
       <find>goal</find>
+      <find>(on (</find>
+      <find>on (6</find>
+      <find>cons</find>
+      <find>(</find>
+      <find>so</find>
+      <find>on</find>
+      <find>on (</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -173,12 +184,12 @@
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/ICA part 5.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/project.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nl_injector.clj" />
-        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/rules.clj" />
         <option value="$MAVEN_REPOSITORY$/org/clojure/clojure/1.8.0/clojure-1.8.0.jar!/clojure/lang/Util.class" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/core.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/util.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj" />
+        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/rules.clj" />
       </list>
     </option>
   </component>
@@ -189,7 +200,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -202,7 +213,57 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="warehouse-sim-clj">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="warehouse-sim-clj">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="warehouse-sim-clj">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ops_search">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Libraries" />
@@ -221,7 +282,7 @@
       <recent name="$PROJECT_DIR$/warehouse-sim-clj/src" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1500255099279">{:repl-history {:ide [], :local [{:command &quot;(ops-search mock-dyn '((at (8 0) forklift 495)) state-ops :debug true) &quot;, :offset 71, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((at (8 0) (forklift 495))) state-ops :debug true) &quot;, :offset 73, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((at (8 0) (forklift 495))) state-ops :debug true :world mock-world) &quot;, :offset 91, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((at (7 0) (forklift 495))) state-ops :debug true :world mock-world) &quot;, :offset 91, :ns &quot;core&quot;} {:command &quot;(and(not= 1 2)(not=1 3))&quot;, :offset 24, :ns &quot;core&quot;} {:command &quot;(and(not= 1 2)(not= 1 1))&quot;, :offset 25, :ns &quot;core&quot;} {:command &quot;(and(not= 1 2)(not= 1 3))&quot;, :offset 25, :ns &quot;core&quot;} {:command &quot;(within-one-patch 6 0 7 0)&quot;, :offset 26, :ns &quot;core&quot;} {:command &quot;(within-one-patch? 6 0 7 0)&quot;, :offset 27, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((at (5 4) (forklift 495))) state-ops) &quot;, :offset 60, :ns &quot;core&quot;} {:command &quot;(println (clojure.string/replace \&quot;(at (6 0) (forklift 495))\\n                 (at (4 5) screws-crate 490)\\n                 (at (4 5) tyres-crate 390)\\n                 (at (4 5) wheels-crate 477)\\n                 (at (4 5) bolts-crate 421)\\n                 (at (4 5) circular-saws-crate 271) (at (12 15) pistons-crate 392)\\n                 (at (12 15) lights-crate 454)\\n                 (at (12 15) jacks-crate 372)\\n                 (at (12 15) engines-crate 296)\\n                 (at (12 15) wheels-crate 458)\\n                 (at (4 15) engines-crate 338)\\n                 (at (4 15) wheels-crate 306)\\n                 (at (4 15) screws-crate 369)\\n                 (at (4 15) pistons-crate 483)\\n                 (at (4 15) tyres-crate 447)\\n                 (at (12 9) compressors-crate 434)\\n                 (at (12 9) pistons-crate 273)\\n                 (at (12 9) jacks-crate 401)\\n                 (at (12 9) tyres-crate 407)\\n                 (at (12 9) screws-crate 359)\\n                 (at (12 11) jacks-crate 442)\\n                 (at (12 11) lights-crate 328)\\n                 (at (12 11) nails-crate 460)\\n                 (at (12 11) jacks-crate 289)\\n                 (at (12 11) screws-crate 339)\\n                 (at (4 14) engines-crate 343)\\n                 (at (4 14) wheels-crate 463)\\n                 (at (4 14) lights-crate 373)\\n                 (at (4 14) jacks-crate 470)\\n                 (at (4 14) circular-saws-crate 379)\\n                 (at (12 13) compressors-crate 380)\\n                 (at (12 13) lights-crate 316)\\n                 (at (12 13) nails-crate 376)\\n                 (at (12 13) circular-saws-crate 366)\\n                 (at (12 13) girders-crate 352)\&quot; \&quot;at\&quot; \&quot;on\&quot;))&quot;, :offset 1736, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((at (5 4) (forklift 495))) state-ops :debug true :world mock-world) &quot;, :offset 90, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((at (5 4) (forklift 495))) state-ops :debug true) &quot;, :offset 72, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '(at (7 0) (forklift 495)) state-ops :debug true) &quot;, :offset 71, :ns &quot;core&quot;} {:command &quot;\n(ops-search mock-dyn '((at (7 0) (forklift 495))) state-ops :debug true) &quot;, :offset 74, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((at (7 0) (forklift 495))) state-ops :debug true) &quot;, :offset 73, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((at (7 0) (forklift ?))) state-ops :debug true) &quot;, :offset 71, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on ((7) (0)) (forklift ?))) state-ops :debug true) &quot;, :offset 75, :ns &quot;core&quot;} {:command &quot;(loop (for [i 0](for [j 0]\n                  (when (i &lt; 10)(print \&quot;()\&quot;i)))))&quot;, :offset 76, :ns &quot;core&quot;} {:command &quot;(uncomment-string \&quot; ;(connects (2 3) (3 3))\\n                   ;(connects (2 3) (1 3))\\n                   ;(connects (2 13) (3 13))\\n                   ;(connects (2 13) (1 13))\\n                   ;(connects (0 7) (1 7))\\n                   ;(connects (0 7) (16 7))\\n                   ;(connects (14 0) (15 0))\\n                   ;(connects (14 0) (13 0))\\n                   ;(connects (14 0) (14 1))\\n                   ;(connects (14 0) (14 16))\\n                   ;(connects (4 16) (5 16))\\n                   ;(connects (4 16) (3 16))\\n                   ;(connects (4 16) (4 0))\\n                   ;(connects (4 16) (4 15))\\n                   ;(connects (12 16) (13 16))\\n                   ;(connects (12 16) (11 16))\\n                   ;(connects (12 16) (12 0))\\n                   ;(connects (12 16) (12 15))\\n                   ;(connects (10 2) (11 2))\\n                   ;(connects (10 2) (9 2))\\n                   ;(connects (10 2) (10 3))\\n                   ;(connects (10 2) (10 1))\\n                   ;(connects (0 3) (1 3))\\n                   ;(connects (0 3) (16 3))\\n                   ;(connects (16 15) (0 15))\\n                   ;(connects (16 15) (15 15))\\n                   ;(connects (4 7) (5 7))\\n                   ;(connects (4 7) (3 7))\\n                   ;(connects (6 16) (7 16))\\n                   ;(connects (6 16) (5 16))\\n                   ;(connects (6 16) (6 0))\\n                   ;(connects (6 16) (6 15))\\n                   ;(connects (6 1) (7 1))\\n                   ;(connects (6 1) (5 1))\\n                   ;(connects (6 12) (7 12))\\n                   ;(connects (6 12) (5 12))\\n                   ;(connects (6 12) (6 13))\\n                   ;(connects (6 12) (6 11))\\n                   ;(connects (0 11) (1 11))\\n                   ;(connects (0 11) (16 11))\\n                   ;(connects (4 8) (5 8))\\n                   ;(connects (4 8) (3 8))\\n                   ;(connects (4 8) (4 9))\\n                   ;(connects (4 8) (4 7))\\n                   ;(connects (16 13) (0 13))\\n                   ;(connects (16 13) (15 13))\\n                   ;(connects (2 16) (3 16))\\n                   ;(connects (2 16) (1 16))\\n                   ;(connects (2 16) (2 0))\\n                   ;(connects (2 16) (2 15))\\n                   ;(connects (0 9) (1 9))\\n                   ;(connects (0 9) (16 9))\\n                   ;(connects (4 11) (5 11))\\n                   ;(connects (4 11) (3 11))\\n                   ;(connects (10 0) (11 0))\\n                   ;(connects (10 0) (9 0))\\n                   ;(connects (10 0) (10 1))\\n                   ;(connects (10 0) (10 16))\\n                   ;(connects (14 6) (15 6))\\n                   ;(connects (14 6) (13 6))\\n                   ;(connects (14 6) (14 7))\\n                   ;(connects (14 6) (14 5))\\n                   ;(connects (4 9) (5 9))\\n                   ;(connects (4 9) (3 9))\\n                   ;(connects (14 10) (15 10))\\n                   ;(connects (14 10) (13 10))\\n                   ;(connects (14 10) (14 11))\\n                   ;(connects (14 10) (14 9))\\n                   ;(connects (10 3) (11 3))\\n                   ;(connects (10 3) (9 3))\\n                   ;(connects (14 2) (15 2))\\n                   ;(connects (14 2) (13 2))\\n                   ;(connects (14 2) (14 3))\\n                   ;(connects (14 2) (14 1))\\n                   ;(connects (0 13) (1 13))\\n                   ;(connects (0 13) (16 13))\\n                   ;(connects (4 14) (5 14))\\n                   ;(connects (4 14) (3 14))\\n                   ;(connects (4 14) (4 15))\\n                   ;(connects (4 14) (4 13))\\n                   ;(connects (8 12) (9 12))\\n                   ;(connects (8 12) (7 12))\\n                   ;(connects (8 12) (8 13))\\n                   ;(connects (8 12) (8 11))\\n                   ;(connects (12 10) (13 10))\\n                   ;(connects (12 10) (11 10))\\n                   ;(connects (12 10) (12 11))\\n                   ;(connects (12 10) (12 9))\\n                   ;(connects (0 10) (1 10))\\n                   ;(connects (0 10) (16 10))\\n                   ;(connects (0 10) (0 11))\\n                   ;(connects (0 10) (0 9))\\n                   ;(connects (6 13) (7 13))\\n                   ;(connects (6 13) (5 13))\\n                   ;(connects (6 2) (7 2))\\n                   ;(connects (6 2) (5 2))\\n                   ;(connects (6 2) (6 3))\\n                   ;(connects (6 2) (6 1))\\n                   ;(connects (14 16) (15 16))\\n                   ;(connects (14 16) (13 16))\\n                   ;(connects (14 16) (14 0))\\n                   ;(connects (14 16) (14 15))\\n                   ;(connects (0 14) (1 14))\\n                   ;(connects (0 14) (16 14))\\n                   ;(connects (0 14) (0 15))\\n                   ;(connects (0 14) (0 13))\\n                   ;(connects (0 5) (1 5))\\n                   ;(connects (0 5) (16 5))\\n                   ;(connects (0 15) (1 15))\\n                   ;(connects (0 15) (16 15))\\n                   ;(connects (10 4) (11 4))\\n                   ;(connects (10 4) (9 4))\\n                   ;(connects (10 4) (10 5))\\n                   ;(connects (10 4) (10 3))\\n                   ;(connects (8 5) (9 5))\\n                   ;(connects (8 5) (7 5))\\n                   ;(connects (10 5) (11 5))\\n                   ;(connects (10 5) (9 5))\\n                   ;(connects (6 9) (7 9))\\n                   ;(connects (6 9) (5 9))\\n                   ;(connects (14 14) (15 14))\\n                   ;(connects (14 14) (13 14))\\n                   ;(connects (14 14) (14 15))\\n                   ;(connects (14 14) (14 13))\\n                   ;(connects (16 4) (0 4))\\n                   ;(connects (16 4) (15 4))\\n                   ;(connects (16 4) (16 5))\\n                   ;(connects (16 4) (16 3))\\n                   ;(connects (16 12) (0 12))\\n                   ;(connects (16 12) (15 12))\\n                   ;(connects (16 12) (16 13))\\n                   ;(connects (16 12) (16 11))\\n                   ;(connects (6 5) (7 5))\\n                   ;(connects (6 5) (5 5))\\n                   ;(connects (14 3) (15 3))\\n                   ;(connects (14 3) (13 3))\\n                   ;(connects (8 3) (9 3))\\n                   ;(connects (8 3) (7 3))\\n                   ;(connects (0 2) (1 2))\\n                   ;(connects (0 2) (16 2))\\n                   ;(connects (0 2) (0 3))\\n                   ;(connects (0 2) (0 1))\\n                   ;(connects (16 7) (0 7))\\n                   ;(connects (16 7) (15 7))\\n                   ;(connects (8 2) (9 2))\\n                   ;(connects (8 2) (7 2))\\n                   ;(connects (8 2) (8 3))\\n                   ;(connects (8 2) (8 1))\\n                   ;(connects (8 10) (9 10))\\n                   ;(connects (8 10) (7 10))\\n                   ;(connects (8 10) (8 11))\\n                   ;(connects (8 10) (8 9))\\n                   ;(connects (8 9) (9 9))\\n                   ;(connects (8 9) (7 9))\\n                   ;(connects (12 15) (13 15))\\n                   ;(connects (12 15) (11 15))\\n                   ;(connects (8 0) (9 0))\\n                   ;(connects (8 0) (7 0))\\n                   ;(connects (8 0) (8 1))\\n                   ;(connects (8 0) (8 16))\\n                   ;(connects (14 1) (15 1))\\n                   ;(connects (14 1) (13 1))\\n                   ;(connects (10 1) (11 1))\\n                   ;(connects (10 1) (9 1))\\n                   ;(connects (4 4) (5 4))\\n                   ;(connects (4 4) (3 4))\\n                   ;(connects (4 4) (4 5))\\n                   ;(connects (4 4) (4 3))\\n                   ;(connects (12 2) (13 2))\\n                   ;(connects (12 2) (11 2))\\n                   ;(connects (12 2) (12 3))\\n                   ;(connects (12 2) (12 1))\\n                   ;(connects (10 7) (11 7))\\n                   ;(connects (10 7) (9 7))\\n                   ;(connects (2 15) (3 15))\\n                   ;(connects (2 15) (1 15))\\n                   ;(connects (2 0) (3 0))\\n                   ;(connects (2 0) (1 0))\\n                   ;(connects (2 0) (2 1))\\n                   ;(connects (2 0) (2 16))\\n                   ;(connects (14 4) (15 4))\\n                   ;(connects (14 4) (13 4))\\n                   ;(connects (14 4) (14 5))\\n                   ;(connects (14 4) (14 3))\\n                   ;(connects (16 11) (0 11))\\n                   ;(connects (16 11) (15 11))\\n                   ;(connects (16 6) (0 6))\\n                   ;(connects (16 6) (15 6))\\n                   ;(connects (16 6) (16 7))\\n                   ;(connects (16 6) (16 5))\\n                   ;(connects (16 1) (0 1))\\n                   ;(connects (16 1) (15 1))\\n                   ;(connects (8 6) (9 6))\\n                   ;(connects (8 6) (7 6))\\n                   ;(connects (8 6) (8 7))\\n                   ;(connects (8 6) (8 5))\\n                   ;(connects (2 1) (3 1))\\n                   ;(connects (2 1) (1 1))\\n                   ;(connects (6 7) (7 7))\\n                   ;(connects (6 7) (5 7))\\n                   ;(connects (0 12) (1 12))\\n                   ;(connects (0 12) (16 12))\\n                   ;(connects (0 12) (0 13))\\n                   ;(connects (0 12) (0 11))\\n                   ;(connects (8 14) (9 14))\\n                   ;(connects (8 14) (7 14))\\n                   ;(connects (8 14) (8 15))\\n                   ;(connects (8 14) (8 13))\\n                   ;(connects (14 13) (15 13))\\n                   ;(connects (14 13) (13 13))\\n                   ;(connects (4 5) (5 5))\\n                   ;(connects (4 5) (3 5))\\n                   ;(connects (4 2) (5 2))\\n                   ;(connects (4 2) (3 2))\\n                   ;(connects (4 2) (4 3))\\n                   ;(connects (4 2) (4 1))\\n                   ;(connects (8 13) (9 13))\\n                   ;(connects (8 13) (7 13))\\n                   ;(connects (2 7) (3 7))\\n                   ;(connects (2 7) (1 7))\\n                   ;(connects (16 5) (0 5))\\n                   ;(connects (16 5) (15 5))\\n                   ;(connects (8 1) (9 1))\\n                   ;(connects (8 1) (7 1))\\n                   ;(connects (12 6) (13 6))\\n                   ;(connects (12 6) (11 6))\\n                   ;(connects (12 6) (12 7))\\n                   ;(connects (12 6) (12 5))\\n                   ;(connects (0 6) (1 6))\\n                   ;(connects (0 6) (16 6))\\n                   ;(connects (0 6) (0 7))\\n                   ;(connects (0 6) (0 5))\\n                   ;(connects (8 4) (9 4))\\n                   ;(connects (8 4) (7 4))\\n                   ;(connects (8 4) (8 5))\\n                   ;(connects (8 4) (8 3))\\n                   ;(connects (6 4) (7 4))\\n                   ;(connects (6 4) (5 4))\\n                   ;(connects (6 4) (6 5))\\n                   ;(connects (6 4) (6 3))\\n                   ;(connects (12 3) (13 3))\\n                   ;(connects (12 3) (11 3))\\n                   ;(connects (0 16) (1 16))\\n                   ;(connects (0 16) (16 16))\\n                   ;(connects (0 16) (0 0))\\n                   ;(connects (0 16) (0 15))\\n                   ;(connects (10 15) (11 15))\\n                   ;(connects (10 15) (9 15))\\n                   ;(connects (10 10) (11 10))\\n                   ;(connects (10 10) (9 10))\\n                   ;(connects (10 10) (10 11))\\n                   ;(connects (10 10) (10 9))\\n                   ;(connects (2 4) (3 4))\\n                   ;(connects (2 4) (1 4))\\n                   ;(connects (2 4) (2 5))\\n                   ;(connects (2 4) (2 3))\\n                   ;(connects (12 13) (13 13))\\n                   ;(connects (12 13) (11 13))\\n                   ;(connects (12 1) (13 1))\\n                   ;(connects (12 1) (11 1))\\n                   ;(connects (4 15) (5 15))\\n                   ;(connects (4 15) (3 15))\\n                   ;(connects (12 5) (13 5))\\n                   ;(connects (12 5) (11 5))\\n                   ;(connects (16 8) (0 8))\\n                   ;(connects (16 8) (15 8))\\n                   ;(connects (16 8) (16 9))\\n                   ;(connects (16 8) (16 7))\\n                   ;(connects (4 0) (5 0))\\n                   ;(connects (4 0) (3 0))\\n                   ;(connects (4 0) (4 1))\\n                   ;(connects (4 0) (4 16))\\n                   ;(connects (2 5) (3 5))\\n                   ;(connects (2 5) (1 5))\\n                   (connects (6 0) (7 0))\\n                   (connects (6 0) (5 0))\\n                   (connects (6 0) (6 1))\\n                   (connects (6 0) (6 16))\\n                   ;(connects (2 2) (3 2))\\n                   ;(connects (2 2) (1 2))\\n                   ;(connects (2 2) (2 3))\\n                   ;(connects (2 2) (2 1))\\n                   ;(connects (16 0) (0 0))\\n                   ;(connects (16 0) (15 0))\\n                   ;(connects (16 0) (16 1))\\n                   ;(connects (16 0) (16 16))\\n                   ;(connects (2 12) (3 12))\\n                   ;(connects (2 12) (1 12))\\n                   ;(connects (2 12) (2 13))\\n                   ;(connects (2 12) (2 11))\\n                   ;(connects (10 9) (11 9))\\n                   ;(connects (10 9) (9 9))\\n                   ;(connects (2 11) (3 11))\\n                   ;(connects (2 11) (1 11))\\n                   ;(connects (0 0) (1 0))\\n                   ;(connects (0 0) (16 0))\\n                   ;(connects (0 0) (0 1))\\n                   ;(connects (0 0) (0 16))\\n                   ;(connects (0 8) (1 8))\\n                   ;(connects (0 8) (16 8))\\n                   ;(connects (0 8) (0 9))\\n                   ;(connects (0 8) (0 7))\\n                   ;(connects (10 8) (11 8))\\n                   ;(connects (10 8) (9 8))\\n                   ;(connects (10 8) (10 9))\\n                   ;(connects (10 8) (10 7))\\n                   ;(connects (8 8) (9 8))\\n                   ;(connects (8 8) (7 8))\\n                   ;(connects (8 8) (8 9))\\n                   ;(connects (8 8) (8 7))\\n                   ;(connects (8 11) (9 11))\\n                   ;(connects (8 11) (7 11))\\n                   ;(connects (16 16) (0 16))\\n                   ;(connects (16 16) (15 16))\\n                   ;(connects (16 16) (16 0))\\n                   ;(connects (16 16) (16 15))\\n                   ;(connects (6 11) (7 11))\\n                   ;(connects (6 11) (5 11))\\n                   ;(connects (16 14) (0 14))\\n                   ;(connects (16 14) (15 14))\\n                   ;(connects (16 14) (16 15))\\n                   ;(connects (16 14) (16 13))\\n                   ;(connects (6 10) (7 10))\\n                   ;(connects (6 10) (5 10))\\n                   ;(connects (6 10) (6 11))\\n                   ;(connects (6 10) (6 9))\\n                   ;(connects (10 12) (11 12))\\n                   ;(connects (10 12) (9 12))\\n                   ;(connects (10 12) (10 13))\\n                   ;(connects (10 12) (10 11))\\n                   ;(connects (0 4) (1 4))\\n                   ;(connects (0 4) (16 4))\\n                   ;(connects (0 4) (0 5))\\n                   ;(connects (0 4) (0 3))\\n                   ;(connects (2 14) (3 14))\\n                   ;(connects (2 14) (1 14))\\n                   ;(connects (2 14) (2 15))\\n                   ;(connects (2 14) (2 13))\\n                   ;(connects (12 4) (13 4))\\n                   ;(connects (12 4) (11 4))\\n                   ;(connects (12 4) (12 5))\\n                   ;(connects (12 4) (12 3))\\n                   ;(connects (0 1) (1 1))\\n                   ;(connects (0 1) (16 1))\\n                   ;(connects (12 9) (13 9))\\n                   ;(connects (12 9) (11 9))\\n                   ;(connects (14 7) (15 7))\\n                   ;(connects (14 7) (13 7))\\n                   ;(connects (12 0) (13 0))\\n                   ;(connects (12 0) (11 0))\\n                   ;(connects (12 0) (12 1))\\n                   ;(connects (12 0) (12 16))\\n                   ;(connects (14 15) (15 15))\\n                   ;(connects (14 15) (13 15))\\n                   ;(connects (10 13) (11 13))\\n                   ;(connects (10 13) (9 13))\\n                   ;(connects (16 9) (0 9))\\n                   ;(connects (16 9) (15 9))\\n                   ;(connects (14 11) (15 11))\\n                   ;(connects (14 11) (13 11))\\n                   ;(connects (6 14) (7 14))\\n                   ;(connects (6 14) (5 14))\\n                   ;(connects (6 14) (6 15))\\n                   ;(connects (6 14) (6 13))\\n                   ;(connects (16 2) (0 2))\\n                   ;(connects (16 2) (15 2))\\n                   ;(connects (16 2) (16 3))\\n                   ;(connects (16 2) (16 1))\\n                   ;(connects (4 13) (5 13))\\n                   ;(connects (4 13) (3 13))\\n                   ;(connects (2 8) (3 8))\\n                   ;(connects (2 8) (1 8))\\n                   ;(connects (2 8) (2 9))\\n                   ;(connects (2 8) (2 7))\\n                   ;(connects (6 6) (7 6))\\n                   ;(connects (6 6) (5 6))\\n                   ;(connects (6 6) (6 7))\\n                   ;(connects (6 6) (6 5))\\n                   ;(connects (2 9) (3 9))\\n                   ;(connects (2 9) (1 9))\\n                   ;(connects (8 16) (9 16))\\n                   ;(connects (8 16) (7 16))\\n                   ;(connects (8 16) (8 0))\\n                   ;(connects (8 16) (8 15))\\n                   ;(connects (8 15) (9 15))\\n                   ;(connects (8 15) (7 15))\\n                   ;(connects (12 14) (13 14))\\n                   ;(connects (12 14) (11 14))\\n                   ;(connects (12 14) (12 15))\\n                   ;(connects (12 14) (12 13))\\n                   ;(connects (4 1) (5 1))\\n                   ;(connects (4 1) (3 1))\\n                   ;(connects (10 14) (11 14))\\n                   ;(connects (10 14) (9 14))\\n                   ;(connects (10 14) (10 15))\\n                   ;(connects (10 14) (10 13))\\n                   ;(connects (4 10) (5 10))\\n                   ;(connects (4 10) (3 10))\\n                   ;(connects (4 10) (4 11))\\n                   ;(connects (4 10) (4 9))\\n                   ;(connects (16 3) (0 3))\\n                   ;(connects (16 3) (15 3))\\n                   ;(connects (2 10) (3 10))\\n                   ;(connects (2 10) (1 10))\\n                   ;(connects (2 10) (2 11))\\n                   ;(connects (2 10) (2 9))\\n                   ;(connects (4 12) (5 12))\\n                   ;(connects (4 12) (3 12))\\n                   ;(connects (4 12) (4 13))\\n                   ;(connects (4 12) (4 11))\\n                   ;(connects (4 6) (5 6))\\n                   ;(connects (4 6) (3 6))\\n                   ;(connects (4 6) (4 7))\\n                   ;(connects (4 6) (4 5))\\n                   ;(connects (10 6) (11 6))\\n                   ;(connects (10 6) (9 6))\\n                   ;(connects (10 6) (10 7))\\n                   ;(connects (10 6) (10 5))\\n                   ;(connects (14 9) (15 9))\\n                   ;(connects (14 9) (13 9))\\n                   ;(connects (14 5) (15 5))\\n                   ;(connects (14 5) (13 5))\\n                   ;(connects (4 3) (5 3))\\n                   ;(connects (4 3) (3 3))\\n                   ;(connects (14 12) (15 12))\\n                   ;(connects (14 12) (13 12))\\n                   ;(connects (14 12) (14 13))\\n                   ;(connects (14 12) (14 11))\\n                   ;(connects (10 11) (11 11))\\n                   ;(connects (10 11) (9 11))\\n                   ;(connects (12 12) (13 12))\\n                   ;(connects (12 12) (11 12))\\n                   ;(connects (12 12) (12 13))\\n                   ;(connects (12 12) (12 11))\\n                   ;(connects (16 10) (0 10))\\n                   ;(connects (16 10) (15 10))\\n                   ;(connects (16 10) (16 11))\\n                   ;(connects (16 10) (16 9))\\n                   ;(connects (6 3) (7 3))\\n                   ;(connects (6 3) (5 3))\\n                   ;(connects (14 8) (15 8))\\n                   ;(connects (14 8) (13 8))\\n                   ;(connects (14 8) (14 9))\\n                   ;(connects (14 8) (14 7))\\n                   ;(connects (6 8) (7 8))\\n                   ;(connects (6 8) (5 8))\\n                   ;(connects (6 8) (6 9))\\n                   ;(connects (6 8) (6 7))\\n                   ;(connects (8 7) (9 7))\\n                   ;(connects (8 7) (7 7))\\n                   ;(connects (10 16) (11 16))\\n                   ;(connects (10 16) (9 16))\\n                   ;(connects (10 16) (10 0))\\n                   ;(connects (10 16) (10 15))\\n                   ;(connects (6 15) (7 15))\\n                   ;(connects (6 15) (5 15))\\n                   ;(connects (2 6) (3 6))\\n                   ;(connects (2 6) (1 6))\\n                   ;(connects (2 6) (2 7))\\n                   ;(connects (2 6) (2 5))\\n                   ;(connects (12 11) (13 11))\\n                   ;(connects (12 11) (11 11))\\n                   ;(connects (12 8) (13 8))\\n                   ;(connects (12 8) (11 8))\\n                   ;(connects (12 8) (12 9))\\n                   ;(connects (12 8) (12 7))\\n                   ;(connects (12 7) (13 7))\\n                   ;(connects (12 7) (11 7))\&quot;)&quot;, :offset 21375, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 495))) state-ops :debug true :world mock-world) &quot;, :offset 90, :ns &quot;core&quot;} {:command &quot;(ops-search (conj mock-world mock-dyn) '((on (7 0) (forklift 495))) state-ops :debug true) &quot;, :offset 90, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (8 0) (forklift 495))) state-ops :debug true) &quot;, :offset 73, :ns &quot;core&quot;} {:command &quot;(let [dx 7 dy 0 x 6 y 0](do (or\n      (= (? dx) (+ (? x) 1))\n      (= (? dx) (- (? x) 1))\n      (= (? dx) (? y)))\n    (or (= (? dy) (+ (? y) 1))\n        (= (? dy) (- (? y) 1))\n        (= (? dy) (? y)))))&quot;, :offset 203, :ns &quot;core&quot;} {:command &quot;(let [dx 7 dy 0 x 6 y 0](if(and(or\n      (= (? dx) (+ (? x) 1))\n      (= (? dx) (- (? x) 1))\n      (= (? dx) (? y)))\n    (or (= (? dy) (+ (? y) 1))\n        (= (? dy) (- (? y) 1))\n        (= (? dy) (? y)))))true)&quot;, :offset 211, :ns &quot;core&quot;} {:command &quot;(let [dx 7 dy 0 x 6 y 0](if(and(or\n      (= (? dx) (+ (? x) 1))\n      (= (? dx) (- (? x) 1))\n      (= (? dx) (? y)))\n    (or (= (? dy) (+ (? y) 1))\n        (= (? dy) (- (? y) 1))\n        (= (? dy) (? y))))true)false)&quot;, :offset 216, :ns &quot;core&quot;} {:command &quot;(let [dx 7 dy 0 x 6 y 0](if(and(or\n      (= (? dx) (+ (? x) 1))\n      (= (? dx) (- (? x) 1))\n      (= (? dx) (? y)))\n    (or (= (? dy) (+ (? y) 1))\n        (= (? dy) (- (? y) 1))\n        (= (? dy) (? y))))true))&quot;, :offset 211, :ns &quot;core&quot;} {:command &quot;(let [dx 7 dy 0 x 6 y 0](if(and(or\n      (= dx (+ x 1))\n      (= dx (- x 1))\n      (= dx y))\n    (or (= dy (+ y 1))\n        (= dy (- y 1))\n        (= dy y)))true))&quot;, :offset 163, :ns &quot;core&quot;} {:command &quot;(let [dx 7 dy 9 x 6 y 0](if(and(or\n      (= dx (+ x 1))\n      (= dx (- x 1))\n      (= dx y))\n    (or (= dy (+ y 1))\n        (= dy (- y 1))\n        (= dy y)))true))&quot;, :offset 163, :ns &quot;core&quot;} {:command &quot;(let [dx 7 dy 1 x 6 y 0](if(and(or\n      (= dx (+ x 1))\n      (= dx (- x 1))\n      (= dx y))\n    (or (= dy (+ y 1))\n        (= dy (- y 1))\n        (= dy y)))true))&quot;, :offset 163, :ns &quot;core&quot;} {:command &quot;(let [dx 7 dy 2 x 6 y 0](if(and(or\n      (= dx (+ x 1))\n      (= dx (- x 1))\n      (= dx y))\n    (or (= dy (+ y 1))\n        (= dy (- y 1))\n        (= dy y)))true))&quot;, :offset 163, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 495))) state-ops :debug true) &quot;, :offset 73, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift ?))) state-ops :debug true) &quot;, :offset 71, :ns &quot;core&quot;} {:command &quot;(apply-all-rules )&quot;, :offset 18} {:command &quot;(apply-single-rule ruleset mock-state)&quot;, :offset 38, :ns &quot;core&quot;} {:command &quot;(apply-single-rule ruleset mock-world)&quot;, :offset 38, :ns &quot;core&quot;} {:command &quot;(apply-single-rule mock-world ruleset)&quot;, :offset 38, :ns &quot;core&quot;} {:command &quot;(apply-all-rules mock-world ruleset mock-world)&quot;, :offset 47, :ns &quot;core&quot;} {:command &quot;(apply-all-rules mock-world)&quot;, :offset 28, :ns &quot;core&quot;} {:command &quot;(apply-all-rules mock-world '{[(connects (?x ?y) (?dx ?dy)) :=&gt; (connects (?dx ?dy) (?x ?y))]} mock-world)&quot;, :offset 106, :ns &quot;core&quot;} {:command &quot;(apply-all-rules mock-world '{[(connects (?x ?y) (?dx ?dy)) :=&gt; (connects (?dx ?dy) (?x ?y))]})&quot;, :offset 95, :ns &quot;core&quot;} {:command &quot;(apply-all-rules mock-world '{[(connects (?x ?y) (?dx ?dy)) :=&gt; (connects (?dx ?dy) (?x ?y))]&quot;, :offset 93} {:command &quot;(apply-all-rules ruleset world-state)&quot;, :offset 37, :ns &quot;core&quot;} {:command &quot;(apply-all-rules mock-world ruleset)&quot;, :offset 36, :ns &quot;core&quot;} {:command &quot;(apply-all-rules mock-dyn ruleset)&quot;, :offset 34, :ns &quot;core&quot;} {:command &quot;(apply-all-rules first mock-dyn ruleset)&quot;, :offset 40, :ns &quot;core&quot;} {:command &quot;(first ruleset)&quot;, :offset 15, :ns &quot;core&quot;} {:command &quot;(rule-set)&quot;, :offset 10, :ns &quot;core&quot;} {:command &quot;(apply-all-rules (first mock-dyn) ruleset)&quot;, :offset 42, :ns &quot;core&quot;} {:command &quot;(apply-rule ruleset mock-world)&quot;, :offset 31, :ns &quot;core&quot;} {:command &quot;ruleset&quot;, :offset 7, :ns &quot;core&quot;} {:command &quot;(apply-all ruleset mock-world)&quot;, :offset 30, :ns &quot;core&quot;} {:command &quot;(apply-all-rules ruleset mock-world)&quot;, :offset 36, :ns &quot;core&quot;} {:command &quot;(apply-all-rules (ruleset) mock-world)&quot;, :offset 38, :ns &quot;core&quot;} {:command &quot;(apply-all-rules (rule-set) mock-world)&quot;, :offset 39, :ns &quot;core&quot;} {:command &quot;(apply-all-rules mock-world rules)&quot;, :offset 34, :ns &quot;core&quot;} {:command &quot;(apply-all-rules (set rule-set) mock-world)&quot;, :offset 43, :ns &quot;core&quot;} {:command &quot;(apply-rule '{[(connects (?x ?y) (?dx ?dy)) :=&gt; (connects (?dx ?dy) (?x ?y))]} mock-world)&quot;, :offset 90, :ns &quot;core&quot;} {:command &quot;(apply-all-rules rule-set mock-dyn)&quot;, :offset 35, :ns &quot;core&quot;} {:command &quot;(fwd-chain (set rule-set) mock-dyn)&quot;, :offset 35, :ns &quot;core&quot;} {:command &quot;fwd-chain&quot;, :offset 9, :ns &quot;core&quot;} {:command &quot;(fwd-chain rule-set mock-dyn)&quot;, :offset 29, :ns &quot;core&quot;} {:command &quot;rule-set&quot;, :offset 8, :ns &quot;core&quot;} {:command &quot;(first rule-set)&quot;, :offset 16, :ns &quot;core&quot;} {:command &quot;(fwd-chain (map first rule-set) mock-world)&quot;, :offset 43, :ns &quot;core&quot;} {:command &quot;(mock-world)&quot;, :offset 12, :ns &quot;core&quot;} {:command &quot;mock-world&quot;, :offset 10, :ns &quot;core&quot;} {:command &quot;(fwd-chain (map first rule-set) (set mock-world))&quot;, :offset 49, :ns &quot;core&quot;} {:command &quot;(fwd-chain (map first rule-set) (first mock-world))&quot;, :offset 51, :ns &quot;core&quot;} {:command &quot;(fwd-chain (map rule-set) (first mock-world))&quot;, :offset 45, :ns &quot;core&quot;} {:command &quot;(fwd-chain rule-set mock-world)&quot;, :offset 31, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((at (7 0) forklift ?)) state-ops :debug true :world (fwd-chain rule-set mock-world)7&quot;, :offset 107, :ns &quot;core&quot;} {:command &quot;(+ 11)&quot;, :offset 6, :ns &quot;user&quot;} {:command &quot;(ops-search mock-dyn '((at (7 0) forklift ?n)) state-ops :debug true :world (fwd-chain rule-set mock-world))&quot;, :offset 108, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((at (7 0) forklift ?)) state-ops :debug true :world (fwd-chain rule-set mock-world)&quot;, :offset 106, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((at (7 0) forklift ?)) state-ops :debug true :world (fwd-chain rule-set mock-world))&quot;, :offset 107, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) forklift ?)) state-ops :debug true :world (fwd-chain rule-set mock-world))&quot;, :offset 107, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (5 0) forklift ?)) state-ops :debug true :world (fwd-chain rule-set mock-world))&quot;, :offset 107, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (6 16) forklift ?)) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 114, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (5 0) forklift ?)) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 113, :ns &quot;core&quot;} {:command &quot;run&quot;, :offset 3, :ns &quot;core&quot;} {:command &quot;(run)&quot;, :offset 5, :ns &quot;core&quot;} {:command &quot;(ops-search (fwd-chain directional-conflict-resolver mock-dyn) '((on (5 0) forklift ?)) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 155, :ns &quot;core&quot;} {:command &quot;(ops-search (fwd-chain directional-conflict-resolver mock-dyn) '(on (6 16) forklift 495) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 156, :ns &quot;core&quot;} {:command &quot;(ops-search (fwd-chain directional-conflict-resolver mock-dyn) '((on (6 16) forklift 495)) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 158, :ns &quot;core&quot;} {:command &quot;(ops-search (fwd-chain directional-conflict-resolver mock-dyn) (on (6 16) (forklift 495)) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 157, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn (on (6 16) (forklift 495)) state-ops :debug true :world (apply-all-rules rule-set mock-world)&quot;, :offset 114, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn (on (6 16) (forklift 495)) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 115, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '(on (6 16) (forklift 495)) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 116, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (8 0) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 117, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (6 16) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 118, :ns &quot;core&quot;} {:command &quot;(ops-search (fwd-chain mock-dyn directional-conflict-resolver) '((on (7 0) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 159, :ns &quot;core&quot;} {:command &quot;(ops-search (fwd-chain directional-conflict-resolver mock-dyn ) '((on (7 0) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 160, :ns &quot;core&quot;} {:command &quot;(fwd-chain directional-conflict-resolver mock-dyn )&quot;, :offset 51, :ns &quot;core&quot;} {:command &quot;(apply-all-rules rule-set mock-world)&quot;, :offset 37, :ns &quot;core&quot;} {:command &quot;(-main 2223)&quot;, :offset 12, :ns &quot;core&quot;} {:command &quot;(+ 1 1)&quot;, :offset 7, :ns &quot;core&quot;} {:command &quot;(-main 2224)&quot;, :offset 12, :ns &quot;core&quot;} {:command &quot;(-main 2222)&quot;, :offset 12, :ns &quot;core&quot;} {:command &quot;(in-ns 'core)&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 117, :ns &quot;core&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1500492565036">{:repl-history {:ide [], :local [{:command &quot;(ops-search mock-dyn (on (6 16) (forklift 495)) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 115, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '(on (6 16) (forklift 495)) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 116, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (8 0) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 117, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (6 16) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 118, :ns &quot;core&quot;} {:command &quot;(ops-search (fwd-chain mock-dyn directional-conflict-resolver) '((on (7 0) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 159, :ns &quot;core&quot;} {:command &quot;(ops-search (fwd-chain directional-conflict-resolver mock-dyn ) '((on (7 0) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 160, :ns &quot;core&quot;} {:command &quot;(fwd-chain directional-conflict-resolver mock-dyn )&quot;, :offset 51, :ns &quot;core&quot;} {:command &quot;(apply-all-rules rule-set mock-world)&quot;, :offset 37, :ns &quot;core&quot;} {:command &quot;(-main 2223)&quot;, :offset 12, :ns &quot;core&quot;} {:command &quot;(+ 1 1)&quot;, :offset 7, :ns &quot;core&quot;} {:command &quot;(-main 2224)&quot;, :offset 12, :ns &quot;core&quot;} {:command &quot;(-main 2222)&quot;, :offset 12, :ns &quot;core&quot;} {:command &quot;(contains? mock-dyn '((on (7 0) (forklift 495))))&quot;, :offset 49, :ns &quot;core&quot;} {:command &quot;(conj mock-dyn '((on (7 0) (forklift 495))))&quot;, :offset 44, :ns &quot;core&quot;} {:command &quot;(conj mock-dyn '(on (7 0) (forklift 495)))&quot;, :offset 42, :ns &quot;core&quot;} {:command &quot;(conj '(on (7 0) (forklift 495))mock-dyn)&quot;, :offset 41, :ns &quot;core&quot;} {:command &quot;(conj '((on (7 0) (forklift 495))) mock-dyn)&quot;, :offset 44, :ns &quot;core&quot;} {:command &quot;(conj '((on (7 0) (forklift 495))) (first mock-dyn))&quot;, :offset 52, :ns &quot;core&quot;} {:command &quot;(conj  (first mock-dyn))'((on (7 0) (forklift 495)))&quot;, :offset 52, :ns &quot;core&quot;} {:command &quot;(conj  mock-dyn) '((on (7 0) (forklift 495)))&quot;, :offset 45, :ns &quot;core&quot;} {:command &quot;(conj  mock-dyn '((on (7 0) (forklift 495))))&quot;, :offset 45, :ns &quot;core&quot;} {:command &quot;(conj  mock-dyn '((on (9 0) (forklift 495))))&quot;, :offset 45, :ns &quot;core&quot;} {:command &quot;(conj  mock-dyn '(on (9 0) (forklift 495)))&quot;, :offset 43, :ns &quot;core&quot;} {:command &quot;(conj  mock-dyn (first( '(on (9 0) (forklift 495)))))&quot;, :offset 53, :ns &quot;core&quot;} {:command &quot;(conj  mock-dyn (first '((on (9 0) (forklift 495)))))&quot;, :offset 53, :ns &quot;core&quot;} {:command &quot;()&quot;, :offset 1} {:command &quot;(conj  \&quot;HELLO\&quot; '(on (9 0) (forklift 495)))&quot;, :offset 42, :ns &quot;core&quot;} {:command &quot;(conj  '(goal) '(on (9 0) (forklift 495)))&quot;, :offset 42, :ns &quot;core&quot;} {:command &quot;(replace '(on (9 0) (forklift 495))) on this) &quot;, :offset 45, :ns &quot;core&quot;} {:command &quot;(replace '(on (9 0) (forklift 495)) on this) &quot;, :offset 45, :ns &quot;core&quot;} {:command &quot;(replace '(on (9 0) (forklift 495)) 'on 'this) &quot;, :offset 46, :ns &quot;core&quot;} {:command &quot;(replace '(on (9 0) (forklift 495)) 'this) &quot;, :offset 43, :ns &quot;core&quot;} {:command &quot;(replace '(on (9 0) (forklift 495)) 'this 'on) &quot;, :offset 46, :ns &quot;core&quot;} {:command &quot;(str '(on (9 0) (forklift 495)) \&quot; 'this 'on\&quot;) &quot;, :offset 45, :ns &quot;core&quot;} {:command &quot;(str (first '(on (9 0) (forklift 495))) \&quot; 'this 'on\&quot;) &quot;, :offset 54, :ns &quot;core&quot;} {:command &quot;(str \&quot;(is-goal(\&quot;'(on (9 0) (forklift 495)) \&quot; 'this 'on\&quot;) &quot;, :offset 57, :ns &quot;core&quot;} {:command &quot;(str \&quot;(is-goal \&quot;'(on (9 0) (forklift 495)) \&quot;)\&quot;) &quot;, :offset 48, :ns &quot;core&quot;} {:command &quot;(conj mock-dyn (str \&quot;(is-goal \&quot;'(on (9 0) (forklift 495)) \&quot;)\&quot;) )&quot;, :offset 64, :ns &quot;core&quot;} {:command &quot;(conj mock-dyn \&quot;(is-goal \&quot;'(on (9 0) (forklift 495)) \&quot;)\&quot;) &quot;, :offset 58, :ns &quot;core&quot;} {:command &quot;(conj mock-dyn '(is-goal '(on (9 0) (forklift 495)) ) ) &quot;, :offset 56, :ns &quot;core&quot;} {:command &quot;(into () (clojure.string/replace '(on (9 0) (forklift 495)) \&quot;on\&quot; \&quot;isgoal\&quot;)) &quot;, :offset 76, :ns &quot;core&quot;} {:command &quot;into () (clojure.string/replace '(on (9 0) (forklift 495)) \&quot;on\&quot; \&quot;isgoal\&quot;) )&quot;, :offset 75, :ns &quot;core&quot;} {:command &quot;(clojure.string/replace '(on (9 0) (forklift 495)) \&quot;on\&quot; \&quot;isgoal\&quot;) &quot;, :offset 66, :ns &quot;core&quot;} {:command &quot;('(on (9 0) (forklift 495)) \&quot;on\&quot; \&quot;isgoal\&quot;) &quot;, :offset 43, :ns &quot;core&quot;} {:command &quot;(string-it  )&quot;, :offset 11} {:command &quot;(string-it '(on (9 0) (forklift 495)))&quot;, :offset 38, :ns &quot;core&quot;} {:command &quot;(replace (string-it '(on (9 0) (forklift 495))) \&quot;quote\&quot; \&quot;goal\&quot;)&quot;, :offset 63, :ns &quot;core&quot;} {:command &quot;(clojure.string/replace (string-it '(on (9 0) (forklift 495))) \&quot;quote\&quot; \&quot;goal\&quot;)&quot;, :offset 78, :ns &quot;core&quot;} {:command &quot;(clojure.string/replace (string-it '(on (9 0) (forklift 495))) \&quot;quote\&quot; \&quot;goal '\&quot;)&quot;, :offset 80, :ns &quot;core&quot;} {:command &quot;(clojure.string/replace (string-it '(on (9 0) (forklift 495))) \&quot;quote \&quot; \&quot;goal '\&quot;)&quot;, :offset 81, :ns &quot;core&quot;} {:command &quot;(read-string(clojure.string/replace (string-it '(on (9 0) (forklift 495))) \&quot;quote \&quot; \&quot;goal '\&quot;))&quot;, :offset 94, :ns &quot;core&quot;} {:command &quot;(re-quote-replacement (read-string(clojure.string/replace (string-it '(on (9 0) (forklift 495))) \&quot;quote \&quot; \&quot;goal '\&quot;)))&quot;, :offset 117, :ns &quot;core&quot;} {:command &quot;(clojure.string/re-quote-replacement (read-string(clojure.string/replace (string-it '(on (9 0) (forklift 495))) \&quot;quote \&quot; \&quot;goal '\&quot;)))&quot;, :offset 132, :ns &quot;core&quot;} {:command &quot;(conj '(goal)'(on (9 0) (forklift 495)))&quot;, :offset 40, :ns &quot;core&quot;} {:command &quot;(cons goal (rest form))&quot;, :offset 23, :ns &quot;core&quot;} {:command &quot;(cons 'Goal (rest '(on (9 0) (forklift 495))))&quot;, :offset 46, :ns &quot;core&quot;} {:command &quot;(conj mock-dyn (cons 'is-goal (rest mock-dyn)))&quot;, :offset 47, :ns &quot;core&quot;} {:command &quot;(cons 'goal (rest '(on (9 0) (forklift 495))))&quot;, :offset 46, :ns &quot;core&quot;} {:command &quot;(cons (mock-dyn (cons 'goal (rest '(on (9 0) (forklift 495)))))&quot;, :offset 63, :ns &quot;core&quot;} {:command &quot;(cons (mock-dyn (cons 'goal (rest '(on (9 0) (forklift 495))))))&quot;, :offset 64, :ns &quot;core&quot;} {:command &quot;(cons (cons 'goal (rest goal))mock-dyn)&quot;, :offset 39, :ns &quot;core&quot;} {:command &quot;(conj (cons 'goal (rest '(on (9 0) (forklift 495))))mock-dyn)&quot;, :offset 61, :ns &quot;core&quot;} {:command &quot;(cons (cons 'goal goal)start )&quot;, :offset 30, :ns &quot;core&quot;} {:command &quot;(cons (cons 'goal (rest goal))start)&quot;, :offset 36, :ns &quot;core&quot;} {:command &quot;(cons mock-dyn (cons 'goal (rest '(on (9 0) (forklift 495)))))&quot;, :offset 62, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 495))) as&quot;, :offset 52} {:command &quot;(cons (cons 'goal start))&quot;, :offset 25, :ns &quot;core&quot;} {:command &quot;(cons (cons 'goal (rest goal))mock-dyn )&quot;, :offset 40, :ns &quot;core&quot;} {:command &quot;(conj a '(a b c))&quot;, :offset 17, :ns &quot;core&quot;} {:command &quot;(conj 'a '(a b c))&quot;, :offset 18, :ns &quot;core&quot;} {:command &quot;(cons 'a '(a b c))&quot;, :offset 18, :ns &quot;core&quot;} {:command &quot;(remove 'on (cons 'a '(a b c)))&quot;, :offset 31, :ns &quot;core&quot;} {:command &quot;(remove 'b (cons 'a '(a b c)))&quot;, :offset 30, :ns &quot;core&quot;} {:command &quot;(cons (cons 'goal (rest '(on (9 0) (forklift 495))))mock-dyn )&quot;, :offset 62, :ns &quot;core&quot;} {:command &quot;(cons (cons 'goal (rest goal))start )&quot;, :offset 35} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))#&quot;, :offset 118, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 117, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift ??))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 116, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift ?n))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 116, :ns &quot;core&quot;} {:command &quot;[][][]&quot;, :offset 6, :ns &quot;core&quot;} {:command &quot;(fwd-chain dyn-rules mock-dyn)#&quot;, :offset 31, :ns &quot;core&quot;} {:command &quot;(fwd-chain dyn-rules mock-dyn)&quot;, :offset 30, :ns &quot;core&quot;} {:command &quot;(fwd-chain (conj '(on (?ox ?oy) (?forklift ?n))dyn-rules mock-dyn))&quot;, :offset 67, :ns &quot;core&quot;} {:command &quot;(fwd-chain (conj '(on (?ox ?oy) (?forklift ?n)) dyn-rules) mock-dyn)&quot;, :offset 68, :ns &quot;core&quot;} {:command &quot;(fwd-chain (conj '(on (7 10) (?forklift ?n)) dyn-rules) mock-dyn)&quot;, :offset 65, :ns &quot;core&quot;} {:command &quot;(conj '(on (7 10) (?forklift ?n)) dyn-rules)&quot;, :offset 44, :ns &quot;core&quot;} {:command &quot;(conj '(on (7 10) (?forklift ?n)) mock-dyn)&quot;, :offset 43, :ns &quot;core&quot;} {:command &quot;(ops-search (fwd-chain dyn-rules mock-dyn) '((on (7 0) (forklift 201))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 139, :ns &quot;core&quot;} {:command &quot;(ops-search (fwd-chain dyn-rules mock-dyn) &quot;, :offset 43} {:command &quot;(apply-all rules mock-dyn mock-world)&quot;, :offset 37, :ns &quot;core&quot;} {:command &quot;(apply-all rule-set mock-dyn mock-world)&quot;, :offset 40, :ns &quot;core&quot;} {:command &quot;mock-dyn&quot;, :offset 8, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 201))) state-ops :debug true :world (apply-all-rules rule-set mock-world))#&quot;, :offset 118, :ns &quot;user&quot;} {:command &quot;(stack)&quot;, :offset 7} {:command &quot;(in-ns 'core)&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;(cons (cons 'goal (rest '(at (x y) z))) start)\n&quot;, :offset 46, :ns &quot;core&quot;} {:command &quot;(cons (cons 'goal (rest '(at (x y) z))) mock-dyn)\n&quot;, :offset 49, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 201))) state-ops :debug true :world mock-world)&quot;, :offset 90, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '(on (7 0) (forklift 201)) state-ops :debug true :world mock-world)&quot;, :offset 88, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 201)) state-ops :debug true :world mock-world))&quot;, :offset 90, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 201))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 117, :ns &quot;core&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -502,7 +563,11 @@
       <workItem from="1500168065264" duration="44000" />
       <workItem from="1500168569802" duration="1579000" />
       <workItem from="1500170366323" duration="2418000" />
-      <workItem from="1500237310864" duration="16399000" />
+      <workItem from="1500237310864" duration="17747000" />
+      <workItem from="1500305043528" duration="824000" />
+      <workItem from="1500308862653" duration="2294000" />
+      <workItem from="1500403915655" duration="20713000" />
+      <workItem from="1500473352929" duration="3136000" />
     </task>
     <task id="LOCAL-00001" summary="Rules are now applied using a forward chain function.&#10; &#10; This has for now just been used to modify the world state, however the obvious next step is to make a rule for (is floor (6 0)) etc, rather than manually inputting them.&#10; &#10; Next up is to look at the feeding that rule applied world state into the ops-search.">
       <created>1499909931460</created>
@@ -525,11 +590,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500172782502</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Got hold of the goal in the operators by modifying ops-search, and also&#10;found a method of printing within the ops. Now I need to calculate distances.">
+      <created>1500255159122</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1500255159122</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43425000" />
+    <option name="totallyTimeSpent" value="71740000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -550,7 +622,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5072917" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5072917" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48645833" sideWeight="0.6837482" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2137628" sideWeight="0.37920937" order="5" side_tool="false" content_ui="tabs" />
@@ -561,11 +633,10 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.49270833" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.49270833" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -573,15 +644,16 @@
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.50292826" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5072917" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="REPL" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48645833" sideWeight="0.6837482" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48645833" sideWeight="0.6837482" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -590,7 +662,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33227345" sideWeight="0.49707174" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.49270833" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66931635" sideWeight="0.4795022" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -599,7 +671,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2137628" sideWeight="0.37920937" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33052632" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -613,32 +685,33 @@
     <MESSAGE value="Rules are now applied using a forward chain function.&#10; &#10; This has for now just been used to modify the world state, however the obvious next step is to make a rule for (is floor (6 0)) etc, rather than manually inputting them.&#10; &#10; Next up is to look at the feeding that rule applied world state into the ops-search." />
     <MESSAGE value="added an init state that might come in useful. &#10;&#10;Need to really look at backward chaining I believe; Also a way to access&#10;the goal arg in ops-search would be nice. Possibly with a macro?" />
     <MESSAGE value="Tried allsorts, haven't quite cracked it yet. &#10;&#10;I need to find a way to use arithmatic inside of the ops, to calculate distance&#10;passing the goal through may also prove to be a neccesity; so that the distance &#10;can be checked. &#10;&#10;Look in ops comments tomorrow." />
-    <option name="LAST_COMMIT_MESSAGE" value="Tried allsorts, haven't quite cracked it yet. &#10;&#10;I need to find a way to use arithmatic inside of the ops, to calculate distance&#10;passing the goal through may also prove to be a neccesity; so that the distance &#10;can be checked. &#10;&#10;Look in ops comments tomorrow." />
+    <MESSAGE value="Got hold of the goal in the operators by modifying ops-search, and also&#10;found a method of printing within the ops. Now I need to calculate distances." />
+    <option name="LAST_COMMIT_MESSAGE" value="Got hold of the goal in the operators by modifying ops-search, and also&#10;found a method of printing within the ops. Now I need to calculate distances." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj</url>
-          <line>13</line>
+          <line>14</line>
           <properties />
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj</url>
-          <line>14</line>
+          <line>15</line>
           <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj</url>
-          <line>15</line>
+          <line>16</line>
           <properties />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj</url>
-          <line>16</line>
+          <line>17</line>
           <properties />
           <option name="timeStamp" value="45" />
         </line-breakpoint>
@@ -654,11 +727,23 @@
           <properties />
           <option name="timeStamp" value="81" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/warehouse-sim-clj/src/core.clj</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="82" />
+      <option name="time" value="87" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -667,14 +752,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/cgsx/tools/matcher.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -883,26 +960,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/rules.clj">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.8.0/clojure-1.8.0.jar!/clojure/set.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="546">
+          <caret line="39" column="33" lean-forward="false" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nl_injector.clj">
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/util.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3878">
-          <caret line="277" column="43" lean-forward="true" selection-start-line="277" selection-start-column="43" selection-end-line="277" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+        <state relative-caret-position="1526">
+          <caret line="109" column="45" lean-forward="false" selection-start-line="109" selection-start-column="45" selection-end-line="109" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -915,10 +984,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/util.clj">
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nl_injector.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="73" column="1" lean-forward="false" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
+        <state relative-caret-position="6958">
+          <caret line="497" column="22" lean-forward="false" selection-start-line="497" selection-start-column="18" selection-end-line="497" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="33" column="43" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -926,18 +1003,26 @@
     <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
-          <caret line="23" column="84" lean-forward="false" selection-start-line="23" selection-start-column="84" selection-end-line="23" selection-end-column="84" />
+          <caret line="32" column="8" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="32" column="71" lean-forward="false" selection-start-line="32" selection-start-column="71" selection-end-line="32" selection-end-column="71" />
+        <state relative-caret-position="310">
+          <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
           <folding>
             <element signature="e#0#80#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/rules.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

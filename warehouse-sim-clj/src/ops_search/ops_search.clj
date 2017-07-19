@@ -6,7 +6,8 @@
 (require '[clojure.set :refer :all])
 (require '[clojure.pprint :refer :all])
 (require '[util :refer :all]
-         '[nl-injector :refer :all])
+         '[nl-injector :refer :all]
+         '[rules :refer :all]) ;bad coupling
 
 (declare finalise-results update-state-map apply-op apply-all)
 
@@ -18,14 +19,31 @@
 
   ;(when (not(contains? start goal))
   ;  (let [goal (cons (cons 'goal (rest goal))start)]
-  (print goal)
+  ;(println start)
   (let [
-        ;(remove 'on goal)
-        goal-added (cons (cons 'goal (drop 1 (first goal))) start ) ;Cheap override.
-        start goal-added]
+        goal-added (cons (cons 'goal (rest (first goal))) start)
+        pre-application (into goal-added world)
+        dyn-rules-applied
+        (into goal-added
+              (clojure.set/difference
+                (distinct (apply-all-rules dyn-rules pre-application)) ;print everything and check
+                (into [] pre-application)
+                )
+              )
+        start dyn-rules-applied
+        ]
+      (println goal-added)
+    ; )
+    ;(println goal-added)
+    (println pre-application)
+    (println dyn-rules-applied)
+
+    ;(println dyn-rules-applied)
+
+    ;(println (apply-all-rules dyn-rules pre-application))
   ; using sets for state tuples...
   (let [start {:state (set start) :path () :cmds () :txt ()}
-        world (set world)
+        world (set (into (apply-all-rules rule-set world) start))
         goal? (fn [state] (mfind* [goal (into world (:state state))] state))
         ]
     (or (goal? start)

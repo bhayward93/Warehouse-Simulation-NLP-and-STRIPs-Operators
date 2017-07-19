@@ -11,7 +11,7 @@
 (def state-ops
   '{move {
           :pre (
-                 (adjacent (?forklift ?n) (?dx ?dy))
+                 ;(adjacent (?forklift ?n) (?dx ?dy))
                  (isa forklift (?forklift ?n))
                  (on (?x ?y) (?forklift ?n))
                  (connects (?x ?y) (?dx ?dy)) ;going to need to implement conflict resolution
@@ -31,9 +31,12 @@
                  ;(:guard ())
                  ;possibly protect?
                  (goal (?gx ?gy) (?forklift ?n)) ;Got hold of the goal!
-                 (:guard (println "GX :"(? gx) "  |  GY: "(? gy)))
+                 ;(:guard (>= (- (gx ?) (dx ?)))
 
-                 (:guard (do (println "X: "(? x) "  | Y: " (? y)"  |  DX: "(? dx) "  | DY: " (? dy))))
+
+                 ;(:guard (println "GX :"(? gx) "  |  GY: "(? gy)))
+
+                ; (:guard (do (println "X: "(? x) "  | Y: " (? y)"  |  DX: "(? dx) "  | DY: " (? dy))))
 
                  )
 
