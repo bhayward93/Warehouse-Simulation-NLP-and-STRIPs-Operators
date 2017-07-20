@@ -11,32 +11,82 @@
 (def state-ops
   '{move {
           :pre (
-                 ;(adjacent (?forklift ?n) (?dx ?dy))
+
                  (isa forklift (?forklift ?n))
-                 (on (?x ?y) (?forklift ?n))
-                 (connects (?x ?y) (?dx ?dy)) ;going to need to implement conflict resolution
-                 (is floor (?dx ?dy))
-                 (:not (unavailable (?dx ?dy))) ;THis should work fine, but temporarily taking it out to be safe whilst debugging guard
-                 ;(:guard  (do (println "HELLO FROM THE GUARD INSIDE")(and ;this println works! TODO Start here tomorrow.
-                 ;           (or
-                 ;             (= (+ (? dx) 1) (? dx)) ;this should be native clojure; need to check the variables using the above.
-                 ;             (= (- (? dx) 1) (? dx)) ;Also try EAP builds for cursive to see if the debugger works!
-                 ;             (= (? dx)(? dx)))
-                 ;           (or
-                 ;             (= (? dy) (? dy))
-                 ;             (= (? dy) (? dy))
-                 ;             (= (? dy)(? dy))))))
-                ; (:guard (do (println (+(? dx) 1)))(= (+ (? dy) 1) (? dy)))   ;can do addition here!!!
+                 (on (?ox ?oy) (?forklift ?n))
+                 (connects (?ox ?oy) (?dx1 ?dy1))
+                 (connects (?ox ?oy) (?dx2 ?dy2))
+                 (connects (?ox ?oy) (?dx3 ?dy3))
+                 (connects (?ox ?oy) (?dx4 ?dy4))
 
-                 ;(:guard ())
-                 ;possibly protect?
-                 (goal (?gx ?gy) (?forklift ?n)) ;Got hold of the goal!
-                 ;(:guard (>= (- (gx ?) (dx ?)))
+                  (:guard
+                    (or(not= (? dx1) (? dx2))
+                       (not= (? dy1) (? dy2)))
+                    (or(not= (? dx2) (? dx3))
+                       (not= (? dy2) (? dy3)))
+                    (or(not= (? dx3) (? dx4))
+                       (not= (? dy3) (? dy4)))
+                    (or(not= (? dx1) (? dx4))
+                       (not= (? dy1) (? dy4)))
+                    (or(not= (? dx1) (? dx3))
+                       (not= (? dy1) (? dy3)))
+                    (or(not= (? dx2) (? dx4))
+                       (not= (? dy2) (? dy4)))
+
+                    )
+                 ;(is floor (?dx ?dy))
+
+                           ;(:not (unavailable (?dx ?dy)))
+                           (:guard (println
+                                     "------------------------------\n"
+                                     "ox:   (" (? ox) " " (? oy) ")\n"
+                                     "dxy1: (" (? dx1) " " (? dy1) ")\n"
+                                     "dxy2: (" (? dx2) " " (? dy2) ")\n"
+                                     "dxy3: (" (? dx3) " " (? dy3) ")\n"
+                                     "dxy4: (" (? dx4) " " (? dy4) ")\n"
+                                     "------------------------------"
+                                     ))
 
 
-                 ;(:guard (println "GX :"(? gx) "  |  GY: "(? gy)))
+                           (:guard (or
+                                     (< (-
+                                          (? gx)
+                                          (? dx1)
+                                          )
+                                        (-
+                                          (? gx)
+                                          (? ox)
+                                          ))
+                                     (<
+                                       (-
+                                         (? gy)
+                                         (? dy1)
+                                         )
+                                       (-
+                                         (? gy)
+                                         (? oy)
+                                         ))))
 
-                ; (:guard (do (println "X: "(? x) "  | Y: " (? y)"  |  DX: "(? dx) "  | DY: " (? dy))))
+                           ;(:guard  (do (println "HELLO FROM THE GUARD INSIDE")(and ;this println works! TODO Start here tomorrow.
+                           ;           (or
+                           ;             (= (+ (? dx) 1) (? dx)) ;this should be native clojure; need to check the variables using the above.
+                           ;             (= (- (? dx) 1) (? dx)) ;Also try EAP builds for cursive to see if the debugger works!
+                           ;             (= (? dx)(? dx)))
+                           ;           (or
+                           ;             (= (? dy) (? dy))
+                           ;             (= (? dy) (? dy))
+                           ;             (= (? dy)(? dy))))))
+                           ; (:guard (do (println (+(? dx) 1)))(= (+ (? dy) 1) (? dy)))   ;can do addition here!!!
+
+                           ;(:guard ())
+                           ;possibly protect?
+                           (goal (?gx ?gy) (?forklift ?n)) ;Got hold of the goal!
+                           ;(:guard (>= (- (gx ?) (dx ?)))
+
+
+                           (:guard (println "GX :" (? gx) "  |  GY: " (? gy)))
+
+                           ; (:guard (do (println "X: "(? x) "  | Y: " (? y)"  |  DX: "(? dx) "  | DY: " (? dy))))
 
                  )
 

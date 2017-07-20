@@ -35,14 +35,14 @@
       (println dynamic-state)
       )
 
-(defn run []
-  (ops-search
-    mock-dyn
-    '((on (7 0) (forklift 201)))
-    state-ops
-    :debug true
-    :world (apply-all-rules rule-set mock-world)
-    ))
+;(defn run
+;  (ops-search
+;    mock-dyn
+;    '((on (7 0) (forklift 201)))
+;    state-ops
+;    :debug true
+;    :world (apply-all-rules rule-set mock-world)
+;    ))
 
 ;(defn run []
 ;  (ops-search

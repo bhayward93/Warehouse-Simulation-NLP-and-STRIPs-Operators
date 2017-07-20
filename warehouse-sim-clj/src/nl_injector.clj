@@ -475,8 +475,7 @@
                    })
 
 ; TODO: ADD IS A FORKLIFT IN NL, ITS CURRENTLY IN DYN STATE
-;FORKLIFT NOW ON, NOT AT.
-(def mock-dyn '#{
+=(def mock-dyn '#{
                  (at (4 13) circular-saws-crate 180)
                  (at (4 13) wheels-crate 199)
                  (at (4 13) grates-crate 192)
