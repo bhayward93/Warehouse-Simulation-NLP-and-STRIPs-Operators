@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac37ebd8-02f0-46ab-8ff8-92010e065088" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/.nrepl-port" afterPath="$PROJECT_DIR$/warehouse-sim-clj/.nrepl-port" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/core.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/core.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/nl_injector.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/nl_injector.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/rules.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/rules.clj" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,14 +19,14 @@
     <favorites_list name="warehouse-sim" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.4976378">
+    <splitter split-orientation="vertical" split-proportion="0.8346457">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="ops.clj" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ops.clj" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="134">
-                  <caret line="27" column="46" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="27" selection-end-column="46" />
+                <state relative-caret-position="112">
+                  <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
                   <folding>
                     <element signature="e#0#80#0" expanded="false" />
                   </folding>
@@ -62,8 +57,28 @@
           <file leaf-file-name="nl_injector.clj" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nl_injector.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="18">
-                  <caret line="468" column="41" lean-forward="true" selection-start-line="468" selection-start-column="41" selection-end-line="468" selection-end-column="41" />
+                <state relative-caret-position="474">
+                  <caret line="470" column="41" lean-forward="false" selection-start-line="470" selection-start-column="41" selection-end-line="470" selection-end-column="41" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="socket.clj" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/sock2/socket.clj">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="145">
+                  <caret line="32" column="6" lean-forward="true" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="18" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="socket_utils.clj" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/sock2/socket_utils.clj">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="238">
+                  <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -76,8 +91,8 @@
           <file leaf-file-name="rules.clj" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/rules.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="189">
-                  <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+                <state relative-caret-position="686">
+                  <caret line="49" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -86,8 +101,8 @@
           <file leaf-file-name="ops_search.clj" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="144">
-                  <caret line="100" column="33" lean-forward="true" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
+                <state relative-caret-position="113">
+                  <caret line="110" column="28" lean-forward="false" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
@@ -96,8 +111,8 @@
           <file leaf-file-name="core.clj" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/core.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="207">
-                  <caret line="25" column="111" lean-forward="false" selection-start-line="25" selection-start-column="107" selection-end-line="25" selection-end-column="111" />
+                <state relative-caret-position="56">
+                  <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="29" />
                   <folding />
                 </state>
               </provider>
@@ -116,9 +131,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>(on</find>
-      <find>fork</find>
-      <find>(6 0)</find>
       <find>cmd</find>
       <find>ad</find>
       <find>adj</find>
@@ -138,14 +150,17 @@
       <find>(</find>
       <find>so</find>
       <find>on</find>
-      <find>on (</find>
       <find>sorted</find>
       <find>sor</find>
-      <find>goal</find>
-      <find>(connects (9 3) (8 3))</find>
       <find>distinc</find>
       <find>ops</find>
       <find>connec</find>
+      <find>(connects (9 3) (8 3))</find>
+      <find>goal</find>
+      <find>on (</find>
+      <find>(on (8 0</find>
+      <find>[ops :refer :all]</find>
+      <find>guard</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -214,10 +229,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,10 +244,17 @@
               <item name="warehouse-sim-clj" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="warehouse-sim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="warehouse-sim-clj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sock2" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -254,7 +275,7 @@
       <recent name="$PROJECT_DIR$/warehouse-sim-clj/src" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1500571588689">{:repl-history {:ide [], :local [{:command &quot;(conj '((on (7 0) (forklift 495))) mock-dyn)&quot;, :offset 44, :ns &quot;core&quot;} {:command &quot;(conj '((on (7 0) (forklift 495))) (first mock-dyn))&quot;, :offset 52, :ns &quot;core&quot;} {:command &quot;(conj  (first mock-dyn))'((on (7 0) (forklift 495)))&quot;, :offset 52, :ns &quot;core&quot;} {:command &quot;(conj  mock-dyn) '((on (7 0) (forklift 495)))&quot;, :offset 45, :ns &quot;core&quot;} {:command &quot;(conj  mock-dyn '((on (7 0) (forklift 495))))&quot;, :offset 45, :ns &quot;core&quot;} {:command &quot;(conj  mock-dyn '((on (9 0) (forklift 495))))&quot;, :offset 45, :ns &quot;core&quot;} {:command &quot;(conj  mock-dyn '(on (9 0) (forklift 495)))&quot;, :offset 43, :ns &quot;core&quot;} {:command &quot;(conj  mock-dyn (first( '(on (9 0) (forklift 495)))))&quot;, :offset 53, :ns &quot;core&quot;} {:command &quot;(conj  mock-dyn (first '((on (9 0) (forklift 495)))))&quot;, :offset 53, :ns &quot;core&quot;} {:command &quot;()&quot;, :offset 1} {:command &quot;(conj  \&quot;HELLO\&quot; '(on (9 0) (forklift 495)))&quot;, :offset 42, :ns &quot;core&quot;} {:command &quot;(conj  '(goal) '(on (9 0) (forklift 495)))&quot;, :offset 42, :ns &quot;core&quot;} {:command &quot;(replace '(on (9 0) (forklift 495))) on this) &quot;, :offset 45, :ns &quot;core&quot;} {:command &quot;(replace '(on (9 0) (forklift 495)) on this) &quot;, :offset 45, :ns &quot;core&quot;} {:command &quot;(replace '(on (9 0) (forklift 495)) 'on 'this) &quot;, :offset 46, :ns &quot;core&quot;} {:command &quot;(replace '(on (9 0) (forklift 495)) 'this) &quot;, :offset 43, :ns &quot;core&quot;} {:command &quot;(replace '(on (9 0) (forklift 495)) 'this 'on) &quot;, :offset 46, :ns &quot;core&quot;} {:command &quot;(str '(on (9 0) (forklift 495)) \&quot; 'this 'on\&quot;) &quot;, :offset 45, :ns &quot;core&quot;} {:command &quot;(str (first '(on (9 0) (forklift 495))) \&quot; 'this 'on\&quot;) &quot;, :offset 54, :ns &quot;core&quot;} {:command &quot;(str \&quot;(is-goal(\&quot;'(on (9 0) (forklift 495)) \&quot; 'this 'on\&quot;) &quot;, :offset 57, :ns &quot;core&quot;} {:command &quot;(str \&quot;(is-goal \&quot;'(on (9 0) (forklift 495)) \&quot;)\&quot;) &quot;, :offset 48, :ns &quot;core&quot;} {:command &quot;(conj mock-dyn (str \&quot;(is-goal \&quot;'(on (9 0) (forklift 495)) \&quot;)\&quot;) )&quot;, :offset 64, :ns &quot;core&quot;} {:command &quot;(conj mock-dyn \&quot;(is-goal \&quot;'(on (9 0) (forklift 495)) \&quot;)\&quot;) &quot;, :offset 58, :ns &quot;core&quot;} {:command &quot;(conj mock-dyn '(is-goal '(on (9 0) (forklift 495)) ) ) &quot;, :offset 56, :ns &quot;core&quot;} {:command &quot;(into () (clojure.string/replace '(on (9 0) (forklift 495)) \&quot;on\&quot; \&quot;isgoal\&quot;)) &quot;, :offset 76, :ns &quot;core&quot;} {:command &quot;into () (clojure.string/replace '(on (9 0) (forklift 495)) \&quot;on\&quot; \&quot;isgoal\&quot;) )&quot;, :offset 75, :ns &quot;core&quot;} {:command &quot;(clojure.string/replace '(on (9 0) (forklift 495)) \&quot;on\&quot; \&quot;isgoal\&quot;) &quot;, :offset 66, :ns &quot;core&quot;} {:command &quot;('(on (9 0) (forklift 495)) \&quot;on\&quot; \&quot;isgoal\&quot;) &quot;, :offset 43, :ns &quot;core&quot;} {:command &quot;(string-it  )&quot;, :offset 11} {:command &quot;(string-it '(on (9 0) (forklift 495)))&quot;, :offset 38, :ns &quot;core&quot;} {:command &quot;(replace (string-it '(on (9 0) (forklift 495))) \&quot;quote\&quot; \&quot;goal\&quot;)&quot;, :offset 63, :ns &quot;core&quot;} {:command &quot;(clojure.string/replace (string-it '(on (9 0) (forklift 495))) \&quot;quote\&quot; \&quot;goal\&quot;)&quot;, :offset 78, :ns &quot;core&quot;} {:command &quot;(clojure.string/replace (string-it '(on (9 0) (forklift 495))) \&quot;quote\&quot; \&quot;goal '\&quot;)&quot;, :offset 80, :ns &quot;core&quot;} {:command &quot;(clojure.string/replace (string-it '(on (9 0) (forklift 495))) \&quot;quote \&quot; \&quot;goal '\&quot;)&quot;, :offset 81, :ns &quot;core&quot;} {:command &quot;(read-string(clojure.string/replace (string-it '(on (9 0) (forklift 495))) \&quot;quote \&quot; \&quot;goal '\&quot;))&quot;, :offset 94, :ns &quot;core&quot;} {:command &quot;(re-quote-replacement (read-string(clojure.string/replace (string-it '(on (9 0) (forklift 495))) \&quot;quote \&quot; \&quot;goal '\&quot;)))&quot;, :offset 117, :ns &quot;core&quot;} {:command &quot;(clojure.string/re-quote-replacement (read-string(clojure.string/replace (string-it '(on (9 0) (forklift 495))) \&quot;quote \&quot; \&quot;goal '\&quot;)))&quot;, :offset 132, :ns &quot;core&quot;} {:command &quot;(conj '(goal)'(on (9 0) (forklift 495)))&quot;, :offset 40, :ns &quot;core&quot;} {:command &quot;(cons goal (rest form))&quot;, :offset 23, :ns &quot;core&quot;} {:command &quot;(cons 'Goal (rest '(on (9 0) (forklift 495))))&quot;, :offset 46, :ns &quot;core&quot;} {:command &quot;(conj mock-dyn (cons 'is-goal (rest mock-dyn)))&quot;, :offset 47, :ns &quot;core&quot;} {:command &quot;(cons 'goal (rest '(on (9 0) (forklift 495))))&quot;, :offset 46, :ns &quot;core&quot;} {:command &quot;(cons (mock-dyn (cons 'goal (rest '(on (9 0) (forklift 495)))))&quot;, :offset 63, :ns &quot;core&quot;} {:command &quot;(cons (mock-dyn (cons 'goal (rest '(on (9 0) (forklift 495))))))&quot;, :offset 64, :ns &quot;core&quot;} {:command &quot;(cons (cons 'goal (rest goal))mock-dyn)&quot;, :offset 39, :ns &quot;core&quot;} {:command &quot;(conj (cons 'goal (rest '(on (9 0) (forklift 495))))mock-dyn)&quot;, :offset 61, :ns &quot;core&quot;} {:command &quot;(cons (cons 'goal goal)start )&quot;, :offset 30, :ns &quot;core&quot;} {:command &quot;(cons (cons 'goal (rest goal))start)&quot;, :offset 36, :ns &quot;core&quot;} {:command &quot;(cons mock-dyn (cons 'goal (rest '(on (9 0) (forklift 495)))))&quot;, :offset 62, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 495))) as&quot;, :offset 52} {:command &quot;(cons (cons 'goal start))&quot;, :offset 25, :ns &quot;core&quot;} {:command &quot;(cons (cons 'goal (rest goal))mock-dyn )&quot;, :offset 40, :ns &quot;core&quot;} {:command &quot;(conj a '(a b c))&quot;, :offset 17, :ns &quot;core&quot;} {:command &quot;(conj 'a '(a b c))&quot;, :offset 18, :ns &quot;core&quot;} {:command &quot;(cons 'a '(a b c))&quot;, :offset 18, :ns &quot;core&quot;} {:command &quot;(remove 'on (cons 'a '(a b c)))&quot;, :offset 31, :ns &quot;core&quot;} {:command &quot;(remove 'b (cons 'a '(a b c)))&quot;, :offset 30, :ns &quot;core&quot;} {:command &quot;(cons (cons 'goal (rest '(on (9 0) (forklift 495))))mock-dyn )&quot;, :offset 62, :ns &quot;core&quot;} {:command &quot;(cons (cons 'goal (rest goal))start )&quot;, :offset 35} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))#&quot;, :offset 118, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 117, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift ??))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 116, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift ?n))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 116, :ns &quot;core&quot;} {:command &quot;[][][]&quot;, :offset 6, :ns &quot;core&quot;} {:command &quot;(fwd-chain dyn-rules mock-dyn)#&quot;, :offset 31, :ns &quot;core&quot;} {:command &quot;(fwd-chain dyn-rules mock-dyn)&quot;, :offset 30, :ns &quot;core&quot;} {:command &quot;(fwd-chain (conj '(on (?ox ?oy) (?forklift ?n))dyn-rules mock-dyn))&quot;, :offset 67, :ns &quot;core&quot;} {:command &quot;(fwd-chain (conj '(on (?ox ?oy) (?forklift ?n)) dyn-rules) mock-dyn)&quot;, :offset 68, :ns &quot;core&quot;} {:command &quot;(fwd-chain (conj '(on (7 10) (?forklift ?n)) dyn-rules) mock-dyn)&quot;, :offset 65, :ns &quot;core&quot;} {:command &quot;(conj '(on (7 10) (?forklift ?n)) dyn-rules)&quot;, :offset 44, :ns &quot;core&quot;} {:command &quot;(conj '(on (7 10) (?forklift ?n)) mock-dyn)&quot;, :offset 43, :ns &quot;core&quot;} {:command &quot;(ops-search (fwd-chain dyn-rules mock-dyn) '((on (7 0) (forklift 201))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 139, :ns &quot;core&quot;} {:command &quot;(ops-search (fwd-chain dyn-rules mock-dyn) &quot;, :offset 43} {:command &quot;(apply-all rules mock-dyn mock-world)&quot;, :offset 37, :ns &quot;core&quot;} {:command &quot;(apply-all rule-set mock-dyn mock-world)&quot;, :offset 40, :ns &quot;core&quot;} {:command &quot;mock-dyn&quot;, :offset 8, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 201))) state-ops :debug true :world (apply-all-rules rule-set mock-world))#&quot;, :offset 118, :ns &quot;user&quot;} {:command &quot;(stack)&quot;, :offset 7} {:command &quot;(cons (cons 'goal (rest '(at (x y) z))) start)\n&quot;, :offset 46, :ns &quot;core&quot;} {:command &quot;(cons (cons 'goal (rest '(at (x y) z))) mock-dyn)\n&quot;, :offset 49, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 201))) state-ops :debug true :world mock-world)&quot;, :offset 90, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '(on (7 0) (forklift 201)) state-ops :debug true :world mock-world)&quot;, :offset 88, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 201)) state-ops :debug true :world mock-world))&quot;, :offset 90, :ns &quot;core&quot;} {:command &quot;;&quot;, :offset 1} {:command &quot;(apply-all-rules dyn-mock pre-application)&quot;, :offset 42, :ns &quot;core&quot;} {:command &quot;(apply-all-rules dyn-rules pre-application)&quot;, :offset 43, :ns &quot;core&quot;} {:command &quot;(apply-all-rules dyn-rules pre)&quot;, :offset 31, :ns &quot;core&quot;} {:command &quot;(apply-all-rules dyn-rules pre-app)&quot;, :offset 35, :ns &quot;core&quot;} {:command &quot;[nl-injector :refer :all]&quot;, :offset 24} {:command &quot;(in-ns 'core)&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 201))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 117, :ns &quot;core&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1500585674163">{:repl-history {:ide [], :local [{:command &quot;(conj  mock-dyn '((on (7 0) (forklift 495))))&quot;, :offset 45, :ns &quot;core&quot;} {:command &quot;(conj  mock-dyn '((on (9 0) (forklift 495))))&quot;, :offset 45, :ns &quot;core&quot;} {:command &quot;(conj  mock-dyn '(on (9 0) (forklift 495)))&quot;, :offset 43, :ns &quot;core&quot;} {:command &quot;(conj  mock-dyn (first( '(on (9 0) (forklift 495)))))&quot;, :offset 53, :ns &quot;core&quot;} {:command &quot;(conj  mock-dyn (first '((on (9 0) (forklift 495)))))&quot;, :offset 53, :ns &quot;core&quot;} {:command &quot;()&quot;, :offset 1} {:command &quot;(conj  \&quot;HELLO\&quot; '(on (9 0) (forklift 495)))&quot;, :offset 42, :ns &quot;core&quot;} {:command &quot;(conj  '(goal) '(on (9 0) (forklift 495)))&quot;, :offset 42, :ns &quot;core&quot;} {:command &quot;(replace '(on (9 0) (forklift 495))) on this) &quot;, :offset 45, :ns &quot;core&quot;} {:command &quot;(replace '(on (9 0) (forklift 495)) on this) &quot;, :offset 45, :ns &quot;core&quot;} {:command &quot;(replace '(on (9 0) (forklift 495)) 'on 'this) &quot;, :offset 46, :ns &quot;core&quot;} {:command &quot;(replace '(on (9 0) (forklift 495)) 'this) &quot;, :offset 43, :ns &quot;core&quot;} {:command &quot;(replace '(on (9 0) (forklift 495)) 'this 'on) &quot;, :offset 46, :ns &quot;core&quot;} {:command &quot;(str '(on (9 0) (forklift 495)) \&quot; 'this 'on\&quot;) &quot;, :offset 45, :ns &quot;core&quot;} {:command &quot;(str (first '(on (9 0) (forklift 495))) \&quot; 'this 'on\&quot;) &quot;, :offset 54, :ns &quot;core&quot;} {:command &quot;(str \&quot;(is-goal(\&quot;'(on (9 0) (forklift 495)) \&quot; 'this 'on\&quot;) &quot;, :offset 57, :ns &quot;core&quot;} {:command &quot;(str \&quot;(is-goal \&quot;'(on (9 0) (forklift 495)) \&quot;)\&quot;) &quot;, :offset 48, :ns &quot;core&quot;} {:command &quot;(conj mock-dyn (str \&quot;(is-goal \&quot;'(on (9 0) (forklift 495)) \&quot;)\&quot;) )&quot;, :offset 64, :ns &quot;core&quot;} {:command &quot;(conj mock-dyn \&quot;(is-goal \&quot;'(on (9 0) (forklift 495)) \&quot;)\&quot;) &quot;, :offset 58, :ns &quot;core&quot;} {:command &quot;(conj mock-dyn '(is-goal '(on (9 0) (forklift 495)) ) ) &quot;, :offset 56, :ns &quot;core&quot;} {:command &quot;(into () (clojure.string/replace '(on (9 0) (forklift 495)) \&quot;on\&quot; \&quot;isgoal\&quot;)) &quot;, :offset 76, :ns &quot;core&quot;} {:command &quot;into () (clojure.string/replace '(on (9 0) (forklift 495)) \&quot;on\&quot; \&quot;isgoal\&quot;) )&quot;, :offset 75, :ns &quot;core&quot;} {:command &quot;(clojure.string/replace '(on (9 0) (forklift 495)) \&quot;on\&quot; \&quot;isgoal\&quot;) &quot;, :offset 66, :ns &quot;core&quot;} {:command &quot;('(on (9 0) (forklift 495)) \&quot;on\&quot; \&quot;isgoal\&quot;) &quot;, :offset 43, :ns &quot;core&quot;} {:command &quot;(string-it  )&quot;, :offset 11} {:command &quot;(string-it '(on (9 0) (forklift 495)))&quot;, :offset 38, :ns &quot;core&quot;} {:command &quot;(replace (string-it '(on (9 0) (forklift 495))) \&quot;quote\&quot; \&quot;goal\&quot;)&quot;, :offset 63, :ns &quot;core&quot;} {:command &quot;(clojure.string/replace (string-it '(on (9 0) (forklift 495))) \&quot;quote\&quot; \&quot;goal\&quot;)&quot;, :offset 78, :ns &quot;core&quot;} {:command &quot;(clojure.string/replace (string-it '(on (9 0) (forklift 495))) \&quot;quote\&quot; \&quot;goal '\&quot;)&quot;, :offset 80, :ns &quot;core&quot;} {:command &quot;(clojure.string/replace (string-it '(on (9 0) (forklift 495))) \&quot;quote \&quot; \&quot;goal '\&quot;)&quot;, :offset 81, :ns &quot;core&quot;} {:command &quot;(read-string(clojure.string/replace (string-it '(on (9 0) (forklift 495))) \&quot;quote \&quot; \&quot;goal '\&quot;))&quot;, :offset 94, :ns &quot;core&quot;} {:command &quot;(re-quote-replacement (read-string(clojure.string/replace (string-it '(on (9 0) (forklift 495))) \&quot;quote \&quot; \&quot;goal '\&quot;)))&quot;, :offset 117, :ns &quot;core&quot;} {:command &quot;(clojure.string/re-quote-replacement (read-string(clojure.string/replace (string-it '(on (9 0) (forklift 495))) \&quot;quote \&quot; \&quot;goal '\&quot;)))&quot;, :offset 132, :ns &quot;core&quot;} {:command &quot;(conj '(goal)'(on (9 0) (forklift 495)))&quot;, :offset 40, :ns &quot;core&quot;} {:command &quot;(cons goal (rest form))&quot;, :offset 23, :ns &quot;core&quot;} {:command &quot;(cons 'Goal (rest '(on (9 0) (forklift 495))))&quot;, :offset 46, :ns &quot;core&quot;} {:command &quot;(conj mock-dyn (cons 'is-goal (rest mock-dyn)))&quot;, :offset 47, :ns &quot;core&quot;} {:command &quot;(cons 'goal (rest '(on (9 0) (forklift 495))))&quot;, :offset 46, :ns &quot;core&quot;} {:command &quot;(cons (mock-dyn (cons 'goal (rest '(on (9 0) (forklift 495)))))&quot;, :offset 63, :ns &quot;core&quot;} {:command &quot;(cons (mock-dyn (cons 'goal (rest '(on (9 0) (forklift 495))))))&quot;, :offset 64, :ns &quot;core&quot;} {:command &quot;(cons (cons 'goal (rest goal))mock-dyn)&quot;, :offset 39, :ns &quot;core&quot;} {:command &quot;(conj (cons 'goal (rest '(on (9 0) (forklift 495))))mock-dyn)&quot;, :offset 61, :ns &quot;core&quot;} {:command &quot;(cons (cons 'goal goal)start )&quot;, :offset 30, :ns &quot;core&quot;} {:command &quot;(cons (cons 'goal (rest goal))start)&quot;, :offset 36, :ns &quot;core&quot;} {:command &quot;(cons mock-dyn (cons 'goal (rest '(on (9 0) (forklift 495)))))&quot;, :offset 62, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 495))) as&quot;, :offset 52} {:command &quot;(cons (cons 'goal start))&quot;, :offset 25, :ns &quot;core&quot;} {:command &quot;(cons (cons 'goal (rest goal))mock-dyn )&quot;, :offset 40, :ns &quot;core&quot;} {:command &quot;(conj a '(a b c))&quot;, :offset 17, :ns &quot;core&quot;} {:command &quot;(conj 'a '(a b c))&quot;, :offset 18, :ns &quot;core&quot;} {:command &quot;(cons 'a '(a b c))&quot;, :offset 18, :ns &quot;core&quot;} {:command &quot;(remove 'on (cons 'a '(a b c)))&quot;, :offset 31, :ns &quot;core&quot;} {:command &quot;(remove 'b (cons 'a '(a b c)))&quot;, :offset 30, :ns &quot;core&quot;} {:command &quot;(cons (cons 'goal (rest '(on (9 0) (forklift 495))))mock-dyn )&quot;, :offset 62, :ns &quot;core&quot;} {:command &quot;(cons (cons 'goal (rest goal))start )&quot;, :offset 35} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))#&quot;, :offset 118, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 117, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift ??))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 116, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift ?n))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 116, :ns &quot;core&quot;} {:command &quot;[][][]&quot;, :offset 6, :ns &quot;core&quot;} {:command &quot;(fwd-chain dyn-rules mock-dyn)#&quot;, :offset 31, :ns &quot;core&quot;} {:command &quot;(fwd-chain dyn-rules mock-dyn)&quot;, :offset 30, :ns &quot;core&quot;} {:command &quot;(fwd-chain (conj '(on (?ox ?oy) (?forklift ?n))dyn-rules mock-dyn))&quot;, :offset 67, :ns &quot;core&quot;} {:command &quot;(fwd-chain (conj '(on (?ox ?oy) (?forklift ?n)) dyn-rules) mock-dyn)&quot;, :offset 68, :ns &quot;core&quot;} {:command &quot;(fwd-chain (conj '(on (7 10) (?forklift ?n)) dyn-rules) mock-dyn)&quot;, :offset 65, :ns &quot;core&quot;} {:command &quot;(conj '(on (7 10) (?forklift ?n)) dyn-rules)&quot;, :offset 44, :ns &quot;core&quot;} {:command &quot;(conj '(on (7 10) (?forklift ?n)) mock-dyn)&quot;, :offset 43, :ns &quot;core&quot;} {:command &quot;(ops-search (fwd-chain dyn-rules mock-dyn) '((on (7 0) (forklift 201))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 139, :ns &quot;core&quot;} {:command &quot;(ops-search (fwd-chain dyn-rules mock-dyn) &quot;, :offset 43} {:command &quot;(apply-all rules mock-dyn mock-world)&quot;, :offset 37, :ns &quot;core&quot;} {:command &quot;(apply-all rule-set mock-dyn mock-world)&quot;, :offset 40, :ns &quot;core&quot;} {:command &quot;mock-dyn&quot;, :offset 8, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 201))) state-ops :debug true :world (apply-all-rules rule-set mock-world))#&quot;, :offset 118, :ns &quot;user&quot;} {:command &quot;(stack)&quot;, :offset 7} {:command &quot;(cons (cons 'goal (rest '(at (x y) z))) start)\n&quot;, :offset 46, :ns &quot;core&quot;} {:command &quot;(cons (cons 'goal (rest '(at (x y) z))) mock-dyn)\n&quot;, :offset 49, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 201))) state-ops :debug true :world mock-world)&quot;, :offset 90, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '(on (7 0) (forklift 201)) state-ops :debug true :world mock-world)&quot;, :offset 88, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 201)) state-ops :debug true :world mock-world))&quot;, :offset 90, :ns &quot;core&quot;} {:command &quot;;&quot;, :offset 1} {:command &quot;(apply-all-rules dyn-mock pre-application)&quot;, :offset 42, :ns &quot;core&quot;} {:command &quot;(apply-all-rules dyn-rules pre-application)&quot;, :offset 43, :ns &quot;core&quot;} {:command &quot;(apply-all-rules dyn-rules pre)&quot;, :offset 31, :ns &quot;core&quot;} {:command &quot;(apply-all-rules dyn-rules pre-app)&quot;, :offset 35, :ns &quot;core&quot;} {:command &quot;[nl-injector :refer :all]&quot;, :offset 24} {:command &quot;(ops-search mock-dyn '((on (5 0) (forklift 201))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 117, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (6 0) (forklift 201))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 117, :ns &quot;core&quot;} {:command &quot;(in-ns 'core)&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;(ops-search mock-dyn '((on (7 0) (forklift 201))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 117, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (6 16) (forklift 201))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 118, :ns &quot;core&quot;} {:command &quot;(ops-search mock-dyn '((on (8 0) (forklift 201))) state-ops :debug true :world (apply-all-rules rule-set mock-world))&quot;, :offset 117, :ns &quot;core&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -557,7 +578,8 @@
       <workItem from="1500403915655" duration="20713000" />
       <workItem from="1500473352929" duration="3172000" />
       <workItem from="1500557983876" duration="4000" />
-      <workItem from="1500559206353" duration="10135000" />
+      <workItem from="1500559206353" duration="14273000" />
+      <workItem from="1500577134763" duration="7154000" />
     </task>
     <task id="LOCAL-00001" summary="Rules are now applied using a forward chain function.&#10; &#10; This has for now just been used to modify the world state, however the obvious next step is to make a rule for (is floor (6 0)) etc, rather than manually inputting them.&#10; &#10; Next up is to look at the feeding that rule applied world state into the ops-search.">
       <created>1499909931460</created>
@@ -594,11 +616,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500492579768</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Now the matcher is distinguishing between neighbors. Can move onto basic arithmatic with goal.">
+      <created>1500571664131</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1500571664131</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81976000" />
+    <option name="totallyTimeSpent" value="93268000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -619,9 +648,9 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5072917" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5102489" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5431918" sideWeight="0.6837482" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43704244" sideWeight="0.6837482" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2137628" sideWeight="0.37920937" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -635,8 +664,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.49270833" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.4897511" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -645,6 +674,39 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5102489" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43704244" sideWeight="0.6837482" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.4897511" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66931635" sideWeight="0.4795022" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2137628" sideWeight="0.37920937" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33052632" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -658,53 +720,12 @@
     <MESSAGE value="Tried allsorts, haven't quite cracked it yet. &#10;&#10;I need to find a way to use arithmatic inside of the ops, to calculate distance&#10;passing the goal through may also prove to be a neccesity; so that the distance &#10;can be checked. &#10;&#10;Look in ops comments tomorrow." />
     <MESSAGE value="Got hold of the goal in the operators by modifying ops-search, and also&#10;found a method of printing within the ops. Now I need to calculate distances." />
     <MESSAGE value="switching machines" />
-    <option name="LAST_COMMIT_MESSAGE" value="switching machines" />
+    <MESSAGE value="Now the matcher is distinguishing between neighbors. Can move onto basic arithmatic with goal." />
+    <option name="LAST_COMMIT_MESSAGE" value="Now the matcher is distinguishing between neighbors. Can move onto basic arithmatic with goal." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj</url>
-          <line>14</line>
-          <properties />
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj</url>
-          <line>15</line>
-          <properties />
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj</url>
-          <line>16</line>
-          <properties />
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj</url>
-          <line>17</line>
-          <properties />
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj</url>
-          <line>14</line>
-          <properties />
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj</url>
-          <line>15</line>
-          <properties />
-          <option name="timeStamp" value="81" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj</url>
-          <line>73</line>
-          <properties />
-          <option name="timeStamp" value="82" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/warehouse-sim-clj/src/core.clj</url>
           <line>26</line>
@@ -891,32 +912,11 @@
     <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/warehouse_sim_clj_v2/core.clj" />
     <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/sock2/socket-utils.clj" />
     <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/matcher/matcher.clj" />
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/sock2/socket_utils.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///tmp/form-init3755614056909349964.clj" />
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/sock2/socket.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///tmp/form-init256235787746821785.clj" />
     <entry file="file:///tmp/form-init855886708457568895.clj" />
     <entry file="file:///tmp/form-init6267820998067373095.clj" />
     <entry file="file:///tmp/form-init8310122103659117004.clj" />
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ICA part 5.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="1054" column="3" lean-forward="true" selection-start-line="1054" selection-start-column="3" selection-end-line="1054" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/cgsx/tools/matcher.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
@@ -935,22 +935,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="39" column="33" lean-forward="false" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/rules.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="686">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/util.clj">
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="109" column="45" lean-forward="false" selection-start-line="109" selection-start-column="45" selection-end-line="109" selection-end-column="45" />
+        <state relative-caret-position="113">
+          <caret line="110" column="28" lean-forward="false" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -963,37 +962,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nl_injector.clj">
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="468" column="41" lean-forward="true" selection-start-line="468" selection-start-column="41" selection-end-line="468" selection-end-column="41" />
+        <state relative-caret-position="112">
+          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#80#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/util.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="109" column="45" lean-forward="false" selection-start-line="109" selection-start-column="45" selection-end-line="109" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj">
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ICA part 5.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="100" column="33" lean-forward="true" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
+        <state relative-caret-position="460">
+          <caret line="1053" column="3" lean-forward="true" selection-start-line="1053" selection-start-column="3" selection-end-line="1053" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="25" column="111" lean-forward="false" selection-start-line="25" selection-start-column="107" selection-end-line="25" selection-end-column="111" />
+        <state relative-caret-position="56">
+          <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj">
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nl_injector.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="27" column="46" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="27" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#80#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="474">
+          <caret line="470" column="41" lean-forward="false" selection-start-line="470" selection-start-column="41" selection-end-line="470" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/sock2/socket_utils.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/sock2/socket.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="32" column="6" lean-forward="true" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>

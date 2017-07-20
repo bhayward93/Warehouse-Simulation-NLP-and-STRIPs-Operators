@@ -18,29 +18,7 @@
                           world  #{}}}]
 
   ;(when (not(contains? start goal))
-  ;  (let [goal (cons (cons 'goal (rest goal))start)]
-  ;(println start)
-  ;(let [
-  ;      goal-added (cons (cons 'goal (rest (first goal))) start)
-  ;      pre-application (into goal-added world)
-  ;      dyn-rules-applied
-  ;      (into goal-added
-  ;            (clojure.set/difference
-  ;              (distinct (apply-all-rules dyn-rules pre-application))
-  ;              (into [] pre-application)
-  ;              )
-  ;            )
-  ;      start dyn-rules-applied
-  ;      ]
-  ;    (println goal-added)
-  ;  ; )
-  ;  ;(println goal-added)
-  ;  (println pre-application)
-  ;  (println dyn-rules-applied)
-  ;
-  ;  ;(println dyn-rules-applied)
-
-    ;(println (apply-all-rules dyn-rules pre-application))
+  (let [start (cons (cons 'goal (rest (first goal))) start)]
   ; using sets for state tuples...
   (let [start {:state (set start) :path () :cmds () :txt ()}
         world (set (into (apply-all-rules rule-set world) start))
@@ -68,7 +46,7 @@
                                                (concat waiting (map #(update-state-map next %) succs))
                                                (conj visited state) ))
                                        ))))))
-          )))
+          ))))
 
 
 (defn update-state-map
