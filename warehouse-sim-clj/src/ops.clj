@@ -22,8 +22,9 @@
                  (goal (?gx ?gy) (forklift ?n))
                  )
           :del ((on (?ox ?oy) (forklift ?n)))
-          :txt (forklift moves to (?gx ?gy))
-          :cmd (move-forklift ?gx ?gy)
+          :txt (forklift to (?gx ?gy))
+          :cmd (sock2.socket/socket-write
+                 (str "move-forklift " (? gx) (? gy)));Hard coded the socket here
           }})
 
 1

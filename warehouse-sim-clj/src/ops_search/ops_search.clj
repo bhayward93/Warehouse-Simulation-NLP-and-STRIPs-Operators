@@ -76,7 +76,7 @@
   (mfor* [(:pre op) (seq (into world state))]
          {:state (union (set (mout (:add op)))
                         (difference state (set (mout (:del op)))))
-          :cmd   (mout (:cmd op))
+          :cmd   (eval (:cmd op))
           :txt   (mout (:txt op))
           }
          ))

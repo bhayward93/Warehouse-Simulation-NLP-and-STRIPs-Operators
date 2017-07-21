@@ -17,14 +17,17 @@
             [ops :refer :all]
             [cgsx.tools.matcher :refer :all]
             [clojure.string :as str]
-            [nl-injector :refer :all]
+            ;[nl-injector :refer :all]
             [util :refer :all]
             [rules :refer :all]
-            [clojure.math.combinatorics])
+            ;[clojure.math.combinatorics]
+            )
             (:refer clojure.math.combinatorics :rename {update, combin-update})
             )
 ;(ops-search mock-dyn '((on (6 16) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))
-(defn -main [port]
+(defn -main
+      ([] (-main 2222)) ;Set a default value
+      ([port]
       (def s25 (open-socket port))
       (println "Awaiting World State")
       (def world-state (receive-state s25 '#{}))
@@ -32,7 +35,7 @@
       (def dynamic-state (receive-state s25 '#{}))
       (println world-state)
       (println "-------------------------")
-      (println dynamic-state)
+      (println dynamic-state))
       )
 
 ;(defn run

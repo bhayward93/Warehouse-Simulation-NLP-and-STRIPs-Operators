@@ -32,10 +32,12 @@
 
 (defn socket-write
   "low-level socket writer"
-  [socket x]
+  ([x]
+   (socket-write 2222 x))
+  ([socket x]
   (binding [*out* (:outp socket)]
-    (println x)
-    ))
+    (println "Writing: "x)
+    )))
 
 
 (defn socket-read
