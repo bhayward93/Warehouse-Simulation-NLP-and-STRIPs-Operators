@@ -21,7 +21,7 @@
   (let [start (cons (cons 'goal (rest (first goal))) start)]
   ; using sets for state tuples...
   (let [start {:state (set start) :path () :cmds () :txt ()}
-        world (set (into (apply-all-rules rule-set world) start))
+        world (set world)
         goal? (fn [state] (mfind* [goal (into world (:state state))] state))
         ]
     (or (goal? start)
@@ -76,7 +76,7 @@
   (mfor* [(:pre op) (seq (into world state))]
          {:state (union (set (mout (:add op)))
                         (difference state (set (mout (:del op)))))
-          :cmd   (eval (:cmd op))
+          :cmd   (eval (mout (:cmd op)))
           :txt   (mout (:txt op))
           }
          ))

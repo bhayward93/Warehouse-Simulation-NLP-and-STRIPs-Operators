@@ -9,24 +9,39 @@ to begin-init
   spawn-objects
   set-shapes
   set-colors
+  set-up-loading-area 2
   connect-clojure
 end
 
+
 to spawn-shelves
-;  let this-bay self
-  ask bays [
-    hatch-shelves 5[
-      set at-bay myself
-    ]
-  ]
+  ask bays [  
+     let i 0
+     hatch-shelves 5[
+       set at-bay myself
+         set #height i
+         set i i + 1
+       ]]
 end
 
 to spawn-objects
+  let i 0
   ask shelves[
-    hatch-collectables 1 [
-      set item-type one-of all-collectables
-      set at-shelf myself
-    ]
+    let #shelf self
+      hatch-collectables random max-shelf-capacity [
+        set #height i
+        set i i + 1
+        set item-type one-of all-collectables
+      ;  set at-shelf #shelf
+        set parent #shelf
+      ]
+    
+  ]
+end
+
+to set-up-loading-area [#size]
+  ask patches [
+     if pxcor < #size and pycor < #size[set pcolor green]  
   ]
 end
 
@@ -34,23 +49,28 @@ end
 to spawn-forklift
   let px 6
   loop[
-    ifelse not any? turtles-on patch px 0
-      [ask patch px 0 [sprout-forklifts 1] stop]
-      [set px px + 1]
-    
+    ifelse not any? turtles-on patch px 0[
+        ask patch px 0 [
+           sprout-forklifts 1 [set shape "car"];arbritrary value, that is unlikely
+        ]                      ;to be set throughout the program 
+                           ;as the destination
+      stop
+    ]
+    [set px px + 1]
   ]
 end
 
 ;Sets up the shapes of the objects - this has to be done after the objects have been created.
 to set-shapes
   ask bays [set shape "square 2"]
-    ask collectables [set shape "square"]
+  ask collectables [set shape "square"]
+ ; ask folklifts [set shape "car"]
 end
 
 to set-colors
-  ask bays [set color orange - 1]
-  ask shelves [set color orange - 1]
-  ask collectables [set color orange]
+  ask bays [set color 22 ask patch-here [set pcolor 21]]
+  ask shelves []
+  ask collectables [set color one-of [brown]]
 
    ; hide this at a later date rather than blending in?
   ;ask all-collectables [set color orange - 1]

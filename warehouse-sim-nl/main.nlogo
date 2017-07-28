@@ -2,6 +2,7 @@ extensions [ sock2 ]
 __includes ["initialize-world.nls"
             "utils.nls"
             "sock2.nls"
+            "movement-ops.nls"
 ]
 breed [forklifts forklift]
 breed [bays bay]
@@ -9,9 +10,10 @@ breed [shelves shelf]
 breed [collectables collectable] ; rather than cluttering code, ids are assigned
 
 turtles-own [id]
-collectables-own [at-shelf item-type]
-shelves-own [at-bay]
+collectables-own [parent item-type #height at-shelf]
+shelves-own [at-bay #height]
 patches-own [visited-by-clojure]
+forklifts-own[#height destination-x destination-y]
 ;bays-own []
 
 
@@ -21,6 +23,7 @@ end
 
 to reset
   clear-all
+  reset-ticks
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
@@ -37,8 +40,8 @@ GRAPHICS-WINDOW
 1
 1
 0
-1
-1
+0
+0
 1
 0
 16
@@ -62,7 +65,7 @@ NIL
 T
 OBSERVER
 NIL
-NIL
+A
 NIL
 NIL
 1
@@ -96,24 +99,24 @@ NIL
 T
 OBSERVER
 NIL
-NIL
+S
 NIL
 NIL
 1
 
 BUTTON
-86
+85
 245
-233
+234
 278
-Send World
-send-world-state\nsend-dynamic-state
+Send Dynamic State
+send-dynamic-state
 NIL
 1
 T
 OBSERVER
 NIL
-NIL
+D
 NIL
 NIL
 1
@@ -128,6 +131,55 @@ port-number
 1
 0
 Number
+
+BUTTON
+162
+379
+225
+412
+Go
+go
+T
+1
+T
+OBSERVER
+NIL
+F
+NIL
+NIL
+1
+
+SLIDER
+86
+88
+234
+121
+max-shelf-capacity
+max-shelf-capacity
+0
+5
+2
+1
+1
+NIL
+HORIZONTAL
+
+BUTTON
+85
+278
+234
+311
+Send World State
+send-world-state
+NIL
+1
+T
+OBSERVER
+NIL
+F
+NIL
+NIL
+1
 
 @#$#@#$#@
 ## WHAT IS IT?
@@ -169,7 +221,7 @@ Number
 default
 true
 0
-Polygon -7500403 true true 150 5 40 250 150 205 260 250
+Polygon -7500403 true true 150 5 40 250 150 210 260 250
 
 airplane
 true
@@ -215,12 +267,16 @@ Line -16777216 false 150 105 105 60
 car
 false
 0
-Polygon -7500403 true true 300 180 279 164 261 144 240 135 226 132 213 106 203 84 185 63 159 50 135 50 75 60 0 150 0 165 0 225 300 225 300 180
-Circle -16777216 true false 180 180 90
-Circle -16777216 true false 30 180 90
-Polygon -16777216 true false 162 80 132 78 134 135 209 135 194 105 189 96 180 89
-Circle -7500403 true true 47 195 58
-Circle -7500403 true true 195 195 58
+Rectangle -16777216 true false 240 195 300 210
+Rectangle -16777216 true false 225 30 240 180
+Polygon -1184463 true false 240 180 255 210 225 180 240 180 225 165 225 120 195 75 180 60 150 45 15 45 15 135 15 150 15 210 240 210 210 180
+Circle -16777216 true false 165 180 90
+Circle -16777216 true false 15 180 90
+Polygon -7500403 true true 150 60 30 60 30 165 165 165 165 120 210 120 180 75
+Circle -7500403 true true 32 195 58
+Circle -7500403 true true 180 195 58
+Rectangle -6459832 true false 255 210 300 210
+Circle -16777216 false false 315 315 30
 
 circle
 false

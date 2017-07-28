@@ -1,3 +1,54 @@
+
+;==============================================
+; an .nls file to improve the interface to
+; sock2 & make it easier to adapt
+;==============================================
+
+
+extensions [ sock2 ]
+
+
+globals [socket-debug-out]
+; socket-debug-out is (task print) by default
+; if you want output to go somewhere else change this after connecting
+; eg: set socket-debug-out (task print-output)
+
+
+
+to connect-to-localhost [#port]
+  set socket-debug-out (task [print ?])      
+  (run socket-debug-out (word "connecting on " #port))
+  sock2:connect-local #port
+  (run socket-debug-out "socket connected")
+end
+
+
+
+to socket-repl
+  let #cmd-str sock2:read
+  (run socket-debug-out (word "received: " #cmd-str))
+  run #cmd-str
+  tick
+end
+
+
+
+to flush-io
+  let #cmd-str sock2:read
+  (run socket-debug-out (word "received: " #cmd-str))
+  if (#cmd-str = "stop") [stop]
+  tick
+end
+
+
+
+to socket-write [#str]
+  (run socket-debug-out (word "writing: " #str))
+  sock2:write #str
+end
+
+
+
 to connect-clojure
   sock2:connect-local port-number
 end
@@ -8,50 +59,42 @@ to read
 end
 
 to send [message]
-    sock2:write (word message)
+   sock2:write (word message)
 end
 
 
 ;Not optimized! this has a huge body.
-to send-world-state
-let world-state ""
-ask patches with [pxcor mod 2 = 0][
-  let originalpx pxcor 
-  let originalpy pycor
-  
-  if (is-multiple-of pxcor 2)[
-    ask patch (pxcor + 1) pycor[          
-      set world-state (word world-state "(connects ("originalpx" "originalpy") ("pxcor" "pycor"))")]
-    ask patch (pxcor - 1) pycor[          
-      set world-state (word world-state "(connects ("originalpx" "originalpy") ("pxcor" "pycor"))")]
-  ]
-  if (is-multiple-of pycor 2)[
-    ask patch pxcor (pycor + 1)[          
-      set world-state (word world-state "(connects ("originalpx" "originalpy") ("pxcor" "pycor"))")]
-    ask patch pxcor (pycor - 1)[          
-      set world-state (word world-state "(connects ("originalpx" "originalpy") ("pxcor" "pycor"))")]
-  ]
+to send-world-state  
+let world-state "["; "#{"
 
+ask forklifts[set world-state (word world-state"(isa forklift " self")")]
+ask bays[ 
+  let bx xcor
+  let by ycor
+  ask shelves-here[
+     set world-state (word world-state "(at bay ("bx" "by") "self")") ;self should be (shelf x), bracketed
+     set world-state (word world-state "(is-height "#height" "self")") ;self should be (shelf x), bracketed
+  ] 
 ]
+  set world-state (word world-state "]")
   send world-state
-
-
 end
-to send-dynamic-state
-  let dynamic-state "" 
 
-  ask patches[
-    ifelse (count turtles-here = 0)[
-      set dynamic-state (word dynamic-state "(at ("pxcor " " pycor ") none)")
-    ][
-    
-    if (count turtles-here != 0)[
+to send-dynamic-state
+ let dyn (word "[") ;"#{") 
+
+   ask patches[ 
       ask turtles-here[
          if is-collectable? self[
-           set dynamic-state (word dynamic-state "(at ("pxcor " " pycor ")" item-type" "who")")
+           set dyn (word dyn "(stored-on "parent" "item-type" "who")")
          ]  
          if is-forklift? self[
-           set dynamic-state (word dynamic-state "(at ("pxcor " " pycor ")" self")")  
-           set dynamic-state (word dynamic-state "(isa forklift " self")")]]]]]
-   send dynamic-state
+           set dyn (word dyn"(on ("pxcor " " pycor ")" self")")
+    ;       set dyn (word dyn"(is-height "#height " " self")")
+         ]
+         ]]
+     
+   set dyn (word dyn "]")
+   send dyn
+
 end

@@ -4,30 +4,89 @@
             [util :refer :all]
             ))
 
-;TODO The preconditions for move are never triggered.
-;TODO Quite puzzled but at a state where I can hop from one square to another. Doing it via pathfinding though is proving to be rather confusing.
-;MATCHER DOCS http://s573859921.websitehome.co.uk/pub/clj/matcher/user%20guide.htm#_:not_and_:guard
+;(ops-search mock-dyn '((on (forklift 324) pistons-crate 312))
+;state-ops
+;:debug true :world mock-world)
 
 (def state-ops
-  '{move {
-          :pre (
-                 (isa forklift (forklift ?n))
-                 (on (?ox ?oy) (forklift ?n))
-                 (goal (?gx ?gy) (forklift ?n))
-                 )
+  '{
+
+    move-to-obj{
+                :pre
+                    (
+                      ;   (isa bay (?bx ?by))
+                      ;   (at bay (?bx ?by) (shelf ?s))
+                      (goal (?arg1 ?arg2) ?obj ?o)
+                      (isa forklift (forklift ?f))
+                      )
+                :add((at (?obj ?o)(forklift ?f)))
+                :del()
+                :txt(forklift ?f moves to ?obj ?o)
+                :cmd(sock2.socket/socket-write s25
+                                        (str "set-forklift-destination forklift "(? f)" "(? obj)" "(? o)));Hard coded the socket here)
+                }
+
+    pick-up {
+             :pre
+                 (
+                   (at (?object ?o)(forklift ?f))
+                   (stored-on (shelf ?s) ?object ?o)
+                   (at bay (?bx ?by) (shelf ?s))
+                   ;(is-height ?h (shelf ?s)) ;(is-height 0 (shelf 116))
+                   ;(is-height ?h (forklift ?f))
+                   )
+             :add((holds (forklift ?f) ?object ?o))
+             :del((stored-on (shelf ?s) ?object ?o))
+             :txt(forklift ?f picked up ?object ?o from shelf ?s)
+             :cmd(sock2.socket/socket-write s25 (str "drop-off "(? object)" "(? o)))
+             }
+
+    drop-off{
+             :pre (
+                    (isa forklift (forklift ?f))
+                    (holds (forklift ?f) ?object ?o)
+                    )
+             :add ((stored-on (loading bay) ?object ?o)
+                    )
+             :del ((holds (forklift ?f) ?object ?o))
+             :txt (forklift ?f dropped off ?object ?o at the loading bay)
+             :cmd (sock2.socket/socket-write s25 (str "dropped off " (? object) (? o) " on shelf" (? s)))
+             }
+    ;move-arm{
+    ;         :pre(
+    ;               (is-height ?dy (shelf ?s)) ;(is-height 0 (shelf 116))
+    ;               (is-height ?y (forklift ?f))
+    ;
+    ;               )
+    ;         :add ((is-height ?dy (forklift ?f))(moved-arm))
+    ;         :del ((is-height ?y (forklift ?f)))
+    ;         :txt(forklift ?f moved it's arm to elevation ?dy)
+    ;         :cmd(sock2.socket/socket-write (str "move-arm forklift " (? f) " " (? dy)))
+    ;         }
+    ;
+    ;
+    ;move-freely { ;cannot freely move around
+    ;             :pre ((isa forklift (forklift ?n))
+    ;                    (on (?ox ?oy) (forklift ?n))
+    ;                    (goal (?gx ?gy) (forklift ?n))
+    ;
+    ;                    )
+    ;             :add (
+    ;                    (goal (forklift ?n) pistons-crate)
+    ;                    ;(at (bay ?b) (forklift ?n))
+    ;                    (goal (?gx ?gy) (forklift ?n))
+    ;                    (on (11 11) (forklift 425))
+    ;
+    ;
+    ;                    )
+    ;             :del ( (on (?ox ?oy) (forklift ?n)))
+    ;             :txt (forklift moves to ?gx ?gy )
+    ;             :cmd (sock2.socket/socket-write
+    ;                    (str "move-forklift " (? gx) (? gy)));Hard coded the socket here
+    ;             }
+    })
 
 
-          :add (
-                 (on (?gx ?gy) (forklift ?n))
-                 (goal (?gx ?gy) (forklift ?n))
-                 )
-          :del ((on (?ox ?oy) (forklift ?n)))
-          :txt (forklift to (?gx ?gy))
-          :cmd (sock2.socket/socket-write
-                 (str "move-forklift " (? gx) (? gy)));Hard coded the socket here
-          }})
-
-1
 ;init {
 ;      :pre ((?anything)) ;should be able to do things before operating (e.g. adding a goal in; but how? Can I get hold of the goal arg from ops-search.
 ;      :add ((init-lock))

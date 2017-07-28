@@ -15,3 +15,7 @@
       )
     )
   )
+
+(defn move-forklift-nl [obj o sock]
+  sock2.socket/socket-write sock (str "move forklift please")
+  )

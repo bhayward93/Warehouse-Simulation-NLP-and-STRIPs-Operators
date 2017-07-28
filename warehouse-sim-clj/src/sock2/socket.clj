@@ -29,14 +29,12 @@
          (catch SocketException e))
     ))
 
-
 (defn socket-write
   "low-level socket writer"
   ([x]
    (socket-write 2222 x))
   ([socket x]
   (binding [*out* (:outp socket)]
-    (println "Writing: "x)
     )))
 
 
