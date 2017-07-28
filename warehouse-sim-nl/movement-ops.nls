@@ -1,0 +1,141 @@
+extensions [array]
+;globals []
+
+to drop-off [coll]
+  ask coll [set parent (patch pxcor pycor)]
+end
+
+
+
+to set-forklift-destination [#forklift #object] 
+  ask #forklift [
+    set heading towards #object
+    set destination-x [xcor] of #object
+    set destination-y [ycor] of #object
+    ]
+end
+
+to pickup-collectable [#forklift coll]
+ask #forklift[  
+    let x xcor
+    let y ycor
+    let s self
+    ask coll [ 
+          set xcor x
+          set ycor y
+          set parent s
+    ]
+]
+end
+
+to #tick-collectables  
+  ask collectables[
+       setxy [pxcor] of parent [pycor] of parent
+     ]  
+end
+  
+to go  
+  tick-forklifts
+  #tick-collectables ;MUST go after tick-forklifts
+  tick                                ;; update screen graphics
+end
+
+
+to tick-forklifts
+  ask forklifts[
+       if xcor < 0 [
+         set xcor xcor + 0.9 ]
+       if ycor < 0 [
+         set ycor ycor + 0.9 ]
+       if xcor > 16.0 [
+         set xcor -0.9]
+       if ycor > 16.0 [
+         set xcor -0.9]
+  
+    if [pxcor] of patch-here != destination-x or [pycor] of patch-here != destination-y[
+       
+       ifelse [pycor] of patch-here = 0 or 
+             [pycor] of patch-here = 1 or
+             [pycor] of patch-here = 15 or  
+             [pycor] of patch-here = 16[
+               move-to-los self     
+          ][     
+       
+       ifelse [pcolor] of patch-at dx dy = 21[  
+               
+          ifelse destination-y > 8
+          [
+            loop [if [pycor] of patch-here = 0 or 
+                     [pycor] of patch-here = 1 or
+                     [pycor] of patch-here = 15 or 
+                     [pycor] of patch-here = 16 [stop]
+              set-heading-and-move 0 self
+            ]
+          ]
+          [
+             loop [if [pycor] of patch-here = 0 or 
+                     [pycor] of patch-here = 1 or
+                     [pycor] of patch-here = 15 or 
+                     [pycor] of patch-here = 16 [stop]
+              set-heading-and-move 180 self
+            ]
+          ]           
+      ][set heading towards patch destination-x destination-y  fd 1] 
+    ]]]
+end
+  
+to move-to-los [#forklift]
+  set heading towards patch destination-x destination-y
+   ask #forklift[
+   
+   if [pxcor] of patch-here = destination-x[
+     loop [
+        if [pycor] of patch-here = destination-y
+          [stop]
+        set heading towards patch destination-x destination-y
+        fd 1 
+     ]
+   ]
+     print heading
+     ifelse heading <= 180[
+       set heading 90
+       loop[
+          if xcor = destination-x [stop]
+          fd 1]
+     ][
+       set heading 270
+       loop[
+          if xcor = destination-x [stop]
+          fd 1 
+       ]
+   ]]
+end  
+  
+  ;sets heading and moves the forklift 
+to set-heading-and-move [#heading #forklift]
+  ask #forklift [set heading #heading fd 1] 
+     ;set heading destination-x 
+  
+end
+
+;  ask forklifts[
+;    if ([pxcor] of patch-at xcor ycor != destination-x and
+;        [pycor] of patch-at xcor ycor != destination-y and 
+;        not patch-obstructed? 
+;               [pxcor] of patch-ahead 1 
+;               [pycor] of patch-ahead 1
+;        ;not any? turtles-on patch-ahead 1
+;        )
+;        [fd 1]
+;  ]
+    
+
+;4 1 / 4 15
+
+;send the patch ahead one space into this.
+to-report patch-obstructed? [x y]
+  let by "1 2 3 4 5 6 7 8 9 10 12 13 14 15"
+  let bx "4 8 12"
+  report (member? (word x) bx and member? (word y) by) or 
+         (by != 0 or by != 16)  
+end
