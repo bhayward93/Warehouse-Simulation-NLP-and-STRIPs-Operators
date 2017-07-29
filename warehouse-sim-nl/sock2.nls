@@ -26,7 +26,7 @@ end
 
 to socket-repl
   let #cmd-str sock2:read
-  (run socket-debug-out (word "received: " #cmd-str))
+ ; (run socket-debug-out (word "received: " #cmd-str))
   run #cmd-str
   tick
 end

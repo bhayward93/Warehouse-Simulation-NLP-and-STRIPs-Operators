@@ -20,8 +20,9 @@
             [nl-injector :refer :all]
             [util :refer :all]
             [rules :refer :all]
+            [nlp.lexicon :refer :all]
+            [nlp.semanticanalyzer :refer :all]
             )
-=          ;  (:refer clojure.math.combinatorics :rename {update, combin-update})
             )
 ;(ops-search mock-dyn '((on (6 16) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))
 (defn -main
