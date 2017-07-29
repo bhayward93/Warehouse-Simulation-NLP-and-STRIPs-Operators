@@ -10,8 +10,8 @@
   (let [new-state (socket-read socket)]
     (println new-state)
     (if (= new-state -1)
-      state-list
-      (receive-state socket (conj state-list new-state))
+      (hash-set
+      (receive-state socket (conj state-list new-state)))
       )
     )
   )

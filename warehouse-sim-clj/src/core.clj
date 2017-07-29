@@ -20,9 +20,8 @@
             [nl-injector :refer :all]
             [util :refer :all]
             [rules :refer :all]
-            ;[clojure.math.combinatorics]
             )
-          ;  (:refer clojure.math.combinatorics :rename {update, combin-update})
+=          ;  (:refer clojure.math.combinatorics :rename {update, combin-update})
             )
 ;(ops-search mock-dyn '((on (6 16) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))
 (defn -main
@@ -39,22 +38,8 @@
 ;  (ops-search
 ;    mock-dyn
 ;    '((on (7 0) (forklift 201)))
-;    state-ops
+;    state-
 ;    :debug true
 ;    :world (apply-all-rules rule-set mock-world)
 ;    ))
-
-;(defn run []
-;  (ops-search
-;    (conj mock-dyn (apply-all-rules rule-set mock-world))
-;    '((on (5 0) forklift ?))
-;    state-ops
-;    :debug true
-;    :world (apply-all-rules rule-set mock-world)
-;    ;(ops-search mock-dyn '((on (6 16) (forklift 495)))
-;    ;state-ops :debug true :world (apply-all-rules rule-set mock-world))
-;    )
-;  )
-;Notes-
-;13/7/17 current issues could be a case of
 

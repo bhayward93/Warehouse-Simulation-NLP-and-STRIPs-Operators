@@ -1,8 +1,8 @@
 (ns sock2.socket)
-
 ;====================================
 ; socket manufacture & control
 ;====================================
+
 
 (import '(java.net ServerSocket Socket SocketException)
         '(java.io InputStreamReader OutputStreamWriter)
@@ -29,13 +29,13 @@
          (catch SocketException e))
     ))
 
+
 (defn socket-write
   "low-level socket writer"
-  ([x]
-   (socket-write 2222 x))
-  ([socket x]
+  [socket x]
   (binding [*out* (:outp socket)]
-    )))
+    (println x)
+    ))
 
 
 (defn socket-read

@@ -23,7 +23,7 @@
                 :del()
                 :txt(forklift ?f moves to ?obj ?o)
                 :cmd(sock2.socket/socket-write s25
-                                        (str "set-forklift-destination forklift "(? f)" "(? obj)" "(? o)));Hard coded the socket here)
+                                        (str '(set-forklift-destination forklift ?f ?obj ?o)));Hard coded the socket here)
                 }
 
     pick-up {
@@ -38,7 +38,7 @@
              :add((holds (forklift ?f) ?object ?o))
              :del((stored-on (shelf ?s) ?object ?o))
              :txt(forklift ?f picked up ?object ?o from shelf ?s)
-             :cmd(sock2.socket/socket-write s25 (str "drop-off "(? object)" "(? o)))
+             :cmd(sock2.socket/socket-write s25 (str '(pickup-collectable forklift ?f ?object ?o)))
              }
 
     drop-off{
@@ -50,7 +50,7 @@
                     )
              :del ((holds (forklift ?f) ?object ?o))
              :txt (forklift ?f dropped off ?object ?o at the loading bay)
-             :cmd (sock2.socket/socket-write s25 (str "dropped off " (? object) (? o) " on shelf" (? s)))
+             :cmd (sock2.socket/socket-write s25 (str '(drop-off ?object ?o)))
              }
     ;move-arm{
     ;         :pre(

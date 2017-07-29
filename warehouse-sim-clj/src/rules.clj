@@ -1,7 +1,7 @@
 (ns rules
   (:require [cgsx.tools.matcher :refer :all]
-            [clojure.math.combinatorics :as combinatorics]
-            [nl-injector :refer :all]
+            ;[clojure.math.combinatorics :as combinatorics]
+            ;[nl-injector :refer :all]
             )
   )
 
