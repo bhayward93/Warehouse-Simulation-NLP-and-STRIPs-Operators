@@ -9,10 +9,11 @@
 
 
 ;Res
-;https://jafingerhut.github.io/cheatsheet/grimoire/cheatsheet-tiptip-cdocs-summary.html
+;https://jafingeGrhut.github.io/cheatsheet/grimoire/cheatsheet-tiptip-cdocs-summary.html
 (ns core
   (:gen-class)
-  (:require [sock2.socket_utils :refer :all]
+  (:require
+            [sock2.socket_utils :refer :all]
             [ops_search.ops_search :refer :all]
             [ops :refer :all]
             [cgsx.tools.matcher :refer :all]
@@ -21,9 +22,9 @@
             [util :refer :all]
             [rules :refer :all]
             [nlp.lexicon :refer :all]
-            [nlp.semanticanalyzer :refer :all]
-            )
-            )
+            [nlp.semantics-analyzer :refer :all]))
+            ;))
+;
 ;(ops-search mock-dyn '((on (6 16) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))
 (defn -main
   ([] (-main 2222)) ;Set a default value

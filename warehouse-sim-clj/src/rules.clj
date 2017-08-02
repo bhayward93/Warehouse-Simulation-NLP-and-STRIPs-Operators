@@ -4,15 +4,14 @@
             ;[nl-injector :refer :all]
             )
   )
-
-;A defined rule set
-(def semantic-rules
-  "Rules for semantics; specifically compound sentences."
-  '( (rule 1 det noun :=> noun-phrase)            ; Determiner + Noun = Noun-Phrase
-     (rule 2 verb noun-phrase :=> verb-phrase)    ; Verb + Noun-Phrase = Verb-Phrase
-     (rule 3 noun-phrase verb-phrase :=> sentence); Noun-Phrase + Verb-Phrase = Sentence
-     ))
-
+;
+;;A defined rule set
+;(def semantic-rules
+;  "Rules for semantics; specifically compound sentences."
+;   (('rule1 (det? noun?) :=> (noun-phrase))            ; Determiner + Noun = Noun-Phrase
+;    ('rule2 (verb? noun-phrase) :=> (verb-phrase))    ; Verb + Noun-Phrase = Verb-Phrase
+;    ('rule3 (noun-phrase? verb-phrase) :=> (sentence)); Noun-Phrase + Verb-Phrase = Sentence
+;    ))
 (def dyn-rules
   '((rule 1  ;(on (6 0) (forklift 201))
              ;(on (?x ?y) (forklift ?n))

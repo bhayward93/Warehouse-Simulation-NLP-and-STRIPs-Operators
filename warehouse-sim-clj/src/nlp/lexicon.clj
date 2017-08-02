@@ -13,19 +13,19 @@
 
 ;A lexicon of words that can be used; some taken from Shrldu
 
-(def lexocon '{box         {:cat noun :sem (isa ?x crate)}
-               square      {:cat noun :sem (isa ?x crate)}
-               object      {:cat noun :sem (isa ?x crate)}
-               crate       {:cat noun :sem (isa ?x crate)}
-               collectable {:cat noun :sem (isa ?x crate)}
-               item        {:cat noun :sem (isa ?x crate)}
+(def lexicon '{box         {:cat noun :sem crate}
+               square      {:cat noun :sem crate}
+               object      {:cat noun :sem crate}
+               crate       {:cat noun :sem crate}
+               collectable {:cat noun :sem crate}
+               item        {:cat noun :sem crate}
 
-               bay         {:cat noun :sem (isa ?x bay)}
-               loading-bay {:cat noun :sem (isa ?x bay)}
-               shelf       {:cat noun :sem (isa ?x bay)}
+               bay         {:cat noun :sem bay}
+               loading-bay {:cat noun :sem bay}
+               shelf       {:cat noun :sem bay}
 
-               forklift    {:cat noun :sem (isa forklift (forklift ?f))}
-               picker      {:cat noun :sem (isa forklift (forklift ?f))}
+               forklift    {:cat noun :sem forklift}
+               picker      {:cat noun :sem forklift}
 
                move        {:cat verb :sem pickup}
                grab        {:cat verb :sem pickup}
@@ -39,76 +39,48 @@
                drop-off    {:cat verb :sem drop-off}
                place       {:cat verb :sem drop-off} ;Conflicts with this. Noun/Verb
                drop        {:cat verb :sem drop-off}
+               put         {:cat verb :sem drop-off}
 
                engine-crate{:cat noun :sem (isa ?x engine-crate)}
 
                on          {:cat prep :sem (stored-on (shelf ?s) ?object ?o)}
                under       {:cat prep :sem (stored-on (shelf ?s) ?object ?o)}
 
-               the         {:cat det}
-               a           {:cat det}
-               an          {:cat det}
-               any         {:cat det}
-               that        {:cat det}
-               this        {:cat det}
+               the         {:cat det :sem last}
+               a           {:cat det :sem 1}
+               an          {:cat det :sem 1}
+               any         {:cat det :sem random}
+               that        {:cat det :sem aforementioned} ;?
+               this        {:cat det :sem aforementioned}
+;               to          {:cat con}
+
+               and         {:cat con :sem next}
+               then        {:cat con :sem next}
+               next        {:cat con :sem next}
+
+               '1           {:cat det :sem '1}
+               '2           {:cat det :sem '2}
+               '3           {:cat det :sem '3}
+               '4           {:cat det :sem '4}
+               '5           {:cat det :sem '5}
+               '6           {:cat det :sem '6}
+               '7           {:cat det :sem '7}
+               '8           {:cat det :sem '8}
+               '9           {:cat det :sem '9}
+               one         {:cat num :sem '1}
+               two         {:cat num :sem '2}
+               three       {:cat num :sem '3}
+               four        {:cat num :sem '4}
+               five        {:cat num :sem '5}
+               six         {:cat num :sem '6}
+               seven       {:cat num :sem '7}
+               eight       {:cat num :sem '8}
+               nine        {:cat num :sem '9}
+
                })
 
-;Shrldu
-(defn word-check [wtype word]
-  (if-let [wdef (word lexicon)]
-    (if (= (:cat wdef) wtype)
-      (or (:sem wdef) 'undef)
-      )))
-
-(defn adj?   [x] (word-check 'adj x  ))
-(defn det?   [x] (word-check 'det x  ))
-(defn noun?  [x] (word-check 'noun x ))
-(defn prep?  [x] (word-check 'prep x ))
-(defn verb1? [x] (word-check 'verb1 x))  ;; verb with arity 1
-(defn put2?  [x] (word-check 'put2 x ))   ;; verb with arity 1
-(defn make?  [x] (word-check 'make x ))
-
-(defn get-word-type [w]
-  (get (get lexicon w) :cat)
-  )
 
 
-
-(defn split-to-symbols [_str]
-  "Splits a string and converts the split strings into symbols,
-   returns the word type of the symbols, provided they are in the lexicon."
-  (map get-word-type ;get the type of word
-       (mapv symbol ;change all elements to symbol
-             (str/split _str #" ") ;split the string on whitespace
-             )))
-
-  ;NLP-intro3a
-
-
-;(defmatch build-grammar []
-;  '( (s1 (sentence -> noun-phrase verb-phrase))
-;     (np (noun-phrase -> determiner noun))
-;     (vp (verb-phrase -> verb noun-phrase))
-;     ))
-
-;(defmatch noun-group []
-;          ((-> ?d det?) (-> ?n noun?))       ; Det N => NG
-;            :=> {:cat  'noun-group
-;                 :sem  (list (? n))}
-;
-;          (((-> ?d det?) (-> ??a adjG) (-> ?n noun?))    ; Det AdjG N => NG
-;            :=> {:cat  'ng
-;                 :sem  (mout '(??a ?n))
-;                 }))
-
-(defn adjG [lis]                   ; AdjG -> *Adj
-  (and (every? #(adj? %) lis)
-       (map #(adj? %) lis)
-       ))
-
-;(defn get-word-type [wo]
-;  mfor
-;  )
 
 ;suffixes - note: if someone uses the word size, will it find ize in the suffixes list,
 ;           and wrongly deduce its meaning.
