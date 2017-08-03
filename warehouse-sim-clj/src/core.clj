@@ -22,7 +22,8 @@
             [util :refer :all]
             [rules :refer :all]
             [nlp.lexicon :refer :all]
-            [nlp.semantics-analyzer :refer :all]))
+            [nlp.syntactical-analyser :refer :all]
+            ))
             ;))
 ;
 ;(ops-search mock-dyn '((on (6 16) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))
