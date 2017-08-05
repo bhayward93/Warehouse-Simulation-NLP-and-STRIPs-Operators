@@ -12,22 +12,22 @@
    returns the word type of the symbols, provided they are in the lexicon."
   ;  (map get-word-type  ;Get the type of word.
   (mapv symbol   ;Change all elements to symbol.
-        (str/split _str #" ") ;Split the string on whitespace.
-        ))
+        (str/split _str #" "))) ;Split the string on whitespace.
+
 
 ;Shrldu
 (defn word-check [wtype word]
-  (println "word-check : type = " wtype " / word = " word)
+  (println "word-check : type = " wtype " / word = " word
     (if-let [wdef (word lexicon)]
       (if (= (:cat wdef) wtype)
-        (or (:sem wdef) 'undef)
-        )))
+        (or (:sem wdef) 'undef)))))
 
-(defn adj?   [x] (word-check 'adj x  ))
-(defn det?   [x] (word-check 'det  x ))
-(defn noun?  [x] (word-check 'noun x ))
+
+(defn adj?   [x] (word-check 'adj x))
+(defn det?   [x] (word-check 'det  x))
+(defn noun?  [x] (word-check 'noun x))
 (defn verb?  [x] (word-check 'verb x))  ;; verb with arity 1
-(defn put2?  [x] (word-check 'put2 x ))   ;; verb with arity 1
+(defn put2?  [x] (word-check 'put2 x))   ;; verb with arity 1
 (defn num?   [x] (word-check 'num x))
 (defn noun-phrase? [x] (word-check 'np x));(noun-phrase x))
 (defn connective?  [x] (word-check 'con x))
@@ -42,8 +42,8 @@
           (((-> ?v verb?) (-> ??d det?) (-> ?n noun?)      :=>)  (mout ((? v)  (? n)  (? d))))"
           (((-> ?v verb?) (-> ?d det?) (-> ?n noun?))       :=>   {:cat 'ng}(mout (list (? v) (? d) (? n)))) ;move the box
           (((-> ?v verb?) (-> ?num num-txt?) (-> ?n noun?)) :=>   (mout (list (? v) (? num) (? n)))) ;could use a nested list to keep num and obj together
-          (((-> ?v verb?) (-> ?n noun?))                    :=>   (mout (list (? v) 'the (? n)))) ;grab box
-          (((-> ?v verb?) (-> ?d det?) (-> ?d det?) (-> ?n noun?)      :=>    (mout (? v))));(mfor [(?? d)(mout(list (? v)  (? n)  (?? d)))])))
+          (((-> ?v verb?) (-> ?n noun?))                    :=>   (mout (list (? v) 'the (? n))))) ;grab box
+         ; (((-> ?v verb?) (-> ?d det?) (-> ?d det?) (-> ?n noun?)      :=>    (mout (? v))));(mfor [(?? d)(mout(list (? v)  (? n)  (?? d)))])))
 
 
 
@@ -57,7 +57,7 @@
           ;  (((-> ?vp verb-phrase)) :=> (? vp)) ;Should be a simple case of something like move a box, drop a crate.
 
 
-          )
+
 
 
 
@@ -68,13 +68,13 @@
     ;(re-find #"\b[A-Z]+\b" could come in useful in the future
     (or
       (integer? x)
-      (some #(= x %) number-words) ;
-      )))
+      (some #(= x %) number-words)))) ;
+
 
 (defn get-word-type [w]
   "Return the type of a word fed in, providing that it is in the lexicon."
-  (get (get nlp.lexicon/lexicon w) :cat)
-  )
+  (get (get nlp.lexicon/lexicon w) :cat))
+
 
 (defn split-lis-at-and [_str]
   "Split a string into vectors, at the place of the word 'and'
@@ -87,25 +87,25 @@
          (remove '#{[and]}))))
 
 (defn syn-analyser [_str & [debug]]
-  (map parse (split-lis-at-and _str))
-  )
+  (map parse (split-lis-at-and _str)))
+
 
 
 (def semantic-rules
   "Rules for semantics; specifically compound sentences."
   '(
      (??a and ??b) => '(??a n ??b)          ; Determiner + Noun = Noun-Phrase
-     (??a and then ??b) => '(??a n ??b)
-     ))
+     (??a and then ??b) => '(??a n ??b)))
+
 
 (defn apply-morph-rules [rules sentence]
   (if (empty? rules) sentence
                      (mlet ['(?pre => ?post) (first rules)]
                            (mif [(? pre) sentence]
                                 (recur rules (mout (? post)))
-                                (recur (rest rules) sentence)
-                                ))
-                     ))
+                                (recur (rest rules) sentence)))))
+
+
 
 
 

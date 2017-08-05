@@ -20,10 +20,12 @@
             [clojure.string :as str]
             [nl-injector :refer :all]
             [util :refer :all]
-            [rules :refer :all]
-            [nlp.lexicon :refer :all]
-            [nlp.syntactical-analyser :refer :all]
-            ))
+            [rules :refer :all]))
+            ;[nlp.lexicon :refer :all]
+            ;[nlp.syntactical-analyser :refer :all]
+            [nlp.#core :refer :all]
+
+
             ;))
 ;
 ;(ops-search mock-dyn '((on (6 16) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))
@@ -34,8 +36,24 @@
    (println "Awaiting Dynamic State...")
    (def dynamic-state (sock2.socket/socket-read s25))
    (println "Awaiting World State...")
-   (def world-state (sock2.socket/socket-read s25)))
-  )
+   (def world-state (sock2.socket/socket-read s25))))
+  ; (println "reading")
+
+
+(defn read-loop []
+  (let [x 0]
+           (while (= x 0)
+             (let [nl-read (sock2.socket/socket-read s25)]
+             (when (not= (nl-read nil))
+               (println "NetLogo => "nl-read "\nAnalysing Input...")
+
+               (nlp.#core/trigger-nlp nl-read))
+
+             (Thread/sleep 100)))))
+
+
+(defn send-cmd [cmd]
+  (sock2.socket/socket-write s25 cmd))
 
 ;(defn run
 ;  (ops-search

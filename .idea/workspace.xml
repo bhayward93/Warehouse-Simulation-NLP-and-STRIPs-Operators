@@ -2,21 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac37ebd8-02f0-46ab-8ff8-92010e065088" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp/core.clj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/syntactical_analyser.clj" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__clojure_complete_0_2_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_clojure_1_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_math_combinatorics_0_0_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_tools_nrepl_0_2_12.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp/utils.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/.nrepl-port" afterPath="$PROJECT_DIR$/warehouse-sim-clj/.nrepl-port" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/project.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/project.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/core.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/core.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/lexicon.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/lexicon.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/morphologicalprocessor.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/morphologicalprocessor.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp/core.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp/core.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/pragmaticprocessor.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/pragmaticprocessor.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/semantics_analyzer.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/semantics_analyzer.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/rules.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/rules.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/syntactical_analyser.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/syntactical_analyser.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,24 +36,47 @@
     <favorites_list name="warehouse-sim" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.57322174">
+    <splitter split-orientation="vertical" split-proportion="0.48535565">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="core.clj" pinned="false" current-in-tab="false">
+          <file leaf-file-name="core.clj" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/core.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="39">
-                  <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+                <state relative-caret-position="91">
+                  <caret line="7" column="45" lean-forward="false" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="core.clj" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ops.clj" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="234">
+                  <caret line="31" column="33" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+                  <folding>
+                    <marker date="1501902399516" expanded="true" signature="0:68" ph="(ns ops ...)" />
+                    <marker date="1501902399516" expanded="true" signature="177:3063" ph="(def state-ops ...)" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="core.clj" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp/core.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="286">
-                  <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+                <state relative-caret-position="26">
+                  <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="utils.clj" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp/utils.clj">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="26">
+                  <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -67,9 +85,34 @@
           <file leaf-file-name="syntactical_analyser.clj" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/syntactical_analyser.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-78">
-                  <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-                  <folding />
+                <state relative-caret-position="533">
+                  <caret line="41" column="95" lean-forward="true" selection-start-line="41" selection-start-column="95" selection-end-line="41" selection-end-column="95" />
+                  <folding>
+                    <marker date="1501902399308" expanded="true" signature="231:563" ph="(defn split-to-symbols ...)" />
+                    <marker date="1501902399308" expanded="true" signature="573:763" ph="(defn word-check ...)" />
+                    <marker date="1501902399308" expanded="true" signature="1151:2485" ph="(defmatch parse ...)" />
+                    <marker date="1501902399308" expanded="true" signature="2489:2903" ph="(defn num-txt? ...)" />
+                    <marker date="1501902399308" expanded="true" signature="2905:3046" ph="(defn get-word-type ...)" />
+                    <marker date="1501902399308" expanded="true" signature="3396:3471" ph="(defn syn-analyser ...)" />
+                    <marker date="1501902399308" expanded="true" signature="3474:3677" ph="(def semantic-rules ...)" />
+                    <marker date="1501902399308" expanded="true" signature="3679:3990" ph="(defn apply-morph-rules ...)" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ops_search.clj" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="98">
+                  <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="32" />
+                  <folding>
+                    <marker date="1501902399456" expanded="true" signature="346:1899" ph="(defn ops-search ...)" />
+                    <marker date="1501902399456" expanded="true" signature="1902:2107" ph="(defn update-state-map ...)" />
+                    <marker date="1501902399456" expanded="true" signature="2110:2416" ph="(defn finalise-results ...)" />
+                    <marker date="1501902399456" expanded="true" signature="2419:2690" ph="(defn apply-op ...)" />
+                    <marker date="1501902399456" expanded="true" signature="2693:2828" ph="(defn apply-all ...)" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -77,9 +120,12 @@
           <file leaf-file-name="pragmaticprocessor.clj" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/pragmaticprocessor.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="39">
-                  <caret line="3" column="78" lean-forward="false" selection-start-line="3" selection-start-column="78" selection-end-line="3" selection-end-column="78" />
-                  <folding />
+                <state relative-caret-position="78">
+                  <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+                  <folding>
+                    <marker date="1501902399348" expanded="true" signature="0:158" ph="(ns nlp.pragmaticprocessor ...)" />
+                    <marker date="1501902399348" expanded="true" signature="499:684" ph="(def specify-crate? ...)" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -91,19 +137,63 @@
           <file leaf-file-name="definitions(1c).clj" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/shrdlu-stuff/shrdlu/definitions(1c).clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="52">
-                  <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-                  <folding />
+                <state relative-caret-position="-2">
+                  <caret line="185" column="0" lean-forward="true" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
+                  <folding>
+                    <marker date="1501902399572" expanded="true" signature="102:181" ph="(def settings ...)" />
+                    <marker date="1501902399572" expanded="true" signature="297:634" ph="(def sentence-morph-rules ...)" />
+                    <marker date="1501902399572" expanded="true" signature="637:1282" ph="(def word-match-rules ...)" />
+                    <marker date="1501902399572" expanded="true" signature="1401:2106" ph="(def block-ops ...)" />
+                    <marker date="1501902399572" expanded="true" signature="2214:5414" ph="(def goal-ops ...)" />
+                    <marker date="1501902399572" expanded="true" signature="5528:6783" ph="(def exec-ops ...)" />
+                    <marker date="1501902399572" expanded="true" signature="7088:7930" ph="(defmatch process-cmd ...)" />
+                    <marker date="1501902399572" expanded="true" signature="8030:8739" ph="(let ...)" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="parsing-1a.clj" pinned="false" current-in-tab="true">
+          <file leaf-file-name="parsing-1a.clj" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/shrdlu-stuff/shrdlu/parsing-1a.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-3959">
-                  <caret line="222" column="4" lean-forward="true" selection-start-line="222" selection-start-column="4" selection-end-line="222" selection-end-column="4" />
-                  <folding />
+                <state relative-caret-position="0">
+                  <caret line="197" column="42" lean-forward="true" selection-start-line="197" selection-start-column="42" selection-end-line="197" selection-end-column="42" />
+                  <folding>
+                    <marker date="1501902399660" expanded="true" signature="24:135" ph="(declare word-check ...)" />
+                    <marker date="1501902399660" expanded="true" signature="371:1905" ph="(def lexicon ...)" />
+                    <marker date="1501902399660" expanded="true" signature="2705:3073" ph="(defmatch noun-group ...)" />
+                    <marker date="1501902399660" expanded="true" signature="3121:3227" ph="(defn adjG ...)" />
+                    <marker date="1501902399660" expanded="true" signature="3276:3836" ph="(defmatch noun-phrase ...)" />
+                    <marker date="1501902399660" expanded="true" signature="3886:4020" ph="(defmatch prep-phrase ...)" />
+                    <marker date="1501902399660" expanded="true" signature="4100:4594" ph="(defmatch parse ...)" />
+                    <marker date="1501902399660" expanded="true" signature="4696:4985" ph="(defn compile-word-rules ...)" />
+                    <marker date="1501902399660" expanded="true" signature="4988:5213" ph="(defn apply-morph-rules ...)" />
+                    <marker date="1501902399660" expanded="true" signature="5216:5317" ph="(defn is-size? ...)" />
+                    <marker date="1501902399660" expanded="true" signature="5320:5423" ph="(defn is-color? ...)" />
+                    <marker date="1501902399660" expanded="true" signature="5426:5605" ph="(let ...)" />
+                    <marker date="1501902399660" expanded="true" signature="5757:5977" ph="(defn edit ...)" />
+                    <marker date="1501902399660" expanded="true" signature="5980:6638" ph="(defn pnp-sems ...)" />
+                    <marker date="1501902399660" expanded="true" signature="6706:6831" ph="(defn word-check ...)" />
+                    <marker date="1501902399660" expanded="true" signature="6835:7236" ph="(defn find-obj ...)" />
+                    <marker date="1501902399660" expanded="true" signature="7309:7427" ph="(defn check ...)" />
+                    <marker date="1501902399660" expanded="true" signature="7644:8006" ph="(defn apply-exec ...)" />
+                    <marker date="1501902399660" expanded="true" signature="8010:8775" ph="(defn goal ...)" />
+                    <marker date="1501902399660" expanded="true" signature="9375:9490" ph="(defn TODO! ...)" />
+                    <marker date="1501902399660" expanded="true" signature="9686:9862" ph="(defn gen-stack-tuples ...)" />
+                    <marker date="1501902399660" expanded="true" signature="9918:10075" ph="(let ...)" />
+                    <marker date="1501902399660" expanded="true" signature="10160:10242" ph="(defn bd-add! ...)" />
+                    <marker date="1501902399660" expanded="true" signature="10333:10585" ph="(defn clear-block-data ...)" />
+                    <marker date="1501902399660" expanded="true" signature="10805:10950" ph="(defmatch sentence ...)" />
+                    <marker date="1501902399660" expanded="true" signature="10952:11266" ph="(defn sentence- ...)" />
+                    <marker date="1501902399660" expanded="true" signature="11269:11536" ph="(defn shrepl ...)" />
+                    <marker date="1501902399660" expanded="true" signature="11539:11669" ph="(defn shrep-1 ...)" />
+                    <marker date="1501902399660" expanded="true" signature="11936:11998" ph="(defn reset ...)" />
+                    <marker date="1501902399660" expanded="true" signature="12040:12119" ph="(defn startup ...)" />
+                    <marker date="1501902399660" expanded="true" signature="12122:12599" ph="(def sample-test ...)" />
+                    <marker date="1501902399660" expanded="true" signature="12602:12986" ph="(def els-test ...)" />
+                    <marker date="1501902399660" expanded="true" signature="12988:13557" ph="(def video-prep ...)" />
+                    <marker date="1501902399660" expanded="true" signature="13630:13788" ph="(defn run-repeatedly ...)" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -113,16 +203,27 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="255">
                   <caret line="68" column="33" lean-forward="false" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
-                  <folding />
+                  <folding>
+                    <marker date="1501902398868" expanded="true" signature="700:735" ph="(declare set-atom! ...)" />
+                    <marker date="1501902398868" expanded="true" signature="799:1164" ph="(defn setup-ui-windows ...)" />
+                    <marker date="1501902398868" expanded="true" signature="1167:1639" ph="(defn add-window ...)" />
+                    <marker date="1501902398868" expanded="true" signature="1890:2343" ph="(defn ui-out ...)" />
+                    <marker date="1501902398868" expanded="true" signature="2346:2471" ph="(defn ui-broadcast ...)" />
+                    <marker date="1501902398868" expanded="true" signature="2475:2611" ph="(defn ui-set ...)" />
+                    <marker date="1501902398868" expanded="true" signature="2614:2712" ph="(defn clear-ui ...)" />
+                    <marker date="1501902398868" expanded="true" signature="3061:3476" ph="(defn startup-server ...)" />
+                    <marker date="1501902398868" expanded="true" signature="3479:3591" ph="(defn socket-write ...)" />
+                    <marker date="1501902398868" expanded="true" signature="4169:4400" ph="(defn nlogo-send-exec ...)" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="lexicon.clj" pinned="false" current-in-tab="false">
+          <file leaf-file-name="lexicon.clj" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/lexicon.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="44">
-                  <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+                <state relative-caret-position="19">
+                  <caret line="114" column="101" lean-forward="true" selection-start-line="114" selection-start-column="101" selection-end-line="114" selection-end-column="101" />
                   <folding />
                 </state>
               </provider>
@@ -141,8 +242,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>(on (8 0</find>
-      <find>[ops :refer :all]</find>
       <find>guard</find>
       <find>println</find>
       <find>(eval (:cmd op))</find>
@@ -171,6 +270,8 @@
       <find>rules</find>
       <find>wor</find>
       <find>word-check</find>
+      <find>m</find>
+      <find>mfind</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -233,12 +334,13 @@
         <option value="$PROJECT_DIR$/warehouse-sim-clj/project.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/morphologicalprocessor.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/rules.clj" />
-        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/syntactical_analyser.clj" />
-        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/lexicon.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/semantics_analyzer.clj" />
-        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/core.clj" />
+        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/syntactical_analyser.clj" />
+        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp/utils.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/pragmaticprocessor.clj" />
+        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/lexicon.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp/core.clj" />
+        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/core.clj" />
       </list>
     </option>
   </component>
@@ -250,7 +352,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="y" value="27" />
-    <option name="width" value="683" />
+    <option name="width" value="1366" />
     <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -269,10 +371,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -341,7 +443,7 @@
       <recent name="$PROJECT_DIR$/warehouse-sim-clj/src" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1501728466961">{:repl-history {:ide [], :local [{:command &quot;(split-lis-at-and \&quot;hello and world\&quot;)&quot;, :offset 36, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(trace (syn-analyser \&quot;take it to loading-bay\&quot; :debug true))&quot;, :offset 59, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(parse '(move the car))&quot;, :offset 23, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(trace (syn-analyser \&quot;take to loading-bay\&quot;))&quot;, :offset 44, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(trace (syn-analyser '(hello and world)))&quot;, :offset 41, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(parse '(move the box))&quot;, :offset 23, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(trace (syn-analyser '(move the box)))&quot;, :offset 38, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(syn-analyser '(move the box))&quot;, :offset 30, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(trace (syn-analyser \&quot;hello and world\&quot;))&quot;, :offset 40, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(trace (syn-analyser \&quot;take it to the loading-bay\&quot;))&quot;, :offset 51, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(trace (syn-analyser \&quot;take it to a loading-bay\&quot;))&quot;, :offset 49, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(trace (syn-analyser \&quot;take it to the a loading-bay\&quot;))&quot;, :offset 53, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(trace (syn-analyser \&quot;take the loading-bay\&quot;))&quot;, :offset 45, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(trace (syn-analyser \&quot;take it to loading-bay\&quot;)&quot;, :offset 46, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(trace (syn-analyser \&quot;take it to loading-bay\&quot;))&quot;, :offset 47, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;()&quot;, :offset 1} {:command &quot;(syn-analyser \&quot;move the box\&quot;)&quot;, :offset 29, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(fwd-chain parse \&quot;move to the box\&quot;)&quot;, :offset 35, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(fwd-chain parse \&quot;&quot;, :offset 18} {:command &quot;(apply-all-rules parse \&quot;move to box\&quot;)&quot;, :offset 37, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(fwd-chain \&quot;the box\&quot; semantic-rules)&quot;, :offset 36, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(fwd-chain semantic-rules \&quot;the box\&quot;)&quot;, :offset 36, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(fwd-chain semantic-rules '(the box))&quot;, :offset 37, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(apply-all-rules semantic-rules '(the box))&quot;, :offset 43, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(apply-morph-rules semantic-rules \&quot;the box\&quot;)&quot;, :offset 44, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(apply-morph-rules semantic-rules \&quot;the box and things\&quot;)&quot;, :offset 55, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(apply-morph-rules semantic-rules \&quot;words and things\&quot;)&quot;, :offset 53, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(apply-morph-rules semantic-rules '(the box))&quot;, :offset 45, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(defn semantic-rules \&quot;the and things\&quot;)&quot;, :offset 38} {:command &quot;(apply-morph-rules semantic-rules \&quot;the and things\&quot;)&quot;, :offset 51, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(apply-morph-rules semantic-rules \&quot;the and things n stuff\&quot;)&quot;, :offset 59, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(trace(apply-morph-rules semantic-rules \&quot;the and things n stuff\&quot;))&quot;, :offset 66, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(syn-analyser \&quot;take it loading-bay\&quot;)&quot;, :offset 36, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(syn-analyser \&quot;take it to loading-bay\&quot;)&quot;, :offset 39, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(syn-analyser \&quot;take it it loading-bay\&quot;)&quot;, :offset 39, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(syn-analyser \&quot;move two crates\&quot;)&quot;, :offset 32, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(syn-analyser \&quot;move two crate\&quot;)&quot;, :offset 31, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(lexicon noun)&quot;, :offset 14, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(lexicon 'grab)&quot;, :offset 15, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(remove-prefix 'grably :sem pickup)&quot;, :offset 35, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(in-ns 'nlp.semantics-analyser)&quot;, :offset 31, :ns &quot;nlp.syntactical-analyser&quot;} {:command &quot;(str/split \&quot;hello\&quot; #\&quot;[a-z]\&quot;)&quot;, :offset 28, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(str/split \&quot;hello\&quot; #\&quot;\&quot;)&quot;, :offset 23, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(contains? \&quot;hello\&quot; \&quot;llo\&quot;)&quot;, :offset 25, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(.contains \&quot;hello\&quot; \&quot;llo\&quot;)&quot;, :offset 25, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(.contains \&quot;hello\&quot; \&quot;lldo\&quot;)&quot;, :offset 26, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(map #(contains % words) prefixes)&quot;, :offset 34, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(map #(.contains % words) prefixes)&quot;, :offset 35, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(map #(.contains % 'grably) prefixes)&quot;, :offset 37, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(map #(.contains % \&quot;grably\&quot;) prefixes)&quot;, :offset 38, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'grab :debug true)&quot;, :offset 33, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'grabl :debug true)&quot;, :offset 34, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'grablysdsd :debug true)&quot;, :offset 39, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'grakkksdsd :debug true)&quot;, :offset 39, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(contains word prefixes)&quot;, :offset 24, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(contains prefixes word)&quot;, :offset 24, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(.contains prefixes word)&quot;, :offset 25, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(prefixes under)&quot;, :offset 16, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(prefixes 'under)&quot;, :offset 17, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(.contains 'grab prefixes)&quot;, :offset 26, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(.contains 'grably prefixes)&quot;, :offset 28, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(.contains \&quot;grab\&quot; prefixes)&quot;, :offset 27, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'grably)&quot;, :offset 23, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'grably :debug true)&quot;, :offset 35, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'movely :debug true)&quot;, :offset 35, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'modffvely :debug true)&quot;, :offset 38, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'dfhsabdfhasbf :debug true)&quot;, :offset 42, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(prefixes 'grably)&quot;, :offset 18, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(prefixes 'ly)&quot;, :offset 14, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(prefixes 'anti)&quot;, :offset 16, :ns &quot;core&quot;} {:command &quot;(in-ns 'nlp.core)&quot;, :offset 17, :ns &quot;core&quot;} {:command &quot;(ns nlp.core\n  (:gen-class)\n  (use [nlp.syntactical-analyser :refer :all]\n       [nlp.lexicon :refer :all]))\n\n(defn trigger-nlp [_str]\n  (syn-analyser _str)\n  )\n&quot;, :offset 161, :ns &quot;user&quot;} {:command &quot;\n(defn trigger-nlp [_str]\n  (syn-analyser _str)\n  )&quot;, :offset 51, :ns &quot;core&quot;} {:command &quot;(in-ns 'core)&quot;, :offset 13, :ns &quot;core&quot;} {:command &quot;(defn goal-creator [cmds]\n  (if (&gt; (count cmds) 1)\n    (println \&quot;first cmds\&quot;)\n    )\n  )&quot;, :offset 87, :ns &quot;nlp.core&quot;} {:command &quot;(trigger-nlp \&quot;move the box\&quot;)&quot;, :offset 28, :ns &quot;core&quot;} {:command &quot;(goal-creator ((pickup previous-noun crate)))&quot;, :offset 45, :ns &quot;core&quot;} {:command &quot;(ffirst'((pickup previous-noun crate)(pik)))&quot;, :offset 44, :ns &quot;core&quot;} {:command &quot;(ffirst'((pickup previous-noun crate))&quot;, :offset 38, :ns &quot;core&quot;} {:command &quot;(ffirst'((pickup previous-noun crate)))&quot;, :offset 39, :ns &quot;core&quot;} {:command &quot;(ffirst '((pickup previous-noun crate)))&quot;, :offset 40, :ns &quot;core&quot;} {:command &quot;(goal-creator '((pickup previous-noun crate)(pik)))&quot;, :offset 51, :ns &quot;core&quot;} {:command &quot;(goal-creator '((pickup previous-noun crate)))&quot;, :offset 46, :ns &quot;core&quot;} {:command &quot;(defn goal-creator [cmds]\n  (if (&gt; (count cmds) 1)\n    (let[_1 (ffirst cmds)\n         _2 (first(rest cmds))\n         _3 (first(rest (rest cmds)))]\n\n  )))&quot;, :offset 153, :ns &quot;core&quot;} {:command &quot;(defn goal-creator [cmds]\n  (if (&gt; (count cmds) 1)\n    (let[_1 (ffirst cmds)\n         _2 (first(rest cmds))\n         _3 (first(rest (rest cmds)))]\n      (println \&quot;test\&quot;_1 _2 _3)\n\n  )))&quot;, :offset 184, :ns &quot;nlp.core&quot;} {:command &quot;(goal-creator '((pickup previous-noun crate)(sem)))&quot;, :offset 51, :ns &quot;core&quot;} {:command &quot;(first'((1 2 3 4)(7 8 9 0)))&quot;, :offset 28, :ns &quot;core&quot;} {:command &quot;(first '((1 2 3 4)(7 8 9 0)))&quot;, :offset 29, :ns &quot;core&quot;} {:command &quot;(ffirst '((1 2 3 4)(7 8 9 0)))&quot;, :offset 30, :ns &quot;core&quot;} {:command &quot;(first (rest '((1 2 3 4)(7 8 9 0))))&quot;, :offset 36, :ns &quot;core&quot;} {:command &quot;(goal-creator '((pickup previous-noun crate)(sem the way)))&quot;, :offset 59, :ns &quot;core&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1501903118890">{:repl-history {:ide [], :local [{:command &quot;(contains? \&quot;hello\&quot; \&quot;llo\&quot;)&quot;, :offset 25, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(.contains \&quot;hello\&quot; \&quot;llo\&quot;)&quot;, :offset 25, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(.contains \&quot;hello\&quot; \&quot;lldo\&quot;)&quot;, :offset 26, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(map #(contains % words) prefixes)&quot;, :offset 34, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(map #(.contains % words) prefixes)&quot;, :offset 35, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(map #(.contains % 'grably) prefixes)&quot;, :offset 37, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(map #(.contains % \&quot;grably\&quot;) prefixes)&quot;, :offset 38, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'grab :debug true)&quot;, :offset 33, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'grabl :debug true)&quot;, :offset 34, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'grablysdsd :debug true)&quot;, :offset 39, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'grakkksdsd :debug true)&quot;, :offset 39, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(contains word prefixes)&quot;, :offset 24, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(contains prefixes word)&quot;, :offset 24, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(.contains prefixes word)&quot;, :offset 25, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(prefixes under)&quot;, :offset 16, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(prefixes 'under)&quot;, :offset 17, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(.contains 'grab prefixes)&quot;, :offset 26, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(.contains 'grably prefixes)&quot;, :offset 28, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(.contains \&quot;grab\&quot; prefixes)&quot;, :offset 27, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'grably)&quot;, :offset 23, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'grably :debug true)&quot;, :offset 35, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'movely :debug true)&quot;, :offset 35, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'modffvely :debug true)&quot;, :offset 38, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'dfhsabdfhasbf :debug true)&quot;, :offset 42, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(prefixes 'grably)&quot;, :offset 18, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(prefixes 'ly)&quot;, :offset 14, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(prefixes 'anti)&quot;, :offset 16, :ns &quot;core&quot;} {:command &quot;(ns nlp.core\n  (:gen-class)\n  (use [nlp.syntactical-analyser :refer :all]\n       [nlp.lexicon :refer :all]))\n\n(defn trigger-nlp [_str]\n  (syn-analyser _str)\n  )\n&quot;, :offset 161, :ns &quot;user&quot;} {:command &quot;\n(defn trigger-nlp [_str]\n  (syn-analyser _str)\n  )&quot;, :offset 51, :ns &quot;core&quot;} {:command &quot;(defn goal-creator [cmds]\n  (if (&gt; (count cmds) 1)\n    (println \&quot;first cmds\&quot;)\n    )\n  )&quot;, :offset 87, :ns &quot;nlp.core&quot;} {:command &quot;(trigger-nlp \&quot;move the box\&quot;)&quot;, :offset 28, :ns &quot;core&quot;} {:command &quot;(goal-creator ((pickup previous-noun crate)))&quot;, :offset 45, :ns &quot;core&quot;} {:command &quot;(ffirst'((pickup previous-noun crate)(pik)))&quot;, :offset 44, :ns &quot;core&quot;} {:command &quot;(ffirst'((pickup previous-noun crate))&quot;, :offset 38, :ns &quot;core&quot;} {:command &quot;(ffirst'((pickup previous-noun crate)))&quot;, :offset 39, :ns &quot;core&quot;} {:command &quot;(goal-creator '((pickup previous-noun crate)(pik)))&quot;, :offset 51, :ns &quot;core&quot;} {:command &quot;(defn goal-creator [cmds]\n  (if (&gt; (count cmds) 1)\n    (let[_1 (ffirst cmds)\n         _2 (first(rest cmds))\n         _3 (first(rest (rest cmds)))]\n\n  )))&quot;, :offset 153, :ns &quot;core&quot;} {:command &quot;(defn goal-creator [cmds]\n  (if (&gt; (count cmds) 1)\n    (let[_1 (ffirst cmds)\n         _2 (first(rest cmds))\n         _3 (first(rest (rest cmds)))]\n      (println \&quot;test\&quot;_1 _2 _3)\n\n  )))&quot;, :offset 184, :ns &quot;nlp.core&quot;} {:command &quot;(goal-creator '((pickup previous-noun crate)(sem)))&quot;, :offset 51, :ns &quot;core&quot;} {:command &quot;(first'((1 2 3 4)(7 8 9 0)))&quot;, :offset 28, :ns &quot;core&quot;} {:command &quot;(first '((1 2 3 4)(7 8 9 0)))&quot;, :offset 29, :ns &quot;core&quot;} {:command &quot;(ffirst '((1 2 3 4)(7 8 9 0)))&quot;, :offset 30, :ns &quot;core&quot;} {:command &quot;(first (rest '((1 2 3 4)(7 8 9 0))))&quot;, :offset 36, :ns &quot;core&quot;} {:command &quot;(defn trigger-nlp [_str]\n  (let [cmds (syn-analyser _str)]\n    (if (&lt; (count cmds) 1)\n      (map cmds goal-creator)\n      (goal-creator cmds)\n      )))&quot;, :offset 151, :ns &quot;nlp.core&quot;} {:command &quot;(goal-creator '((pickup previous-noun crate)(sem the way)))&quot;, :offset 59, :ns &quot;user&quot;} {:command &quot;(defn goal-creator [cmds]\n  (when (&gt; (count cmds) 1)\n    (let[_1 (ffirst cmds)\n         _2 (ffirst(rest cmds))\n         _3 (ffirst(rest (rest cmds)))]\n\n      (cond (and(= _1 'move)(= _3 'crate))\n            (println \&quot;CMD=&gt; set-forklift-destination one-of-forklifts \&quot;_3)\n            (and(= _1 'grab)(= _3 'object))\n            (println \&quot;CMD=&gt; pickup-collectable one-of forklifts \&quot;_3)\n              )\n      ))\n\n  )&quot;, :offset 412, :ns &quot;user&quot;} {:command &quot;(in-ns 'goal-creator)&quot;, :offset 21, :ns &quot;goal-creator&quot;} {:command &quot;(goal-creator '((pickup previous-noun crate)))&quot;, :offset 46, :ns &quot;goal-creator&quot;} {:command &quot;(defmatch parse []\n          \&quot;I am aware that instead of repetition, i should be using\n          (??d det?) in place of repeating code for multiple dets. I could not get this to work\n\n          Example of how I was trying to use ??det:\n          (((-&gt; ?v verb?) (-&gt; ??d det?) (-&gt; ?n noun?)      :=&gt;)  (mout ((? v)  (? n)  (? d))))\&quot;\n          (((-&gt; ?v verb?) (-&gt; ?d det?) (-&gt; ?n noun?))       :=&gt;   {:cat 'ng}(mout (list (? v) (? d) (? n)))) ;move the box\n          (((-&gt; ?v verb?) (-&gt; ?num num-txt?) (-&gt; ?n noun?)) :=&gt;   (mout (list (? v) (? num) (? n)))) ;could use a nested list to keep num and obj together\n          (((-&gt; ?v verb?) (-&gt; ?n noun?))                    :=&gt;   (mout (list (? v) 'the (? n)))) ;grab box\n         ; (((-&gt; ?v verb?) (-&gt; ?d det?) (-&gt; ?d det?) (-&gt; ?n noun?)      :=&gt;    (mout (? v))));(mfor [(?? d)(mout(list (? v)  (? n)  (?? d)))])))\n\n\n\n\n          ;(((-&gt; cmd?\n          ;(((-&gt; ?d ?)  n v det n))\n          ;(([??ante (?con connective?) ??post])            :=&gt;   (mout (? con)))\n          ;(((-&gt; )))\n          ;  (((-&gt; ?v verb?) (-&gt; ?np noun-phrase)) :=&gt; (println \&quot;SUCCESS!!\&quot;))\n          ;  (((-&gt; ?vp verb-phrase)(-&gt; ?np noun-phrase)) :=&gt; (list (? vp) (? np))); move a box to drop-off\n          ;  (((-&gt; ?vp verb-phrase)) :=&gt; (? vp)) ;Should be a simple case of something like move a box, drop a crate.\n\n\n          )&quot;, :offset 1344, :ns &quot;goal-creator&quot;} {:command &quot;(&quot;, :offset 1} {:command &quot;;Intructions at present:\n\n;run, load this file in the *ns* then enter in repl (-main) - should make this a config\n;press setup in nl\n;wait for the world state and dyn state to populate\n;run (fwd-chain rule-set mock-world)\n\n;(ops-search mock-dyn '((on (6 16) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))\n\n\n;Res\n;https://jafingeGrhut.github.io/cheatsheet/grimoire/cheatsheet-tiptip-cdocs-summary.html\n(ns core\n  (:gen-class)\n  (:require\n            [sock2.socket_utils :refer :all]\n            [ops_search.ops_search :refer :all]\n            [ops :refer :all]\n            [cgsx.tools.matcher :refer :all]\n            [clojure.string :as str]\n            [nl-injector :refer :all]\n            [util :refer :all]\n            [rules :refer :all]\n            ;[nlp.lexicon :refer :all]\n            ;[nlp.syntactical-analyser :refer :all]\n            [nlp.core :refer :all]\n            ))\n            ;))\n;\n;(ops-search mock-dyn '((on (6 16) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))\n(defn -main\n  ([] (-main 2222)) ;Set a default value\n  ([port]\n   (def s25 (open-socket port))\n   (println \&quot;Awaiting Dynamic State...\&quot;)\n   (def dynamic-state (sock2.socket/socket-read s25))\n   (println \&quot;Awaiting World State...\&quot;)\n   (def world-state (sock2.socket/socket-read s25)))\n  )\n\n;(defn run\n;  (ops-search\n;    mock-dyn\n;    '((on (7 0) (forklift 201)))\n;    state-\n;    :debug true\n;    :world (apply-all-rules rule-set mock-world)\n;    ))\n\n&quot;, :offset 1509, :ns &quot;core&quot;} {:command &quot;()&quot;, :offset 1} {:command &quot;(verb? 'move)&quot;, :offset 13, :ns &quot;core&quot;} {:command &quot;(nlp.syntactical-analyser/verb? 'move)&quot;, :offset 38, :ns &quot;core&quot;} {:command &quot;(nlp.syntactical-analyser/syn-analyser \&quot;move the box\&quot;)&quot;, :offset 54, :ns &quot;nlp.core&quot;} {:command &quot;(nlp.syntactical-analyser/verb? \&quot;move the box\&quot;)&quot;, :offset 47, :ns &quot;nlp.core&quot;} {:command &quot;(first '(pickup previous-noun crate))&quot;, :offset 37, :ns &quot;nlp.core&quot;} {:command &quot;(first (rest'(pickup previous-noun crate)))&quot;, :offset 43, :ns &quot;nlp.core&quot;} {:command &quot;(first (rest '(pickup previous-noun crate)))&quot;, :offset 44, :ns &quot;nlp.core&quot;} {:command &quot;(first (rest (rest '(pickup previous-noun crate))))&quot;, :offset 51, :ns &quot;nlp.core&quot;} {:command &quot;(defn goal-creator [cmds]\n  (println \&quot;Attempting to create a goal state, with cmds :\&quot; cmds)\n  (when (&gt; (count cmds) 1)\n    (let[_1 (ffirst cmds)\n         _2 (ffirst(rest cmds))\n         _3 (ffirst(rest (rest cmds)))]\n\n      (cond (and(= _1 'move)(= _3 'crate))\n            (println \&quot;CMD=&gt; set-forklift-destination one-of-forklifts \&quot;_3)\n            (and(= _1 'pickup)(= _3 'crate))\n            (println \&quot;CMD=&gt; pickup-collectable one-of forklifts \&quot;_3)\n              )\n      ))\n\n  )&quot;, :offset 479, :ns &quot;nlp.core&quot;} {:command &quot;(defn goal-creator [cmds]\n  (println \&quot;Attempting to create a goal state, with cmds :\&quot; cmds)\n  (when (&gt; (count cmds) 1)\n    (let[_1 (ffirst cmds)\n         _2 (ffirst(rest cmds))\n         _3 (ffirst(rest (rest cmds)))]\n      (println \&quot;CMDS Split: 1: \&quot; _1\&quot; 2:\&quot;_2\&quot; 3:\&quot;_3)\n      (cond (and(= _1 'move)(= _3 'crate))\n            (println \&quot;CMD=&gt; set-forklift-destination one-of-forklifts \&quot;_3)\n            (and(= _1 'pickup)(= _3 'crate))\n            (println \&quot;CMD=&gt; pickup-collectable one-of forklifts \&quot;_3)\n              )\n      ))\n\n  )&quot;, :offset 529, :ns &quot;nlp.core&quot;} {:command &quot;(ns nlp.core\n  (:gen-class)\n  (:require\n    [nlp.syntactical-analyser :refer :all]\n    [nlp.lexicon :refer :all]))\n\n(defn goal-creator [cmds]\n  (println \&quot;Attempting to create a goal state, with cmds :\&quot; cmds)\n  (when (&gt; (count cmds) 1)\n    (let[_1 (ffirst cmds)\n         _2 (ffirst(rest cmds))\n         _3 (ffirst(rest (rest cmds)))]\n      (println \&quot;CMDS Split: 1: \&quot; _1\&quot; 2:\&quot;_2\&quot; 3:\&quot;_3)\n      (cond (and(= _1 'move)(= _3 'crate))\n            (println \&quot;CMD=&gt; set-forklift-destination one-of-forklifts \&quot;_3)\n            (and(= _1 'pickup)(= _3 'crate))\n            (println \&quot;CMD=&gt; pickup-collectable one-of forklifts \&quot;_3)\n              )\n      ))\n\n  )\n\n(defn trigger-nlp [_str]\n  (let [cmds (syn-analyser _str)]\n    (if (&lt; (count cmds) 1)\n      (map cmds goal-creator)\n      (goal-creator cmds)\n      )))\n&quot;, :offset 799, :ns &quot;nlp.core&quot;} {:command &quot;(ffirst ((pickup previous-noun crate)))&quot;, :offset 39, :ns &quot;nlp.core&quot;} {:command &quot;(ffirst '((pickup previous-noun crate)))&quot;, :offset 40, :ns &quot;nlp.core&quot;} {:command &quot;(ffirst (rest '((pickup previous-noun crate))))&quot;, :offset 47, :ns &quot;nlp.core&quot;} {:command &quot;(first (rest (first '((pickup previous-noun crate))))&quot;, :offset 53, :ns &quot;nlp.core&quot;} {:command &quot;(first (rest (first '((pickup previous-noun crate)))))&quot;, :offset 54, :ns &quot;nlp.core&quot;} {:command &quot;(nlp.core/trigger-nlp \&quot;move the box\&quot;)&quot;, :offset 37, :ns &quot;nlp.core&quot;} {:command &quot;(nlp.core/trigger-nlp \&quot;move the crate\&quot;)&quot;, :offset 39, :ns &quot;CMD&quot;} {:command &quot;(nlp.core/trigger-nlp \&quot;pickup a box\&quot;)&quot;, :offset 37, :ns &quot;nlp.core&quot;} {:command &quot;(syn-analyser \&quot;pickup an engines-crate\&quot;)&quot;, :offset 40, :ns &quot;nlp.core&quot;} {:command &quot;(nlp.core/trigger-nlp \&quot;pickup an engines-crate\&quot;)&quot;, :offset 48, :ns &quot;nlp.core&quot;} {:command &quot;(nlp.core/trigger-nlp \&quot;move an crate\&quot;)&quot;, :offset 38, :ns &quot;nlp.core&quot;} {:command &quot;(ns nlp.lexicon\n  (:gen-class)\n  (:require [cgsx.tools.matcher :refer :all]\n            [clojure.string :as str]))\n;stores the words known\n;(def old-lexicon {:box :noun,    :square :noun,   :object :noun, :crate :noun  ;for box\n;                  :move :verb,  :go :verb, :drive                              ;verb / for moving\n;                  :worker :noun, :player :noun, :agent :noun, :man :noun, :woman :noun,\n;                  :person :noun, :guy :noun, :character :noun ;the player\n;                  :gentle :adjective  :force :verb\n;                  :block :noun :switch :noun\n;              })\n\n;A lexicon of words that can be used; some taken from Shrldu\n\n(def lexicon '{box         {:cat noun :sem crate}\n               square      {:cat noun :sem crate}\n               object      {:cat noun :sem crate}\n               crate       {:cat noun :sem crate}\n               collectable {:cat noun :sem crate}\n               item        {:cat noun :sem crate}\n\n               bay         {:cat noun :sem bay}\n               loading-bay {:cat noun :sem bay}\n               shelf       {:cat noun :sem bay}\n\n               forklift    {:cat noun :sem forklift}\n               picker      {:cat noun :sem forklift}\n\n               move        {:cat verb :sem pickup}\n               grab        {:cat verb :sem pickup}\n               grasp       {:cat verb :sem pickup}\n               pickup      {:cat verb :sem pickup}\n               get         {:cat verb :sem pickup}\n               lift        {:cat verb :sem pickup}\n               collect     {:cat verb :sem pickup}\n\n               drop-off    {:cat verb :sem drop-off}\n               place       {:cat verb :sem drop-off} ;Conflicts with this. Noun/Verb\n               drop        {:cat verb :sem drop-off}\n               put         {:cat verb :sem drop-off}\n               take        {:cat verb :sem drop-off} ;this could be problematic.\n\n               engine-crate        {:cat noun :sem engines-crate}\n               pistons-crate       {:cat noun :sem pistons-crate}\n               circular-saws-crate {:cat noun :sem circular-saws-crate}\n               engines-crate       {:cat noun :sem engines-crate}\n               nails-crate         {:cat noun :sem nails-crate}\n               bolts-crate         {:cat noun :sem bolts-crate}\n               screws-crate        {:cat noun :sem screws-crate}\n               lights-crate        {:cat noun :sem lights-crate} ;could implement as delicate\n               compressors-crate   {:cat noun :sem compressors-crate}\n               wheels-crate        {:cat noun :sem wheels-crate}\n               tyres-crate         {:cat noun :sem tyres-crate}\n               girders-crate       {:cat noun :sem girders-crate}\n               wooden-planks-crate {:cat noun :sem wooden-planks-crate}\n               grates-crate        {:cat noun :sem grates-crate}\n               jacks-crate         {:cat noun :sem jacks-crate}\n\n\n               on          {:cat prep :sem (stored-on (shelf ?s) ?object ?o)}\n               under       {:cat prep :sem (stored-on (shelf ?s) ?object ?o)}\n\n               to          {:cat det :sem drop-off}\n               the         {:cat det :sem previous-noun}\n               a           {:cat det :sem '1}\n               an          {:cat det :sem '1}\n               any         {:cat det :sem random}\n               that        {:cat det :sem previous-noun}\n               this        {:cat det :sem previous-noun}\n               it          {:cat det :sem previous}\n\n               and         {:cat con :sem next}\n               then        {:cat con :sem next}\n               next        {:cat con :sem next}\n\n               1           {:cat det :sem 1}\n               2           {:cat det :sem 2}\n               3           {:cat det :sem 3}\n               4           {:cat det :sem 4}\n               5           {:cat det :sem 5}\n               6           {:cat det :sem 6}\n               7           {:cat det :sem 7}\n               8           {:cat det :sem 8}\n               9           {:cat det :sem 9}\n               one         {:cat num :sem 1}\n               two         {:cat num :sem 2}\n               three       {:cat num :sem 3}\n               four        {:cat num :sem 4}\n               five        {:cat num :sem 5}\n               six         {:cat num :sem 6}\n               seven       {:cat num :sem 7}\n               eight       {:cat num :sem 8}\n               nine        {:cat num :sem 9}\n               })\n\n\n\n\n;suffixes - note: if someone uses the word size, will it find ize in the suffixes list,\n;           and wrongly deduce its meaning.\n;(def sufixes (:acy :al :ance :dom :er :or :ism :ist :ty\n;               :ment :ness :ship :sion :tion :ate :en\n;               :ify :fy :ize :ise :able :ible :al :esque\n;               :ful :ic :ical :ious :ous :ish :ive :less :y))\n;taken from http://grammar.about.com/od/words/a/comsuffixes.htm\n\n;prefixes - note, can convert this and suffixes into a different datatype using REPL.\n;           should we be storing the values of these symbols in a map, with the value being the meaning\n;      format:  {prefix {reworded [word type]}} - note word type feild may be off, and also require ordering.\n\n(def prefixes '{anti{:sem no       };[:noun ]}\n                de {:sem reverse   };[:verb :adverb]}\n               dis {:sem not       };[:adjective :verb :noun]}\n                en {:sem within    };[:adjective :noun]}       ;\&quot;to put (something/someone) into &lt;noun&gt;\&quot;,\n                em {:sem within    };[:noun :adjective]}       ;http://www.dictionary.com/browse/en-\n              fore {:sem already   };[:noun :adjective]}       ;{:before\n                in {:sem in        };[:verb :adjective :noun]}\n                im {:sem in        };[:verb :adjective :noun]}\n                il {:sem not       };[:noun :adjective :verb]}\n                ir {:sem not       };[:noun :adjective :verb]}\n              inter{:sem interior  };[:noun :adjective :verb :adverb]}\n               mid {:sem middle    };[:verb :adjective :verb]}\n               mis {:sem wrong     };[:verb :noun :adjective]}\n               non {:sem not       };[:adjective :verb :noun]}\n              over {:sem overly    };[:adjective :adverb :prep]}\n               pre {:sem prior     };[:verb :adjective :adverb :noun]} ;do before :re {:again     [:verb :adjective :noun :adverb]} ;do again\n               semi{:sem part      }; [:noun :adjective :verb :adverb :pronoun]}\n               sub {:sem underneath};[:noun :adjective :adverb]}\n              super{:sem greater   };[:noun :adjective :adverb]}\n              trans{:sem cross     };[:noun :adjective :adverb :adverb]}\n                 un{:sem not       };[:adjective :verb :pronoun :noun]}\n              under{:sem beneath   };[:adverb :prep]}\n                        })\n\n;see Dictionary.com. Look up \&quot;re-\&quot; for the prefix re.\n\n;taken from http://teacher.scholastic.com/reading/bestpractices/vocabulary/pdf/prefixes_suffixes.pdf\n;Considerations:\n;-Group words by type; efficiency?\n;-Need to scan lexicon fully every time, to pick up ambiguty.\n;-the colors used in the nlp. these can change or be added to but\n;-need to be fed in with the lexicon. Note that colours can be nouns or adjectives.\n;-switch could be taken multiple ways\n(def all-collectables '[\n    \&quot;pistons-crate\&quot;\n    \&quot;circular-saws-crate\&quot;\n    \&quot;engines-crate\&quot;\n    \&quot;nails-crate\&quot;\n    \&quot;bolts-crate\&quot;\n    \&quot;screws-crate\&quot;\n    \&quot;lights-crate\&quot; ;Could implement this as delicate\n    \&quot;compressors-crate\&quot;\n    \&quot;wheels-crate\&quot;\n    \&quot;tyres-crate\&quot;\n    \&quot;girders-crate\&quot;\n    \&quot;wooden-planks-crate\&quot;\n    \&quot;grates-crate\&quot;\n    \&quot;jacks-crate\&quot;\n                       ])&quot;, :offset 7642, :ns &quot;nlp.core&quot;} {:command &quot;(all-collectables engines-cra)te&quot;, :offset 32, :ns &quot;nlp.core&quot;} {:command &quot;(all-collectables engines-crate)&quot;, :offset 32, :ns &quot;nlp.core&quot;} {:command &quot;(all-collectables 'engines-crate)&quot;, :offset 33, :ns &quot;nlp.core&quot;} {:command &quot;(in? all-collectables engines-crate)&quot;, :offset 36, :ns &quot;nlp.core&quot;} {:command &quot;(some? 'engines-crate all-collectables)&quot;, :offset 39, :ns &quot;nlp.core&quot;} {:command &quot;(contains? all-collectables 'engines-crate)&quot;, :offset 43, :ns &quot;nlp.core&quot;} {:command &quot;(in-ns 'nlp.core)&quot;, :offset 17, :ns &quot;user&quot;} {:command &quot;all-collectables&quot;, :offset 16, :ns &quot;nlp.core&quot;} {:command &quot;(some 'engines-crate all-collectables)&quot;, :offset 38, :ns &quot;nlp.core&quot;} {:command &quot;(in? all-collectables 'engines-crate)&quot;, :offset 37, :ns &quot;nlp.core&quot;} {:command &quot;(defmacro specify-crate? [ctype]\n  \&quot;Attempts to return which crate is being referred to given world context\&quot;\n  (mfind [\n          '(at (?object ?o)(forklift ?f))\n          dynamic-state\n               ])\n    )&quot;, :offset 209, :ns &quot;nlp.pragmaticprocessor&quot;} {:command &quot;(def last-crate (atom 0))&quot;, :offset 25, :ns &quot;nlp.pragmaticprocessor&quot;} {:command &quot;(in-ns 'core)&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;nlp.core&quot;, :offset 8, :ns &quot;user&quot;} {:command &quot;(in-ns 'nlp.)&quot;, :offset 13} {:command &quot;(nlp.core/trigger-nlp \&quot;move an engines-crate\&quot;)&quot;, :offset 46, :ns &quot;user&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -675,7 +777,8 @@
       <workItem from="1501532377206" duration="13209000" />
       <workItem from="1501591332696" duration="24467000" />
       <workItem from="1501693180462" duration="25000" />
-      <workItem from="1501718083457" duration="9975000" />
+      <workItem from="1501718083457" duration="10288000" />
+      <workItem from="1501888631465" duration="10861000" />
     </task>
     <task id="LOCAL-00001" summary="Rules are now applied using a forward chain function.&#10; &#10; This has for now just been used to modify the world state, however the obvious next step is to make a rule for (is floor (6 0)) etc, rather than manually inputting them.&#10; &#10; Next up is to look at the feeding that rule applied world state into the ops-search.">
       <created>1499909931460</created>
@@ -733,11 +836,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501640290159</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="NLP now does some form of syntactical rearranging, parsing the output commands is started, and also part of the prefixsuffix done. also some reorganising due to incorrectly named classes. &#10;&#10;Need to really get on and get a rough output done, link them up, add shelve&#10;capacity, and write  the paper. No sweat!">
+      <created>1501728596011</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1501728596011</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259378000" />
+    <option name="totallyTimeSpent" value="270552000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -750,7 +860,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-28" width="1366" height="796" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -760,16 +869,15 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.022047244" sideWeight="0.5102489" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32796487" sideWeight="0.6837482" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="REPL" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32796487" sideWeight="0.6837482" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2137628" sideWeight="0.37920937" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18814056" sideWeight="0.4945055" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19912152" sideWeight="0.4945055" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -783,6 +891,7 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -844,7 +953,8 @@
     <MESSAGE value="Now the matcher is distinguishing between neighbors. Can move onto basic arithmatic with goal." />
     <MESSAGE value="I overcomplicated things, simplified and now going to send a destination to netlogo, and navigate there using Netlogo." />
     <MESSAGE value="Basic language can now be parsed into a sentence that I should be able to make work. Currently trying to work out how to split the commands on 'and'&#10;&#10;Current thinking is that if i split the str, put the parts in a queue&#10;and read from the queue one at a time it should work well." />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic language can now be parsed into a sentence that I should be able to make work. Currently trying to work out how to split the commands on 'and'&#10;&#10;Current thinking is that if i split the str, put the parts in a queue&#10;and read from the queue one at a time it should work well." />
+    <MESSAGE value="NLP now does some form of syntactical rearranging, parsing the output commands is started, and also part of the prefixsuffix done. also some reorganising due to incorrectly named classes. &#10;&#10;Need to really get on and get a rough output done, link them up, add shelve&#10;capacity, and write  the paper. No sweat!" />
+    <option name="LAST_COMMIT_MESSAGE" value="NLP now does some form of syntactical rearranging, parsing the output commands is started, and also part of the prefixsuffix done. also some reorganising due to incorrectly named classes. &#10;&#10;Need to really get on and get a rough output done, link them up, add shelve&#10;capacity, and write  the paper. No sweat!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -860,14 +970,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/project.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/warehouse_sim_clj_v2/core.clj" />
     <entry file="file://$PROJECT_DIR$/src/warehouse_sim_clj_v2/core.clj" />
     <entry file="file://$PROJECT_DIR$/warehouse-sim-clj-v2.iml">
       <provider selected="true" editor-type-id="text-editor">
@@ -961,13 +1063,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///tmp/form-init7903697644343218534.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///tmp/form-init7903697644343218534.clj" />
     <entry file="file://$PROJECT_DIR$/../../shrdlu">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
@@ -975,13 +1071,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///tmp/form-init7132774929341139758.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///tmp/form-init7132774929341139758.clj" />
     <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/util.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-93">
@@ -989,26 +1079,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-468">
-          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/project.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="9" column="50" lean-forward="false" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1028,27 +1102,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/cgsx/tools/matcher.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/morphologicalprocessor.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/shrdlu-stuff/shrdlu/definitions(1c).clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1056,7 +1113,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="151" column="19" lean-forward="false" selection-start-line="151" selection-start-column="19" selection-end-line="151" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1068,35 +1124,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/lexicon.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///tmp/form-init6351233093436934486.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///tmp/form-init925420517996157583.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="678" lean-forward="false" selection-start-line="0" selection-start-column="678" selection-end-line="0" selection-end-column="678" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/core.clj">
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/cgsx/tools/matcher.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state relative-caret-position="162">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/pragmaticprocessor.clj">
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/shrdlu-stuff/shrdlu/definitions(1c).clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="3" column="78" lean-forward="false" selection-start-line="3" selection-start-column="78" selection-end-line="3" selection-end-column="78" />
-          <folding />
+        <state relative-caret-position="-2">
+          <caret line="185" column="0" lean-forward="true" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
+          <folding>
+            <marker date="1501902399572" expanded="true" signature="102:181" ph="(def settings ...)" />
+            <marker date="1501902399572" expanded="true" signature="297:634" ph="(def sentence-morph-rules ...)" />
+            <marker date="1501902399572" expanded="true" signature="637:1282" ph="(def word-match-rules ...)" />
+            <marker date="1501902399572" expanded="true" signature="1401:2106" ph="(def block-ops ...)" />
+            <marker date="1501902399572" expanded="true" signature="2214:5414" ph="(def goal-ops ...)" />
+            <marker date="1501902399572" expanded="true" signature="5528:6783" ph="(def exec-ops ...)" />
+            <marker date="1501902399572" expanded="true" signature="7088:7930" ph="(defmatch process-cmd ...)" />
+            <marker date="1501902399572" expanded="true" signature="8030:8739" ph="(let ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/shrdlu-stuff/shrdlu/parsing-1a.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="197" column="42" lean-forward="true" selection-start-line="197" selection-start-column="42" selection-end-line="197" selection-end-column="42" />
+          <folding>
+            <marker date="1501902399660" expanded="true" signature="24:135" ph="(declare word-check ...)" />
+            <marker date="1501902399660" expanded="true" signature="371:1905" ph="(def lexicon ...)" />
+            <marker date="1501902399660" expanded="true" signature="2705:3073" ph="(defmatch noun-group ...)" />
+            <marker date="1501902399660" expanded="true" signature="3121:3227" ph="(defn adjG ...)" />
+            <marker date="1501902399660" expanded="true" signature="3276:3836" ph="(defmatch noun-phrase ...)" />
+            <marker date="1501902399660" expanded="true" signature="3886:4020" ph="(defmatch prep-phrase ...)" />
+            <marker date="1501902399660" expanded="true" signature="4100:4594" ph="(defmatch parse ...)" />
+            <marker date="1501902399660" expanded="true" signature="4696:4985" ph="(defn compile-word-rules ...)" />
+            <marker date="1501902399660" expanded="true" signature="4988:5213" ph="(defn apply-morph-rules ...)" />
+            <marker date="1501902399660" expanded="true" signature="5216:5317" ph="(defn is-size? ...)" />
+            <marker date="1501902399660" expanded="true" signature="5320:5423" ph="(defn is-color? ...)" />
+            <marker date="1501902399660" expanded="true" signature="5426:5605" ph="(let ...)" />
+            <marker date="1501902399660" expanded="true" signature="5757:5977" ph="(defn edit ...)" />
+            <marker date="1501902399660" expanded="true" signature="5980:6638" ph="(defn pnp-sems ...)" />
+            <marker date="1501902399660" expanded="true" signature="6706:6831" ph="(defn word-check ...)" />
+            <marker date="1501902399660" expanded="true" signature="6835:7236" ph="(defn find-obj ...)" />
+            <marker date="1501902399660" expanded="true" signature="7309:7427" ph="(defn check ...)" />
+            <marker date="1501902399660" expanded="true" signature="7644:8006" ph="(defn apply-exec ...)" />
+            <marker date="1501902399660" expanded="true" signature="8010:8775" ph="(defn goal ...)" />
+            <marker date="1501902399660" expanded="true" signature="9375:9490" ph="(defn TODO! ...)" />
+            <marker date="1501902399660" expanded="true" signature="9686:9862" ph="(defn gen-stack-tuples ...)" />
+            <marker date="1501902399660" expanded="true" signature="9918:10075" ph="(let ...)" />
+            <marker date="1501902399660" expanded="true" signature="10160:10242" ph="(defn bd-add! ...)" />
+            <marker date="1501902399660" expanded="true" signature="10333:10585" ph="(defn clear-block-data ...)" />
+            <marker date="1501902399660" expanded="true" signature="10805:10950" ph="(defmatch sentence ...)" />
+            <marker date="1501902399660" expanded="true" signature="10952:11266" ph="(defn sentence- ...)" />
+            <marker date="1501902399660" expanded="true" signature="11269:11536" ph="(defn shrepl ...)" />
+            <marker date="1501902399660" expanded="true" signature="11539:11669" ph="(defn shrep-1 ...)" />
+            <marker date="1501902399660" expanded="true" signature="11936:11998" ph="(defn reset ...)" />
+            <marker date="1501902399660" expanded="true" signature="12040:12119" ph="(defn startup ...)" />
+            <marker date="1501902399660" expanded="true" signature="12122:12599" ph="(def sample-test ...)" />
+            <marker date="1501902399660" expanded="true" signature="12602:12986" ph="(def els-test ...)" />
+            <marker date="1501902399660" expanded="true" signature="12988:13557" ph="(def video-prep ...)" />
+            <marker date="1501902399660" expanded="true" signature="13630:13788" ph="(defn run-repeatedly ...)" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1104,30 +1211,102 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="68" column="33" lean-forward="false" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
-          <folding />
+          <folding>
+            <marker date="1501902398868" expanded="true" signature="700:735" ph="(declare set-atom! ...)" />
+            <marker date="1501902398868" expanded="true" signature="799:1164" ph="(defn setup-ui-windows ...)" />
+            <marker date="1501902398868" expanded="true" signature="1167:1639" ph="(defn add-window ...)" />
+            <marker date="1501902398868" expanded="true" signature="1890:2343" ph="(defn ui-out ...)" />
+            <marker date="1501902398868" expanded="true" signature="2346:2471" ph="(defn ui-broadcast ...)" />
+            <marker date="1501902398868" expanded="true" signature="2475:2611" ph="(defn ui-set ...)" />
+            <marker date="1501902398868" expanded="true" signature="2614:2712" ph="(defn clear-ui ...)" />
+            <marker date="1501902398868" expanded="true" signature="3061:3476" ph="(defn startup-server ...)" />
+            <marker date="1501902398868" expanded="true" signature="3479:3591" ph="(defn socket-write ...)" />
+            <marker date="1501902398868" expanded="true" signature="4169:4400" ph="(defn nlogo-send-exec ...)" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/shrdlu-stuff/shrdlu/parsing-1a.clj">
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3959">
-          <caret line="222" column="4" lean-forward="true" selection-start-line="222" selection-start-column="4" selection-end-line="222" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="234">
+          <caret line="31" column="33" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <marker date="1501902399516" expanded="true" signature="0:68" ph="(ns ops ...)" />
+            <marker date="1501902399516" expanded="true" signature="177:3063" ph="(def state-ops ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="32" />
+          <folding>
+            <marker date="1501902399456" expanded="true" signature="346:1899" ph="(defn ops-search ...)" />
+            <marker date="1501902399456" expanded="true" signature="1902:2107" ph="(defn update-state-map ...)" />
+            <marker date="1501902399456" expanded="true" signature="2110:2416" ph="(defn finalise-results ...)" />
+            <marker date="1501902399456" expanded="true" signature="2419:2690" ph="(defn apply-op ...)" />
+            <marker date="1501902399456" expanded="true" signature="2693:2828" ph="(defn apply-all ...)" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/syntactical_analyser.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-78">
-          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        <state relative-caret-position="533">
+          <caret line="41" column="95" lean-forward="true" selection-start-line="41" selection-start-column="95" selection-end-line="41" selection-end-column="95" />
+          <folding>
+            <marker date="1501902399308" expanded="true" signature="231:563" ph="(defn split-to-symbols ...)" />
+            <marker date="1501902399308" expanded="true" signature="573:763" ph="(defn word-check ...)" />
+            <marker date="1501902399308" expanded="true" signature="1151:2485" ph="(defmatch parse ...)" />
+            <marker date="1501902399308" expanded="true" signature="2489:2903" ph="(defn num-txt? ...)" />
+            <marker date="1501902399308" expanded="true" signature="2905:3046" ph="(defn get-word-type ...)" />
+            <marker date="1501902399308" expanded="true" signature="3396:3471" ph="(defn syn-analyser ...)" />
+            <marker date="1501902399308" expanded="true" signature="3474:3677" ph="(def semantic-rules ...)" />
+            <marker date="1501902399308" expanded="true" signature="3679:3990" ph="(defn apply-morph-rules ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/pragmaticprocessor.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <marker date="1501902399348" expanded="true" signature="0:158" ph="(ns nlp.pragmaticprocessor ...)" />
+            <marker date="1501902399348" expanded="true" signature="499:684" ph="(def specify-crate? ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp/utils.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        <state relative-caret-position="26">
+          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/lexicon.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="114" column="101" lean-forward="true" selection-start-line="114" selection-start-column="101" selection-end-line="114" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="7" column="45" lean-forward="false" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
           <folding />
         </state>
       </provider>

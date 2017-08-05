@@ -1,8 +1,8 @@
 (ns ops
   (:gen-class)
   (:require
-            [util :refer :all]
-            ))
+            [util :refer :all]))
+
 
 ;(ops-search mock-dyn '((on (forklift 324) pistons-crate 312))
 ;state-ops
@@ -17,41 +17,41 @@
                       ;   (isa bay (?bx ?by))
                       ;   (at bay (?bx ?by) (shelf ?s))
                       (goal (?arg1 ?arg2) ?obj ?o)
-                      (isa forklift (forklift ?f))
-                      )
+                      (isa forklift (forklift ?f)))
+
                 :add((at (?obj ?o)(forklift ?f)))
                 :del()
                 :txt(forklift ?f moves to ?obj ?o)
                 :cmd(sock2.socket/socket-write s25
-                                        (str '(set-forklift-destination forklift ?f collectable ?o)));Hard coded the socket here)
-                }
+                                        (str '(set-forklift-destination forklift ?f collectable ?o)))};Hard coded the socket here)
+
 
     pick-up {
              :pre
                  (
                    (at (?object ?o)(forklift ?f))
                    (stored-on (shelf ?s) ?object ?o)
-                   (at bay (?bx ?by) (shelf ?s))
+                   (at bay (?bx ?by) (shelf ?s)))
                    ;(is-height ?h (shelf ?s)) ;(is-height 0 (shelf 116))
                    ;(is-height ?h (forklift ?f))
-                   )
+
              :add((holds (forklift ?f) ?object ?o))
              :del((stored-on (shelf ?s) ?object ?o))
              :txt(forklift ?f picked up ?object ?o from shelf ?s)
-             :cmd(sock2.socket/socket-write s25 (str '(pickup-collectable forklift ?f collectable ?o)))
-             }
+             :cmd(sock2.socket/socket-write s25 (str '(pickup-collectable forklift ?f collectable ?o)))}
+
 
     drop-off{
              :pre (
                     (isa forklift (forklift ?f))
-                    (holds (forklift ?f) ?object ?o)
-                    )
-             :add ((stored-on (loading bay) ?object ?o)
-                    )
+                    (holds (forklift ?f) ?object ?o))
+
+             :add ((stored-on (loading bay) ?object ?o))
+
              :del ((holds (forklift ?f) ?object ?o))
              :txt (forklift ?f dropped off ?object ?o at the loading bay)
-             :cmd (sock2.socket/socket-write s25 (str '(drop-off collectable ?o)))
-             }
+             :cmd (sock2.socket/socket-write s25 (str '(drop-off collectable ?o)))}})
+
     ;move-arm{
     ;         :pre(
     ;               (is-height ?dy (shelf ?s)) ;(is-height 0 (shelf 116))
@@ -84,7 +84,7 @@
     ;             :cmd (sock2.socket/socket-write
     ;                    (str "move-forklift " (? gx) (? gy)));Hard coded the socket here
     ;             }
-    })
+
 
 
 ;init {
