@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac37ebd8-02f0-46ab-8ff8-92010e065088" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp/utils.clj" />
+    <list default="true" id="ac37ebd8-02f0-46ab-8ff8-92010e065088" name="Default" comment="NLP now does some form of syntactical rearranging, parsing the output commands is started, and also part of the prefixsuffix done. also some reorganising due to incorrectly named classes. &#10;&#10;Need to really get on and get a rough output done, link them up, add shelve&#10;capacity, and write  the paper. No sweat!">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/.nrepl-port" afterPath="$PROJECT_DIR$/warehouse-sim-clj/.nrepl-port" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/core.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/core.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/lexicon.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/lexicon.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp/core.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp/core.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/pragmaticprocessor.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/pragmaticprocessor.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/syntactical_analyser.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/syntactical_analyser.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj" afterPath="$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,44 +29,41 @@
     <favorites_list name="warehouse-sim" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.48535565">
+    <splitter split-orientation="vertical" split-proportion="0.1">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="core.clj" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/core.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="91">
-                  <caret line="7" column="45" lean-forward="false" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+                <state relative-caret-position="24">
+                  <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ops.clj" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj">
+          <file leaf-file-name="util.clj" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/util.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="234">
-                  <caret line="31" column="33" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-                  <folding>
-                    <marker date="1501902399516" expanded="true" signature="0:68" ph="(ns ops ...)" />
-                    <marker date="1501902399516" expanded="true" signature="177:3063" ph="(def state-ops ...)" />
-                  </folding>
+                <state relative-caret-position="104">
+                  <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="core.clj" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp/core.clj">
+          <file leaf-file-name="nlp_main.clj" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp_main.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="26">
-                  <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+                <state relative-caret-position="39">
+                  <caret line="3" column="43" lean-forward="false" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
           <file leaf-file-name="utils.clj" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp/utils.clj">
+            <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/utils.clj">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="26">
                   <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="25" />
@@ -85,17 +75,17 @@
           <file leaf-file-name="syntactical_analyser.clj" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/syntactical_analyser.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="533">
-                  <caret line="41" column="95" lean-forward="true" selection-start-line="41" selection-start-column="95" selection-end-line="41" selection-end-column="95" />
+                <state relative-caret-position="897">
+                  <caret line="69" column="18" lean-forward="false" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
                   <folding>
-                    <marker date="1501902399308" expanded="true" signature="231:563" ph="(defn split-to-symbols ...)" />
-                    <marker date="1501902399308" expanded="true" signature="573:763" ph="(defn word-check ...)" />
-                    <marker date="1501902399308" expanded="true" signature="1151:2485" ph="(defmatch parse ...)" />
-                    <marker date="1501902399308" expanded="true" signature="2489:2903" ph="(defn num-txt? ...)" />
-                    <marker date="1501902399308" expanded="true" signature="2905:3046" ph="(defn get-word-type ...)" />
-                    <marker date="1501902399308" expanded="true" signature="3396:3471" ph="(defn syn-analyser ...)" />
-                    <marker date="1501902399308" expanded="true" signature="3474:3677" ph="(def semantic-rules ...)" />
-                    <marker date="1501902399308" expanded="true" signature="3679:3990" ph="(defn apply-morph-rules ...)" />
+                    <marker date="1501969851951" expanded="true" signature="231:563" ph="(defn split-to-symbols ...)" />
+                    <marker date="1501969851951" expanded="true" signature="573:763" ph="(defn word-check ...)" />
+                    <marker date="1501969851951" expanded="true" signature="1151:2485" ph="(defmatch parse ...)" />
+                    <marker date="1501969851951" expanded="true" signature="2489:2903" ph="(defn num-txt? ...)" />
+                    <marker date="1501969851951" expanded="true" signature="2905:3046" ph="(defn get-word-type ...)" />
+                    <marker date="1501969851951" expanded="true" signature="3396:3474" ph="(defn syn-analyser ...)" />
+                    <marker date="1501969851951" expanded="true" signature="3477:3680" ph="(def semantic-rules ...)" />
+                    <marker date="1501969851951" expanded="true" signature="3682:3993" ph="(defn apply-morph-rules ...)" />
                   </folding>
                 </state>
               </provider>
@@ -104,14 +94,14 @@
           <file leaf-file-name="ops_search.clj" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="98">
-                  <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="32" />
+                <state relative-caret-position="500">
+                  <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
                   <folding>
-                    <marker date="1501902399456" expanded="true" signature="346:1899" ph="(defn ops-search ...)" />
-                    <marker date="1501902399456" expanded="true" signature="1902:2107" ph="(defn update-state-map ...)" />
-                    <marker date="1501902399456" expanded="true" signature="2110:2416" ph="(defn finalise-results ...)" />
-                    <marker date="1501902399456" expanded="true" signature="2419:2690" ph="(defn apply-op ...)" />
-                    <marker date="1501902399456" expanded="true" signature="2693:2828" ph="(defn apply-all ...)" />
+                    <marker date="1501985767154" expanded="true" signature="346:1940" ph="(defn ops-search ...)" />
+                    <marker date="1501985767154" expanded="true" signature="1943:2148" ph="(defn update-state-map ...)" />
+                    <marker date="1501985767154" expanded="true" signature="2151:2457" ph="(defn finalise-results ...)" />
+                    <marker date="1501985767154" expanded="true" signature="2460:2731" ph="(defn apply-op ...)" />
+                    <marker date="1501985767154" expanded="true" signature="2734:2869" ph="(defn apply-all ...)" />
                   </folding>
                 </state>
               </provider>
@@ -121,11 +111,20 @@
             <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/pragmaticprocessor.clj">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="78">
-                  <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+                  <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
                   <folding>
                     <marker date="1501902399348" expanded="true" signature="0:158" ph="(ns nlp.pragmaticprocessor ...)" />
-                    <marker date="1501902399348" expanded="true" signature="499:684" ph="(def specify-crate? ...)" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="nl_injector.clj" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nl_injector.clj">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="293">
+                  <caret line="87" column="47" lean-forward="true" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="47" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -137,8 +136,8 @@
           <file leaf-file-name="definitions(1c).clj" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/shrdlu-stuff/shrdlu/definitions(1c).clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-2">
-                  <caret line="185" column="0" lean-forward="true" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
+                <state relative-caret-position="0">
+                  <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
                   <folding>
                     <marker date="1501902399572" expanded="true" signature="102:181" ph="(def settings ...)" />
                     <marker date="1501902399572" expanded="true" signature="297:634" ph="(def sentence-morph-rules ...)" />
@@ -156,8 +155,8 @@
           <file leaf-file-name="parsing-1a.clj" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/shrdlu-stuff/shrdlu/parsing-1a.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="197" column="42" lean-forward="true" selection-start-line="197" selection-start-column="42" selection-end-line="197" selection-end-column="42" />
+                <state relative-caret-position="2561">
+                  <caret line="197" column="42" lean-forward="false" selection-start-line="197" selection-start-column="42" selection-end-line="197" selection-end-column="42" />
                   <folding>
                     <marker date="1501902399660" expanded="true" signature="24:135" ph="(declare word-check ...)" />
                     <marker date="1501902399660" expanded="true" signature="371:1905" ph="(def lexicon ...)" />
@@ -198,32 +197,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="wrappers-1a.clj" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/shrdlu-stuff/shrdlu/wrappers-1a.clj">
+          <file leaf-file-name="lexicon.clj" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/lexicon.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="68" column="33" lean-forward="false" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
-                  <folding>
-                    <marker date="1501902398868" expanded="true" signature="700:735" ph="(declare set-atom! ...)" />
-                    <marker date="1501902398868" expanded="true" signature="799:1164" ph="(defn setup-ui-windows ...)" />
-                    <marker date="1501902398868" expanded="true" signature="1167:1639" ph="(defn add-window ...)" />
-                    <marker date="1501902398868" expanded="true" signature="1890:2343" ph="(defn ui-out ...)" />
-                    <marker date="1501902398868" expanded="true" signature="2346:2471" ph="(defn ui-broadcast ...)" />
-                    <marker date="1501902398868" expanded="true" signature="2475:2611" ph="(defn ui-set ...)" />
-                    <marker date="1501902398868" expanded="true" signature="2614:2712" ph="(defn clear-ui ...)" />
-                    <marker date="1501902398868" expanded="true" signature="3061:3476" ph="(defn startup-server ...)" />
-                    <marker date="1501902398868" expanded="true" signature="3479:3591" ph="(defn socket-write ...)" />
-                    <marker date="1501902398868" expanded="true" signature="4169:4400" ph="(defn nlogo-send-exec ...)" />
-                  </folding>
+                <state relative-caret-position="325">
+                  <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="lexicon.clj" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/lexicon.clj">
+          <file leaf-file-name="ops.clj" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="19">
-                  <caret line="114" column="101" lean-forward="true" selection-start-line="114" selection-start-column="101" selection-end-line="114" selection-end-column="101" />
+                <state relative-caret-position="767">
+                  <caret line="59" column="24" lean-forward="true" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -242,36 +230,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>guard</find>
-      <find>println</find>
-      <find>(eval (:cmd op))</find>
-      <find>dynami</find>
-      <find>import</find>
-      <find>s1</find>
-      <find>get-word</find>
-      <find>noun-grou</find>
-      <find>noun-group</find>
-      <find>p</find>
-      <find>find-obj</find>
-      <find>find-o</find>
-      <find>apply-morph-rules</find>
-      <find>word-match-rules</find>
-      <find>word-match</find>
-      <find>parse</find>
-      <find>verb</find>
-      <find>noun-phrase</find>
-      <find>and</find>
-      <find>noun</find>
-      <find>when</find>
-      <find>cons</find>
-      <find>word-mat</find>
-      <find>word</find>
-      <find>sente</find>
-      <find>rules</find>
-      <find>wor</find>
-      <find>word-check</find>
-      <find>m</find>
-      <find>mfind</find>
+      <find>forkli</find>
+      <find>just</find>
+      <find>shelf 109</find>
+      <find>?</find>
+      <find>shelf 145</find>
+      <find>163</find>
+      <find>holds</find>
+      <find>320</find>
+      <find>shelf 163</find>
+      <find>CMD</find>
+      <find>goal</find>
+      <find>=</find>
+      <find>cmds</find>
+      <find>(holds (f</find>
+      <find>(holds (forklift 125)</find>
+      <find>isa</find>
+      <find>adjac</find>
+      <find>load</find>
+      <find>loading</find>
+      <find>adj</find>
+      <find>fork</find>
+      <find>holds (</find>
+      <find>forklift</find>
+      <find>nails</find>
+      <find>G</find>
+      <find>holds (fork</find>
+      <find>isa</find>
+      <find>picks up</find>
+      <find>cmd</find>
+      <find>pick</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -319,28 +307,33 @@
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/matcher.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/matcher/matcher.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/ICA part 5.clj" />
-        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nl_injector.clj" />
         <option value="$MAVEN_REPOSITORY$/org/clojure/clojure/1.8.0/clojure-1.8.0.jar!/clojure/lang/Util.class" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/sock2/socket_utils.clj" />
         <option value="$PROJECT_DIR$/../../shrdlu" />
         <option value="$USER_HOME$/Downloads/sock2/socket.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/sock2/socket.clj" />
-        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj" />
-        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/sematicsanalyzer.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/shrdlu-stuff/shrdlu/definitions(1c).clj" />
-        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/util.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/shrdlu-stuff/shrdlu/parsing-1a.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/project.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/morphologicalprocessor.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/rules.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/semantics_analyzer.clj" />
-        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/syntactical_analyser.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp/utils.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/pragmaticprocessor.clj" />
-        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/lexicon.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp/core.clj" />
+        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp/nlp_core.clj" />
+        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp/lang_core.clj" />
+        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/lang_core.clj" />
+        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/util.clj" />
+        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/syntactical_analyser.clj" />
+        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp_main.clj" />
         <option value="$PROJECT_DIR$/warehouse-sim-clj/src/core.clj" />
+        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nlp/lexicon.clj" />
+        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj" />
+        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/shrdlu-stuff/shrdlu/wrappers-1a.clj" />
+        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/nl_injector.clj" />
+        <option value="$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj" />
       </list>
     </option>
   </component>
@@ -350,9 +343,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="27" />
-    <option name="width" value="1366" />
+    <option name="width" value="683" />
     <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -371,9 +364,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -391,13 +383,6 @@
               <item name="warehouse-sim" type="b2602c69:ProjectViewProjectNode" />
               <item name="warehouse-sim-clj" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="nlp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="warehouse-sim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="warehouse-sim-clj" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="nlp" type="462c0819:PsiDirectoryNode" />
               <item name="nlp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -422,13 +407,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="Clojure.IDE" />
     <property name="cursive.last.file.extension./home/nemo/warehouse-sim/warehouse-sim-clj/src" value="clj" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/sock2/socket.clj" />
     <property name="full.screen.before.presentation.mode" value="true" />
@@ -438,12 +424,13 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/warehouse-sim-clj/src/nlp" />
       <recent name="$PROJECT_DIR$/warehouse-sim-clj/src/matcher" />
       <recent name="$PROJECT_DIR$/warehouse-sim-clj/src/sock2" />
       <recent name="$PROJECT_DIR$/warehouse-sim-clj/src" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1501903118890">{:repl-history {:ide [], :local [{:command &quot;(contains? \&quot;hello\&quot; \&quot;llo\&quot;)&quot;, :offset 25, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(.contains \&quot;hello\&quot; \&quot;llo\&quot;)&quot;, :offset 25, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(.contains \&quot;hello\&quot; \&quot;lldo\&quot;)&quot;, :offset 26, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(map #(contains % words) prefixes)&quot;, :offset 34, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(map #(.contains % words) prefixes)&quot;, :offset 35, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(map #(.contains % 'grably) prefixes)&quot;, :offset 37, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(map #(.contains % \&quot;grably\&quot;) prefixes)&quot;, :offset 38, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'grab :debug true)&quot;, :offset 33, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'grabl :debug true)&quot;, :offset 34, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'grablysdsd :debug true)&quot;, :offset 39, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'grakkksdsd :debug true)&quot;, :offset 39, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(contains word prefixes)&quot;, :offset 24, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(contains prefixes word)&quot;, :offset 24, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(.contains prefixes word)&quot;, :offset 25, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(prefixes under)&quot;, :offset 16, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(prefixes 'under)&quot;, :offset 17, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(.contains 'grab prefixes)&quot;, :offset 26, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(.contains 'grably prefixes)&quot;, :offset 28, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(.contains \&quot;grab\&quot; prefixes)&quot;, :offset 27, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'grably)&quot;, :offset 23, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'grably :debug true)&quot;, :offset 35, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'movely :debug true)&quot;, :offset 35, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'modffvely :debug true)&quot;, :offset 38, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(remove-prefix 'dfhsabdfhasbf :debug true)&quot;, :offset 42, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(prefixes 'grably)&quot;, :offset 18, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(prefixes 'ly)&quot;, :offset 14, :ns &quot;nlp.semantics-analyser&quot;} {:command &quot;(prefixes 'anti)&quot;, :offset 16, :ns &quot;core&quot;} {:command &quot;(ns nlp.core\n  (:gen-class)\n  (use [nlp.syntactical-analyser :refer :all]\n       [nlp.lexicon :refer :all]))\n\n(defn trigger-nlp [_str]\n  (syn-analyser _str)\n  )\n&quot;, :offset 161, :ns &quot;user&quot;} {:command &quot;\n(defn trigger-nlp [_str]\n  (syn-analyser _str)\n  )&quot;, :offset 51, :ns &quot;core&quot;} {:command &quot;(defn goal-creator [cmds]\n  (if (&gt; (count cmds) 1)\n    (println \&quot;first cmds\&quot;)\n    )\n  )&quot;, :offset 87, :ns &quot;nlp.core&quot;} {:command &quot;(trigger-nlp \&quot;move the box\&quot;)&quot;, :offset 28, :ns &quot;core&quot;} {:command &quot;(goal-creator ((pickup previous-noun crate)))&quot;, :offset 45, :ns &quot;core&quot;} {:command &quot;(ffirst'((pickup previous-noun crate)(pik)))&quot;, :offset 44, :ns &quot;core&quot;} {:command &quot;(ffirst'((pickup previous-noun crate))&quot;, :offset 38, :ns &quot;core&quot;} {:command &quot;(ffirst'((pickup previous-noun crate)))&quot;, :offset 39, :ns &quot;core&quot;} {:command &quot;(goal-creator '((pickup previous-noun crate)(pik)))&quot;, :offset 51, :ns &quot;core&quot;} {:command &quot;(defn goal-creator [cmds]\n  (if (&gt; (count cmds) 1)\n    (let[_1 (ffirst cmds)\n         _2 (first(rest cmds))\n         _3 (first(rest (rest cmds)))]\n\n  )))&quot;, :offset 153, :ns &quot;core&quot;} {:command &quot;(defn goal-creator [cmds]\n  (if (&gt; (count cmds) 1)\n    (let[_1 (ffirst cmds)\n         _2 (first(rest cmds))\n         _3 (first(rest (rest cmds)))]\n      (println \&quot;test\&quot;_1 _2 _3)\n\n  )))&quot;, :offset 184, :ns &quot;nlp.core&quot;} {:command &quot;(goal-creator '((pickup previous-noun crate)(sem)))&quot;, :offset 51, :ns &quot;core&quot;} {:command &quot;(first'((1 2 3 4)(7 8 9 0)))&quot;, :offset 28, :ns &quot;core&quot;} {:command &quot;(first '((1 2 3 4)(7 8 9 0)))&quot;, :offset 29, :ns &quot;core&quot;} {:command &quot;(ffirst '((1 2 3 4)(7 8 9 0)))&quot;, :offset 30, :ns &quot;core&quot;} {:command &quot;(first (rest '((1 2 3 4)(7 8 9 0))))&quot;, :offset 36, :ns &quot;core&quot;} {:command &quot;(defn trigger-nlp [_str]\n  (let [cmds (syn-analyser _str)]\n    (if (&lt; (count cmds) 1)\n      (map cmds goal-creator)\n      (goal-creator cmds)\n      )))&quot;, :offset 151, :ns &quot;nlp.core&quot;} {:command &quot;(goal-creator '((pickup previous-noun crate)(sem the way)))&quot;, :offset 59, :ns &quot;user&quot;} {:command &quot;(defn goal-creator [cmds]\n  (when (&gt; (count cmds) 1)\n    (let[_1 (ffirst cmds)\n         _2 (ffirst(rest cmds))\n         _3 (ffirst(rest (rest cmds)))]\n\n      (cond (and(= _1 'move)(= _3 'crate))\n            (println \&quot;CMD=&gt; set-forklift-destination one-of-forklifts \&quot;_3)\n            (and(= _1 'grab)(= _3 'object))\n            (println \&quot;CMD=&gt; pickup-collectable one-of forklifts \&quot;_3)\n              )\n      ))\n\n  )&quot;, :offset 412, :ns &quot;user&quot;} {:command &quot;(in-ns 'goal-creator)&quot;, :offset 21, :ns &quot;goal-creator&quot;} {:command &quot;(goal-creator '((pickup previous-noun crate)))&quot;, :offset 46, :ns &quot;goal-creator&quot;} {:command &quot;(defmatch parse []\n          \&quot;I am aware that instead of repetition, i should be using\n          (??d det?) in place of repeating code for multiple dets. I could not get this to work\n\n          Example of how I was trying to use ??det:\n          (((-&gt; ?v verb?) (-&gt; ??d det?) (-&gt; ?n noun?)      :=&gt;)  (mout ((? v)  (? n)  (? d))))\&quot;\n          (((-&gt; ?v verb?) (-&gt; ?d det?) (-&gt; ?n noun?))       :=&gt;   {:cat 'ng}(mout (list (? v) (? d) (? n)))) ;move the box\n          (((-&gt; ?v verb?) (-&gt; ?num num-txt?) (-&gt; ?n noun?)) :=&gt;   (mout (list (? v) (? num) (? n)))) ;could use a nested list to keep num and obj together\n          (((-&gt; ?v verb?) (-&gt; ?n noun?))                    :=&gt;   (mout (list (? v) 'the (? n)))) ;grab box\n         ; (((-&gt; ?v verb?) (-&gt; ?d det?) (-&gt; ?d det?) (-&gt; ?n noun?)      :=&gt;    (mout (? v))));(mfor [(?? d)(mout(list (? v)  (? n)  (?? d)))])))\n\n\n\n\n          ;(((-&gt; cmd?\n          ;(((-&gt; ?d ?)  n v det n))\n          ;(([??ante (?con connective?) ??post])            :=&gt;   (mout (? con)))\n          ;(((-&gt; )))\n          ;  (((-&gt; ?v verb?) (-&gt; ?np noun-phrase)) :=&gt; (println \&quot;SUCCESS!!\&quot;))\n          ;  (((-&gt; ?vp verb-phrase)(-&gt; ?np noun-phrase)) :=&gt; (list (? vp) (? np))); move a box to drop-off\n          ;  (((-&gt; ?vp verb-phrase)) :=&gt; (? vp)) ;Should be a simple case of something like move a box, drop a crate.\n\n\n          )&quot;, :offset 1344, :ns &quot;goal-creator&quot;} {:command &quot;(&quot;, :offset 1} {:command &quot;;Intructions at present:\n\n;run, load this file in the *ns* then enter in repl (-main) - should make this a config\n;press setup in nl\n;wait for the world state and dyn state to populate\n;run (fwd-chain rule-set mock-world)\n\n;(ops-search mock-dyn '((on (6 16) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))\n\n\n;Res\n;https://jafingeGrhut.github.io/cheatsheet/grimoire/cheatsheet-tiptip-cdocs-summary.html\n(ns core\n  (:gen-class)\n  (:require\n            [sock2.socket_utils :refer :all]\n            [ops_search.ops_search :refer :all]\n            [ops :refer :all]\n            [cgsx.tools.matcher :refer :all]\n            [clojure.string :as str]\n            [nl-injector :refer :all]\n            [util :refer :all]\n            [rules :refer :all]\n            ;[nlp.lexicon :refer :all]\n            ;[nlp.syntactical-analyser :refer :all]\n            [nlp.core :refer :all]\n            ))\n            ;))\n;\n;(ops-search mock-dyn '((on (6 16) (forklift 495))) state-ops :debug true :world (apply-all-rules rule-set mock-world))\n(defn -main\n  ([] (-main 2222)) ;Set a default value\n  ([port]\n   (def s25 (open-socket port))\n   (println \&quot;Awaiting Dynamic State...\&quot;)\n   (def dynamic-state (sock2.socket/socket-read s25))\n   (println \&quot;Awaiting World State...\&quot;)\n   (def world-state (sock2.socket/socket-read s25)))\n  )\n\n;(defn run\n;  (ops-search\n;    mock-dyn\n;    '((on (7 0) (forklift 201)))\n;    state-\n;    :debug true\n;    :world (apply-all-rules rule-set mock-world)\n;    ))\n\n&quot;, :offset 1509, :ns &quot;core&quot;} {:command &quot;()&quot;, :offset 1} {:command &quot;(verb? 'move)&quot;, :offset 13, :ns &quot;core&quot;} {:command &quot;(nlp.syntactical-analyser/verb? 'move)&quot;, :offset 38, :ns &quot;core&quot;} {:command &quot;(nlp.syntactical-analyser/syn-analyser \&quot;move the box\&quot;)&quot;, :offset 54, :ns &quot;nlp.core&quot;} {:command &quot;(nlp.syntactical-analyser/verb? \&quot;move the box\&quot;)&quot;, :offset 47, :ns &quot;nlp.core&quot;} {:command &quot;(first '(pickup previous-noun crate))&quot;, :offset 37, :ns &quot;nlp.core&quot;} {:command &quot;(first (rest'(pickup previous-noun crate)))&quot;, :offset 43, :ns &quot;nlp.core&quot;} {:command &quot;(first (rest '(pickup previous-noun crate)))&quot;, :offset 44, :ns &quot;nlp.core&quot;} {:command &quot;(first (rest (rest '(pickup previous-noun crate))))&quot;, :offset 51, :ns &quot;nlp.core&quot;} {:command &quot;(defn goal-creator [cmds]\n  (println \&quot;Attempting to create a goal state, with cmds :\&quot; cmds)\n  (when (&gt; (count cmds) 1)\n    (let[_1 (ffirst cmds)\n         _2 (ffirst(rest cmds))\n         _3 (ffirst(rest (rest cmds)))]\n\n      (cond (and(= _1 'move)(= _3 'crate))\n            (println \&quot;CMD=&gt; set-forklift-destination one-of-forklifts \&quot;_3)\n            (and(= _1 'pickup)(= _3 'crate))\n            (println \&quot;CMD=&gt; pickup-collectable one-of forklifts \&quot;_3)\n              )\n      ))\n\n  )&quot;, :offset 479, :ns &quot;nlp.core&quot;} {:command &quot;(defn goal-creator [cmds]\n  (println \&quot;Attempting to create a goal state, with cmds :\&quot; cmds)\n  (when (&gt; (count cmds) 1)\n    (let[_1 (ffirst cmds)\n         _2 (ffirst(rest cmds))\n         _3 (ffirst(rest (rest cmds)))]\n      (println \&quot;CMDS Split: 1: \&quot; _1\&quot; 2:\&quot;_2\&quot; 3:\&quot;_3)\n      (cond (and(= _1 'move)(= _3 'crate))\n            (println \&quot;CMD=&gt; set-forklift-destination one-of-forklifts \&quot;_3)\n            (and(= _1 'pickup)(= _3 'crate))\n            (println \&quot;CMD=&gt; pickup-collectable one-of forklifts \&quot;_3)\n              )\n      ))\n\n  )&quot;, :offset 529, :ns &quot;nlp.core&quot;} {:command &quot;(ns nlp.core\n  (:gen-class)\n  (:require\n    [nlp.syntactical-analyser :refer :all]\n    [nlp.lexicon :refer :all]))\n\n(defn goal-creator [cmds]\n  (println \&quot;Attempting to create a goal state, with cmds :\&quot; cmds)\n  (when (&gt; (count cmds) 1)\n    (let[_1 (ffirst cmds)\n         _2 (ffirst(rest cmds))\n         _3 (ffirst(rest (rest cmds)))]\n      (println \&quot;CMDS Split: 1: \&quot; _1\&quot; 2:\&quot;_2\&quot; 3:\&quot;_3)\n      (cond (and(= _1 'move)(= _3 'crate))\n            (println \&quot;CMD=&gt; set-forklift-destination one-of-forklifts \&quot;_3)\n            (and(= _1 'pickup)(= _3 'crate))\n            (println \&quot;CMD=&gt; pickup-collectable one-of forklifts \&quot;_3)\n              )\n      ))\n\n  )\n\n(defn trigger-nlp [_str]\n  (let [cmds (syn-analyser _str)]\n    (if (&lt; (count cmds) 1)\n      (map cmds goal-creator)\n      (goal-creator cmds)\n      )))\n&quot;, :offset 799, :ns &quot;nlp.core&quot;} {:command &quot;(ffirst ((pickup previous-noun crate)))&quot;, :offset 39, :ns &quot;nlp.core&quot;} {:command &quot;(ffirst '((pickup previous-noun crate)))&quot;, :offset 40, :ns &quot;nlp.core&quot;} {:command &quot;(ffirst (rest '((pickup previous-noun crate))))&quot;, :offset 47, :ns &quot;nlp.core&quot;} {:command &quot;(first (rest (first '((pickup previous-noun crate))))&quot;, :offset 53, :ns &quot;nlp.core&quot;} {:command &quot;(first (rest (first '((pickup previous-noun crate)))))&quot;, :offset 54, :ns &quot;nlp.core&quot;} {:command &quot;(nlp.core/trigger-nlp \&quot;move the box\&quot;)&quot;, :offset 37, :ns &quot;nlp.core&quot;} {:command &quot;(nlp.core/trigger-nlp \&quot;move the crate\&quot;)&quot;, :offset 39, :ns &quot;CMD&quot;} {:command &quot;(nlp.core/trigger-nlp \&quot;pickup a box\&quot;)&quot;, :offset 37, :ns &quot;nlp.core&quot;} {:command &quot;(syn-analyser \&quot;pickup an engines-crate\&quot;)&quot;, :offset 40, :ns &quot;nlp.core&quot;} {:command &quot;(nlp.core/trigger-nlp \&quot;pickup an engines-crate\&quot;)&quot;, :offset 48, :ns &quot;nlp.core&quot;} {:command &quot;(nlp.core/trigger-nlp \&quot;move an crate\&quot;)&quot;, :offset 38, :ns &quot;nlp.core&quot;} {:command &quot;(ns nlp.lexicon\n  (:gen-class)\n  (:require [cgsx.tools.matcher :refer :all]\n            [clojure.string :as str]))\n;stores the words known\n;(def old-lexicon {:box :noun,    :square :noun,   :object :noun, :crate :noun  ;for box\n;                  :move :verb,  :go :verb, :drive                              ;verb / for moving\n;                  :worker :noun, :player :noun, :agent :noun, :man :noun, :woman :noun,\n;                  :person :noun, :guy :noun, :character :noun ;the player\n;                  :gentle :adjective  :force :verb\n;                  :block :noun :switch :noun\n;              })\n\n;A lexicon of words that can be used; some taken from Shrldu\n\n(def lexicon '{box         {:cat noun :sem crate}\n               square      {:cat noun :sem crate}\n               object      {:cat noun :sem crate}\n               crate       {:cat noun :sem crate}\n               collectable {:cat noun :sem crate}\n               item        {:cat noun :sem crate}\n\n               bay         {:cat noun :sem bay}\n               loading-bay {:cat noun :sem bay}\n               shelf       {:cat noun :sem bay}\n\n               forklift    {:cat noun :sem forklift}\n               picker      {:cat noun :sem forklift}\n\n               move        {:cat verb :sem pickup}\n               grab        {:cat verb :sem pickup}\n               grasp       {:cat verb :sem pickup}\n               pickup      {:cat verb :sem pickup}\n               get         {:cat verb :sem pickup}\n               lift        {:cat verb :sem pickup}\n               collect     {:cat verb :sem pickup}\n\n               drop-off    {:cat verb :sem drop-off}\n               place       {:cat verb :sem drop-off} ;Conflicts with this. Noun/Verb\n               drop        {:cat verb :sem drop-off}\n               put         {:cat verb :sem drop-off}\n               take        {:cat verb :sem drop-off} ;this could be problematic.\n\n               engine-crate        {:cat noun :sem engines-crate}\n               pistons-crate       {:cat noun :sem pistons-crate}\n               circular-saws-crate {:cat noun :sem circular-saws-crate}\n               engines-crate       {:cat noun :sem engines-crate}\n               nails-crate         {:cat noun :sem nails-crate}\n               bolts-crate         {:cat noun :sem bolts-crate}\n               screws-crate        {:cat noun :sem screws-crate}\n               lights-crate        {:cat noun :sem lights-crate} ;could implement as delicate\n               compressors-crate   {:cat noun :sem compressors-crate}\n               wheels-crate        {:cat noun :sem wheels-crate}\n               tyres-crate         {:cat noun :sem tyres-crate}\n               girders-crate       {:cat noun :sem girders-crate}\n               wooden-planks-crate {:cat noun :sem wooden-planks-crate}\n               grates-crate        {:cat noun :sem grates-crate}\n               jacks-crate         {:cat noun :sem jacks-crate}\n\n\n               on          {:cat prep :sem (stored-on (shelf ?s) ?object ?o)}\n               under       {:cat prep :sem (stored-on (shelf ?s) ?object ?o)}\n\n               to          {:cat det :sem drop-off}\n               the         {:cat det :sem previous-noun}\n               a           {:cat det :sem '1}\n               an          {:cat det :sem '1}\n               any         {:cat det :sem random}\n               that        {:cat det :sem previous-noun}\n               this        {:cat det :sem previous-noun}\n               it          {:cat det :sem previous}\n\n               and         {:cat con :sem next}\n               then        {:cat con :sem next}\n               next        {:cat con :sem next}\n\n               1           {:cat det :sem 1}\n               2           {:cat det :sem 2}\n               3           {:cat det :sem 3}\n               4           {:cat det :sem 4}\n               5           {:cat det :sem 5}\n               6           {:cat det :sem 6}\n               7           {:cat det :sem 7}\n               8           {:cat det :sem 8}\n               9           {:cat det :sem 9}\n               one         {:cat num :sem 1}\n               two         {:cat num :sem 2}\n               three       {:cat num :sem 3}\n               four        {:cat num :sem 4}\n               five        {:cat num :sem 5}\n               six         {:cat num :sem 6}\n               seven       {:cat num :sem 7}\n               eight       {:cat num :sem 8}\n               nine        {:cat num :sem 9}\n               })\n\n\n\n\n;suffixes - note: if someone uses the word size, will it find ize in the suffixes list,\n;           and wrongly deduce its meaning.\n;(def sufixes (:acy :al :ance :dom :er :or :ism :ist :ty\n;               :ment :ness :ship :sion :tion :ate :en\n;               :ify :fy :ize :ise :able :ible :al :esque\n;               :ful :ic :ical :ious :ous :ish :ive :less :y))\n;taken from http://grammar.about.com/od/words/a/comsuffixes.htm\n\n;prefixes - note, can convert this and suffixes into a different datatype using REPL.\n;           should we be storing the values of these symbols in a map, with the value being the meaning\n;      format:  {prefix {reworded [word type]}} - note word type feild may be off, and also require ordering.\n\n(def prefixes '{anti{:sem no       };[:noun ]}\n                de {:sem reverse   };[:verb :adverb]}\n               dis {:sem not       };[:adjective :verb :noun]}\n                en {:sem within    };[:adjective :noun]}       ;\&quot;to put (something/someone) into &lt;noun&gt;\&quot;,\n                em {:sem within    };[:noun :adjective]}       ;http://www.dictionary.com/browse/en-\n              fore {:sem already   };[:noun :adjective]}       ;{:before\n                in {:sem in        };[:verb :adjective :noun]}\n                im {:sem in        };[:verb :adjective :noun]}\n                il {:sem not       };[:noun :adjective :verb]}\n                ir {:sem not       };[:noun :adjective :verb]}\n              inter{:sem interior  };[:noun :adjective :verb :adverb]}\n               mid {:sem middle    };[:verb :adjective :verb]}\n               mis {:sem wrong     };[:verb :noun :adjective]}\n               non {:sem not       };[:adjective :verb :noun]}\n              over {:sem overly    };[:adjective :adverb :prep]}\n               pre {:sem prior     };[:verb :adjective :adverb :noun]} ;do before :re {:again     [:verb :adjective :noun :adverb]} ;do again\n               semi{:sem part      }; [:noun :adjective :verb :adverb :pronoun]}\n               sub {:sem underneath};[:noun :adjective :adverb]}\n              super{:sem greater   };[:noun :adjective :adverb]}\n              trans{:sem cross     };[:noun :adjective :adverb :adverb]}\n                 un{:sem not       };[:adjective :verb :pronoun :noun]}\n              under{:sem beneath   };[:adverb :prep]}\n                        })\n\n;see Dictionary.com. Look up \&quot;re-\&quot; for the prefix re.\n\n;taken from http://teacher.scholastic.com/reading/bestpractices/vocabulary/pdf/prefixes_suffixes.pdf\n;Considerations:\n;-Group words by type; efficiency?\n;-Need to scan lexicon fully every time, to pick up ambiguty.\n;-the colors used in the nlp. these can change or be added to but\n;-need to be fed in with the lexicon. Note that colours can be nouns or adjectives.\n;-switch could be taken multiple ways\n(def all-collectables '[\n    \&quot;pistons-crate\&quot;\n    \&quot;circular-saws-crate\&quot;\n    \&quot;engines-crate\&quot;\n    \&quot;nails-crate\&quot;\n    \&quot;bolts-crate\&quot;\n    \&quot;screws-crate\&quot;\n    \&quot;lights-crate\&quot; ;Could implement this as delicate\n    \&quot;compressors-crate\&quot;\n    \&quot;wheels-crate\&quot;\n    \&quot;tyres-crate\&quot;\n    \&quot;girders-crate\&quot;\n    \&quot;wooden-planks-crate\&quot;\n    \&quot;grates-crate\&quot;\n    \&quot;jacks-crate\&quot;\n                       ])&quot;, :offset 7642, :ns &quot;nlp.core&quot;} {:command &quot;(all-collectables engines-cra)te&quot;, :offset 32, :ns &quot;nlp.core&quot;} {:command &quot;(all-collectables engines-crate)&quot;, :offset 32, :ns &quot;nlp.core&quot;} {:command &quot;(all-collectables 'engines-crate)&quot;, :offset 33, :ns &quot;nlp.core&quot;} {:command &quot;(in? all-collectables engines-crate)&quot;, :offset 36, :ns &quot;nlp.core&quot;} {:command &quot;(some? 'engines-crate all-collectables)&quot;, :offset 39, :ns &quot;nlp.core&quot;} {:command &quot;(contains? all-collectables 'engines-crate)&quot;, :offset 43, :ns &quot;nlp.core&quot;} {:command &quot;(in-ns 'nlp.core)&quot;, :offset 17, :ns &quot;user&quot;} {:command &quot;all-collectables&quot;, :offset 16, :ns &quot;nlp.core&quot;} {:command &quot;(some 'engines-crate all-collectables)&quot;, :offset 38, :ns &quot;nlp.core&quot;} {:command &quot;(in? all-collectables 'engines-crate)&quot;, :offset 37, :ns &quot;nlp.core&quot;} {:command &quot;(defmacro specify-crate? [ctype]\n  \&quot;Attempts to return which crate is being referred to given world context\&quot;\n  (mfind [\n          '(at (?object ?o)(forklift ?f))\n          dynamic-state\n               ])\n    )&quot;, :offset 209, :ns &quot;nlp.pragmaticprocessor&quot;} {:command &quot;(def last-crate (atom 0))&quot;, :offset 25, :ns &quot;nlp.pragmaticprocessor&quot;} {:command &quot;(in-ns 'core)&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;nlp.core&quot;, :offset 8, :ns &quot;user&quot;} {:command &quot;(in-ns 'nlp.)&quot;, :offset 13} {:command &quot;(nlp.core/trigger-nlp \&quot;move an engines-crate\&quot;)&quot;, :offset 46, :ns &quot;user&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1502060292295">{:repl-history {:ide [], :local [{:command &quot;(ops-search dynamic-state '((holds (shelf 91) (screws-crate 323))) state-ops2 :debug true :world world-state)&quot;, :offset 109, :ns &quot;core&quot;} {:command &quot;/&quot;, :offset 1} {:command &quot;(ops-search dynamic-state '((holds (shelf 72) (screws-crate 323))) state-ops2 :debug true :world world-state)&quot;, :offset 109, :ns &quot;core&quot;} {:command &quot;(-main 2226)&quot;, :offset 12, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (forklift 329) (screws-crate 323))) state-ops2 :debug true :world world-state)&quot;, :offset 113, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (forklift 331) (screws-crate 288))) state-ops2 :debug true :world world-state)&quot;, :offset 113, :ns &quot;core&quot;} {:command &quot;worl&quot;, :offset 4, :ns &quot;core&quot;} {:command &quot;(ops-search\n  dynamic-state '((holds (forklift 331) (tyres-crate 284))) state-ops2 :debug true :world world-state)&quot;, :offset 114, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (forklift 331) (tyres-crate 284))) state-ops2 :debug true :world world-state)&quot;, :offset 112, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (forklift 328) (grates-crate 323))) state-ops2 :debug true :world world-state)&quot;, :offset 113, :ns &quot;core&quot;} {:command &quot;(adjacent )&quot;, :offset 10} {:command &quot;(ops-search dynamic-state '((adjacent (bay 9) (forklift 328) (grates-crate 323))) state-ops2 :debug true :world world-state)&quot;, :offset 124, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (forklift 328) (lights-crate 262))) state-ops2 :debug true :world world-state)&quot;, :offset 113, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((adjacent (bay 9) (forklift 328))) state-ops2 :debug true :world world-state)&quot;, :offset 105, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (forklift ?f) (?object ?o))) state-ops2 :debug true :world world-state)&quot;, :offset 106, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (forklift 345) (wheels-crate 296))) state-ops2 :debug true :world world-state)&quot;, :offset 113, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (forklift 345) (nails-crate 234))) state-ops2 :debug true :world world-state)&quot;, :offset 112, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (forklift 345) (nails-crate 292))) state-ops2 :debug true :world world-state)&quot;, :offset 112, :ns &quot;core&quot;} {:command &quot;()&quot;, :offset 1} {:command &quot;(ops-search dynamic-state '((holds (shelf 62) (nails-crate 236))) state-ops2 :debug true :world world-state)&quot;, :offset 108, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((adjacent (bay 9) (forklift 345))) state-ops2 :debug true :world world-state)&quot;, :offset 105, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (forklift 335) (nails-crate 236))) state-ops2 :debug true :world world-state)&quot;, :offset 112, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (forklift 335) (nails-crate 320))) state-ops2 :debug true&quot;, :offset 13} {:command &quot;(ops-search dynamic-state '((holds (forklift 335) (nails-crate 320))) state-ops2 :debug true :world world-state)&quot;, :offset 112, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (shelf 62) (nails-crate 320))) state-ops2 :debug true :world world-state)&quot;, :offset 108, :ns &quot;core&quot;} {:command &quot;(holds (shelf 201) (compressors-crate 343))&quot;, :offset 43} {:command &quot;(ops-search dynamic-state '((holds (loading-bay) (nails-crate 320))) state-ops2 :debug true :world world-state)&quot;, :offset 111, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '(     (adjacent (bay 4) (forklift 345))\n                             ) state-ops2 :debug true :world world-state)&quot;, :offset 140, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (forklift ?f) (nails-crate 320))) state-ops2 :debug true :world world-state)&quot;, :offset 111, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '(     (adjacent (bay 4) (forklift ?f))) state-ops2 :debug true :world world-state)&quot;, :offset 109, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (loading-bay) (nails-crate= ?))) state-ops2 :debug true :world world-state)&quot;, :offset 110, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (loading-bay) (?obj ?o))) state-ops2 :debug true :world world-state)&quot;, :offset 103, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (loading-bay) (nails-crate 299))) state-ops2 :debug true :world world-state)&quot;, :offset 111, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (forklift ?f) (nails-crate ?n))) state-ops2 :debug true :world world-state)&quot;, :offset 110, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (loading-bay) (nails-crate ?n))) state-ops2 :debug true :world world-state)#&quot;, :offset 111, :ns &quot;core&quot;} {:command &quot;(ops-search nl-injector/mock-comb '((holds (loading-bay) (nails-crate 0))) state-ops2 :debug true)&quot;, :offset 98, :ns &quot;core&quot;} {:command &quot;(ops-search nl-injector/mock-comb '((holds (forklift 1) (nails-crate 1))) state-ops2 :debug true)&quot;, :offset 97, :ns &quot;core&quot;} {:command &quot;(ops-search nl-injector/mock-comb '((holds (loading-bay) (nails-crate 1))) state-ops2 :debug true)&quot;, :offset 98, :ns &quot;core&quot;} {:command &quot;(dynamic-state)&quot;, :offset 15, :ns &quot;core&quot;} {:command &quot;+&quot;, :offset 1} {:command &quot;(main)&quot;, :offset 6, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (loading-bay) (nails-crate 106))) state-ops2 :debug true :world world-state)&quot;, :offset 111, :ns &quot;core&quot;} {:command &quot;mock-dyn&quot;, :offset 8, :ns &quot;core&quot;} {:command &quot;mock-world&quot;, :offset 10, :ns &quot;core&quot;} {:command &quot;(adjace)&quot;, :offset 8} {:command &quot;(ops-search dynamic-state '((holds (loading-bay) (nails-crate ?n))) state-ops2 :debug true :world world-state)&quot;, :offset 110, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (loading-bay) (nails-crate ?n))) state-ops2 :debug true)&quot;, :offset 91, :ns &quot;core&quot;} {:command &quot;(ops-search nl-injector/mock-comb '((holds (forklift ?f) (nails-crate ?n))) state-ops2 :debug true)&quot;, :offset 99, :ns &quot;core&quot;} {:command &quot;(ops-search nl-injector/mock-comb '((holds (forklift ?f) (nails-crate ?n))) state-ops2)&quot;, :offset 87, :ns &quot;core&quot;} {:command &quot;(ops-search '((holds (loading-bay) (nails-crate 106))) state-ops2 :debug true :world world-state)&quot;, :offset 97, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (forklift ?d) (nails-crate ?n))) state-ops2 :world world-state :debug true)&quot;, :offset 110, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((adjacent (forklift ?f) (nails-crate ?n))) state-ops2 :world world-state :debug true)&quot;, :offset 113, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((adjacent (forklift ?f) (?bay ?b))) state-ops2 :world world-state :debug true)&quot;, :offset 106, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((adjacent (?bay ?b)(forklift ?f))) state-ops2 :world world-state :debug true)&quot;, :offset 105, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((adjacent (bay 3)(forklift ?f))) state-ops2 :world world-state :debug true)&quot;, :offset 103, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((adjacent (bay 9)(forklift ?f))) state-ops2 :world world-state :debug true)&quot;, :offset 103, :ns &quot;core&quot;} {:command &quot;dynamic-state&quot;, :offset 13, :ns &quot;core&quot;} {:command &quot;pi&quot;, :offset 2} {:command &quot;(ops-search dynamic-state '((holds (loading-bay) (nails-crate ?n))) state-ops2 :world world-state :debug true)&quot;, :offset 110, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (loading bay) (nails-crate ?n))) state-ops2 :world world-state :debug true)&quot;, :offset 110, :ns &quot;core&quot;} {:command &quot;(adjacent (loading bay) (forklift ?f))\n&quot;, :offset 0} {:command &quot;(ops-search dynamic-state '((adjacent (bay 9) (forklift ?f))) state-ops2 :world world-state :debug true)&quot;, :offset 104, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (forklift ?f) (nails-crate ?n))) state-ops2 :world world-state :debug true)&quot;, :offset 110, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (loading bay) (nails-crate ?n))) state-ops2 :world world-state)&quot;, :offset 98, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (loading-bay) (nails-crate ?n))) state-ops2 :world world-state)&quot;, :offset 98, :ns &quot;core&quot;} {:command &quot;(ns nl-injector)\n ;can take this in as a vector, NOT a map. Remove dupes and then put it INTO a map.\n\n\n(def mock-comb    '#{(adjacent (bay 1) (forklift 1))\n                    (isa bay (bay 2))\n                    (holds (forklift 1) none)\n                    (holds (shelf 1) (nails-crate 1))\n                    (isa loading-bay (bay 3))\n                     (isa bay (bay3))\n                    })\n\n\n\n(def mock-dyn2 '#{\n                         (stored-on (shelf 194) wheels-crate 240)\n                         (on (6 0) (forklift 324))\n                         (isa forklift (forklift 324))\n                         (is-height 0 (forklift 324))\n                         })\n\n(def sample #{(holds (bay 11) (nails-crate 86))\n           (holds (shelf 36) (pistons-crate 112))\n           (holds (bay 11) (circular-saws-crate 84))\n           (holds (bay 4) (engines-crate 121))\n           (holds (shelf 60) (pistons-crate 107))\n           (holds (bay 12) (wheels-crate 104))\n           (holds (shelf 35) (screws-crate 97))\n           (holds (shelf 66) (screws-crate 96))\n           (holds (shelf 39) (wheels-crate 104))\n           (holds (bay 10) (tyres-crate 116))\n           (holds (shelf 21) (compressors-crate 109))\n           (holds (bay 13) (girders-crate 103))\n           (holds (bay 8) (grates-crate 100))\n           (holds (bay 11) (girders-crate 102))\n           (holds (shelf 16) (wheels-crate 113))\n           (holds (shelf 64) (wheels-crate 95))\n           (holds (bay 3) (lights-crate 120))\n           (holds (shelf 34) (compressors-crate 108))\n           (holds (shelf 73) (compressors-crate 114))\n           (holds (shelf 59) (tyres-crate 116))\n           (holds (shelf 69) (wooden-planks-crate 87))\n           (holds (bay 7) (screws-crate 92))\n           (holds (shelf 45) (wheels-crate 117))\n           (holds (bay 13) (pistons-crate 99))\n           (holds (shelf 71) (engines-crate 121))\n           (adjacent (bay 11) (forklift 126))\n           (holds (shelf 63) (girders-crate 105))\n           (holds (shelf 30) (lights-crate 120))\n           (holds (shelf 83) (jacks-crate 101))\n           (holds (bay 6) (circular-saws-crate 106))\n           (holds (shelf 58) (girders-crate 102))\n           (holds (bay 7) (pistons-crate 98))\n           (holds (shelf 18) (screws-crate 92))\n           (holds (bay 5) (grates-crate 111))\n           (holds (bay 9) (jacks-crate 115))\n           (holds (bay 5) (pistons-crate 112))\n           (holds (bay 1) (jacks-crate 101))\n           (holds (bay 2) (wheels-crate 117))\n           (holds (shelf 24) (lights-crate 94))\n           (holds (shelf 49) (jacks-crate 91))\n           (holds (shelf 47) (pistons-crate 110))\n           (holds (shelf 54) (circular-saws-crate 88))\n           (holds (bay 13) (screws-crate 96))\n           (holds (shelf 53) (circular-saws-crate 106))\n           (holds (bay 3) (circular-saws-crate 119))\n           (holds (bay 4) (wooden-planks-crate 87))\n           (holds (shelf 76) (lights-crate 85))\n           (holds (shelf 68) (girders-crate 103))\n           (holds (shelf 46) (girders-crate 90))\n           (holds (bay 5) (compressors-crate 108))\n           (holds (shelf 32) (circular-saws-crate 119))\n           (holds (bay 10) (pistons-crate 107))\n           (holds (forklift 126) (nails-crate 86))\n           (holds (bay 8) (lights-crate 94))\n           (holds (bay 4) (compressors-crate 114))\n           (holds (bay 13) (screws-crate 93))\n           (holds (bay 6) (jacks-crate 91))\n           (holds (bay 7) (wheels-crate 113))\n           (holds (shelf 56) (circular-saws-crate 84))\n           (holds (shelf 77) (girders-crate 89))\n           (holds (shelf 67) (screws-crate 93))\n           (holds (shelf 20) (jacks-crate 115))\n           (holds (bay 0) (girders-crate 89))\n           (holds (bay 0) (lights-crate 85))\n           (holds (bay 11) (circular-saws-crate 88))\n           (holds (bay 2) (girders-crate 90))\n           (holds (bay 10) (girders-crate 105))\n           (holds (shelf 31) (compressors-crate 118))\n           (holds (shelf 38) (grates-crate 111))\n           (holds (bay 3) (compressors-crate 118))\n           (holds (bay 13) (wheels-crate 95))\n           (holds (bay 9) (compressors-crate 109))\n           (holds (shelf 25) (grates-crate 100))\n           (holds (bay 2) (pistons-crate 110))\n           (holds (shelf 65) (pistons-crate 99))\n           (holds (bay 5) (screws-crate 97))\n           (holds (shelf 15) (pistons-crate 98))})\n\n(def mock-world2 '#{(is-height 0 (shelf 1))\n                           (is-height 0 (shelf 2))\n                           (at bay (12 4) (shelf 194))\n                           (is-height 4 (shelf 194))\n                           })\n(def mock-dyn2 '#{\n                 (stored-on (shelf 53) tyres-crate 271)\n                 (stored-on (shelf 49) nails-crate 272)\n                 (stored-on (shelf 50) bolts-crate 280)\n                 (stored-on (shelf 140) circular-saws-crate 311)\n                 (stored-on (shelf 143) wheels-crate 244)\n                 (stored-on (shelf 157) compressors-crate 315)\n                 (stored-on (shelf 158) tyres-crate 296)\n                 (stored-on (shelf 155) tyres-crate 298)\n                 (stored-on (shelf 101) nails-crate 248)\n                 (stored-on (shelf 174) wooden-planks-crate 247)\n                 (stored-on (shelf 109) wooden-planks-crate 252)\n                 (stored-on (shelf 208) tyres-crate 276)\n                 (stored-on (shelf 206) pistons-crate 316)\n                 (stored-on (shelf 205) wheels-crate 301)\n                 (stored-on (shelf 189) compressors-crate 297)\n                 (stored-on (shelf 227) girders-crate 245)\n                 (stored-on (shelf 224) nails-crate 234)\n                 (stored-on (shelf 226) pistons-crate 321)\n                 (stored-on (shelf 93) lights-crate 282)\n                 (stored-on (shelf 59) lights-crate 304)\n                 (stored-on (shelf 62) nails-crate 246)\n                 (stored-on (shelf 194) wheels-crate 240)\n                 (stored-on (shelf 96) nails-crate 235)\n                 (stored-on (shelf 95) nails-crate 303)\n                 (stored-on (shelf 97) circular-saws-crate 270)\n                 (stored-on (shelf 94) girders-crate 299)\n                 (stored-on (shelf 179) nails-crate 249)\n                 (stored-on (shelf 43) grates-crate 242)\n                 (stored-on (shelf 41) compressors-crate 318)\n                 (stored-on (shelf 124) nails-crate 255)\n                 (stored-on (shelf 126) grates-crate 317)\n                 (stored-on (shelf 125) circular-saws-crate 257)\n                 (stored-on (shelf 150) nails-crate 314)\n                 (stored-on (shelf 163) circular-saws-crate 243)\n                 (stored-on (shelf 162) grates-crate 305)\n                 (stored-on (shelf 159) bolts-crate 281)\n                 (stored-on (shelf 160) grates-crate 313)\n                 (stored-on (shelf 55) girders-crate 293)\n                 (stored-on (shelf 54) nails-crate 260)\n                 (stored-on (shelf 57) lights-crate 302)\n                 (stored-on (shelf 56) girders-crate 253)\n                 (stored-on (shelf 186) circular-saws-crate 306)\n                 (stored-on (shelf 134) grates-crate 294)\n                 (stored-on (shelf 106) pistons-crate 239)\n                 (stored-on (shelf 105) girders-crate 300)\n                 (stored-on (shelf 107) screws-crate 269)\n                 (stored-on (shelf 231) bolts-crate 308)\n                 (stored-on (shelf 229) wheels-crate 263)\n                 (stored-on (shelf 81) pistons-crate 320)\n                 (stored-on (shelf 80) bolts-crate 295)\n                 (stored-on (shelf 82) grates-crate 236)\n                 (stored-on (shelf 117) tyres-crate 241)\n                 (stored-on (shelf 116) nails-crate 310)\n                 (stored-on (shelf 115) lights-crate 266)\n                 (stored-on (shelf 45) wooden-planks-crate 278)\n                 (stored-on (shelf 48) lights-crate 267)\n                 (stored-on (shelf 47) wheels-crate 290)\n                 (stored-on (shelf 147) wheels-crate 291)\n                 (stored-on (shelf 148) grates-crate 238)\n                 (stored-on (shelf 145) circular-saws-crate 261)\n                 (stored-on (shelf 144) screws-crate 262)\n                 (stored-on (shelf 213) compressors-crate 259)\n                 (stored-on (shelf 212) compressors-crate 286)\n                 (stored-on (shelf 72) pistons-crate 312)\n                 (stored-on (shelf 70) lights-crate 283)\n                 (stored-on (shelf 67) engines-crate 287)\n                 (stored-on (shelf 66) compressors-crate 277)\n                 (stored-on (shelf 222) grates-crate 274)\n                 (stored-on (shelf 223) tyres-crate 323)\n                 (stored-on (shelf 220) pistons-crate 250)\n                 (stored-on (shelf 119) engines-crate 309)\n                 (stored-on (shelf 120) engines-crate 279)\n                 (stored-on (shelf 122) circular-saws-crate 288)\n                 (stored-on (shelf 173) screws-crate 322)\n                 (stored-on (shelf 171) bolts-crate 307)\n                 (stored-on (shelf 214) wooden-planks-crate 264)\n                 (stored-on (shelf 216) wooden-planks-crate 237)\n                 (stored-on (shelf 217) pistons-crate 254)\n                 (stored-on (shelf 218) screws-crate 268)\n                 (stored-on (shelf 86) wooden-planks-crate 273)\n                 (stored-on (shelf 88) wheels-crate 275)\n                 (stored-on (shelf 87) lights-crate 256)\n                 (stored-on (shelf 84) wooden-planks-crate 258)\n                 (stored-on (shelf 201) circular-saws-crate 292)\n                 (stored-on (shelf 200) tyres-crate 319)\n                 (stored-on (shelf 164) pistons-crate 289)\n                 (stored-on (shelf 165) girders-crate 285)\n                 (stored-on (shelf 166) engines-crate 284)\n                 (stored-on (shelf 167) wooden-planks-crate 265)\n                 (on (6 0) (forklift 324))\n                 (isa forklift (forklift 324))\n                 (is-height 0 (forklift 324))\n                 (stored-on (shelf 131) tyres-crate 251) ; (stored-on (shelf ?s) ?object ?o)\n                 })\n\n; TODO: ADD IS A FORKLIFT IN NL, ITS CURRENTLY IN DYN STATE\n=(def mock-world '#{\n                    (adjacent bay (8 7) patch (7 7))\n                    (adjacent bay (8 7) patch (9 7))\n                    (at bay (8 7) (shelf 91))\n                    (is-height 3 (shelf 91))\n                    (at bay (8 7) (shelf 89))\n                    (is-height 2 (shelf 89))\n                    (at bay (8 7) (shelf 92))\n                    (is-height 4 (shelf 92))\n                    (at bay (8 7) (shelf 93))\n                    (is-height 1 (shelf 93))\n                    (at bay (8 7) (shelf 90))\n                    (is-height 0 (shelf 90))\n                    (adjacent bay (12 2) patch (11 2))\n                    (adjacent bay (12 2) patch (13 2))\n                    (at bay (12 2) (shelf 225))\n                    (is-height 1 (shelf 225))\n                    (at bay (12 2) (shelf 228))\n                    (is-height 4 (shelf 228))\n                    (at bay (12 2) (shelf 224))\n                    (is-height 2 (shelf 224))\n                    (at bay (12 2) (shelf 227))\n                    (is-height 0 (shelf 227))\n                    (at bay (12 2) (shelf 226))\n                    (is-height 3 (shelf 226))\n                    (adjacent bay (4 3) patch (3 3))\n                    (adjacent bay (4 3) patch (5 3))\n                    (at bay (4 3) (shelf 190))\n                    (is-height 0 (shelf 190))\n                    (at bay (4 3) (shelf 193))\n                    (is-height 2 (shelf 193))\n                    (at bay (4 3) (shelf 192))\n                    (is-height 3 (shelf 192))\n                    (at bay (4 3) (shelf 191))\n                    (is-height 4 (shelf 191))\n                    (at bay (4 3) (shelf 189))\n                    (is-height 1 (shelf 189))\n                    (adjacent bay (8 9) patch (7 9))\n                    (adjacent bay (8 9) patch (9 9))\n                    (at bay (8 9) (shelf 94))\n                    (is-height 1 (shelf 94))\n                    (at bay (8 9) (shelf 98))\n                    (is-height 3 (shelf 98))\n                    (at bay (8 9) (shelf 96))\n                    (is-height 2 (shelf 96))\n                    (at bay (8 9) (shelf 97))\n                    (is-height 4 (shelf 97))\n                    (at bay (8 9) (shelf 95))\n                    (is-height 0 (shelf 95))\n                    (adjacent bay (12 10) patch (11 10))\n                    (adjacent bay (12 10) patch (13 10))\n                    (at bay (12 10) (shelf 209))\n                    (is-height 0 (shelf 209))\n                    (at bay (12 10) (shelf 210))\n                    (is-height 2 (shelf 210))\n                    (at bay (12 10) (shelf 211))\n                    (is-height 3 (shelf 211))\n                    (at bay (12 10) (shelf 213))\n                    (is-height 1 (shelf 213))\n                    (at bay (12 10) (shelf 212))\n                    (is-height 4 (shelf 212))\n                    (adjacent bay (8 4) patch (7 4))\n                    (adjacent bay (8 4) patch (9 4))\n                    (at bay (8 4) (shelf 206))\n                    (is-height 4 (shelf 206))\n                    (at bay (8 4) (shelf 204))\n                    (is-height 2 (shelf 204))\n                    (at bay (8 4) (shelf 208))\n                    (is-height 1 (shelf 208))\n                    (at bay (8 4) (shelf 205))\n                    (is-height 0 (shelf 205))\n                    (at bay (8 4) (shelf 207))\n                    (is-height 3 (shelf 207))\n                    (adjacent bay (12 3) patch (11 3))\n                    (adjacent bay (12 3) patch (13 3))\n                    (at bay (12 3) (shelf 214))\n                    (is-height 0 (shelf 214))\n                    (at bay (12 3) (shelf 218))\n                    (is-height 3 (shelf 218))\n                    (at bay (12 3) (shelf 217))\n                    (is-height 1 (shelf 217))\n                    (at bay (12 3) (shelf 215))\n                    (is-height 4 (shelf 215))\n                    (at bay (12 3) (shelf 216))\n                    (is-height 2 (shelf 216))\n                    (adjacent bay (8 5) patch (7 5))\n                    (adjacent bay (8 5) patch (9 5))\n                    (at bay (8 5) (shelf 101))\n                    (is-height 0 (shelf 101))\n                    (at bay (8 5) (shelf 100))\n                    (is-height 4 (shelf 100))\n                    (at bay (8 5) (shelf 102))\n                    (is-height 3 (shelf 102))\n                    (at bay (8 5) (shelf 99))\n                    (is-height 2 (shelf 99))\n                    (at bay (8 5) (shelf 103))\n                    (is-height 1 (shelf 103))\n                    (adjacent bay (4 2) patch (3 2))\n                    (adjacent bay (4 2) patch (5 2))\n                    (at bay (4 2) (shelf 169))\n                    (is-height 3 (shelf 169))\n                    (at bay (4 2) (shelf 173))\n                    (is-height 0 (shelf 173))\n                    (at bay (4 2) (shelf 170))\n                    (is-height 4 (shelf 170))\n                    (at bay (4 2) (shelf 171))\n                    (is-height 1 (shelf 171))\n                    (at bay (4 2) (shelf 172))\n                    (is-height 2 (shelf 172))\n                    (adjacent bay (8 12) patch (7 12))\n                    (adjacent bay (8 12) patch (9 12))\n                    (at bay (8 12) (shelf 42))\n                    (is-height 1 (shelf 42))\n                    (at bay (8 12) (shelf 43))\n                    (is-height 3 (shelf 43))\n                    (at bay (8 12) (shelf 40))\n                    (is-height 4 (shelf 40))\n                    (at bay (8 12) (shelf 39))\n                    (is-height 0 (shelf 39))\n                    (at bay (8 12) (shelf 41))\n                    (is-height 2 (shelf 41))\n                    (adjacent bay (4 12) patch (3 12))\n                    (adjacent bay (4 12) patch (5 12))\n                    (at bay (4 12) (shelf 181))\n                    (is-height 4 (shelf 181))\n                    (at bay (4 12) (shelf 180))\n                    (is-height 0 (shelf 180))\n                    (at bay (4 12) (shelf 183))\n                    (is-height 1 (shelf 183))\n                    (at bay (4 12) (shelf 179))\n                    (is-height 2 (shelf 179))\n                    (at bay (4 12) (shelf 182))\n                    (is-height 3 (shelf 182))\n                    (adjacent bay (4 8) patch (3 8))\n                    (adjacent bay (4 8) patch (5 8))\n                    (at bay (4 8) (shelf 81))\n                    (is-height 2 (shelf 81))\n                    (at bay (4 8) (shelf 80))\n                    (is-height 4 (shelf 80))\n                    (at bay (4 8) (shelf 83))\n                    (is-height 0 (shelf 83))\n                    (at bay (4 8) (shelf 79))\n                    (is-height 3 (shelf 79))\n                    (at bay (4 8) (shelf 82))\n                    (is-height 1 (shelf 82))\n                    (adjacent bay (8 8) patch (7 8))\n                    (adjacent bay (8 8) patch (9 8))\n                    (at bay (8 8) (shelf 69))\n                    (is-height 4 (shelf 69))\n                    (at bay (8 8) (shelf 72))\n                    (is-height 0 (shelf 72))\n                    (at bay (8 8) (shelf 70))\n                    (is-height 1 (shelf 70))\n                    (at bay (8 8) (shelf 73))\n                    (is-height 2 (shelf 73))\n                    (at bay (8 8) (shelf 71))\n                    (is-height 3 (shelf 71))\n                    (adjacent bay (4 5) patch (3 5))\n                    (adjacent bay (4 5) patch (5 5))\n                    (at bay (4 5) (shelf 203))\n                    (is-height 4 (shelf 203))\n                    (at bay (4 5) (shelf 200))\n                    (is-height 2 (shelf 200))\n                    (at bay (4 5) (shelf 199))\n                    (is-height 0 (shelf 199))\n                    (at bay (4 5) (shelf 201))\n                    (is-height 3 (shelf 201))\n                    (at bay (4 5) (shelf 202))\n                    (is-height 1 (shelf 202))\n                    (adjacent bay (12 14) patch (11 14))\n                    (adjacent bay (12 14) patch (13 14))\n                    (at bay (12 14) (shelf 178))\n                    (is-height 3 (shelf 178))\n                    (at bay (12 14) (shelf 174))\n                    (is-height 0 (shelf 174))\n                    (at bay (12 14) (shelf 175))\n                    (is-height 2 (shelf 175))\n                    (at bay (12 14) (shelf 176))\n                    (is-height 4 (shelf 176))\n                    (at bay (12 14) (shelf 177))\n                    (is-height 1 (shelf 177))\n                    (adjacent bay (8 6) patch (7 6))\n                    (adjacent bay (8 6) patch (9 6))\n                    (at bay (8 6) (shelf 130))\n                    (is-height 2 (shelf 130))\n                    (at bay (8 6) (shelf 131))\n                    (is-height 3 (shelf 131))\n                    (at bay (8 6) (shelf 132))\n                    (is-height 0 (shelf 132))\n                    (at bay (8 6) (shelf 129))\n                    (is-height 1 (shelf 129))\n                    (at bay (8 6) (shelf 133))\n                    (is-height 4 (shelf 133))\n                    (adjacent bay (8 11) patch (7 11))\n                    (adjacent bay (8 11) patch (9 11))\n                    (at bay (8 11) (shelf 157))\n                    (is-height 4 (shelf 157))\n                    (at bay (8 11) (shelf 155))\n                    (is-height 0 (shelf 155))\n                    (at bay (8 11) (shelf 154))\n                    (is-height 1 (shelf 154))\n                    (at bay (8 11) (shelf 158))\n                    (is-height 2 (shelf 158))\n                    (at bay (8 11) (shelf 156))\n                    (is-height 3 (shelf 156))\n                    (adjacent bay (12 4) patch (11 4))\n                    (adjacent bay (12 4) patch (13 4))\n                    (at bay (12 4) (shelf 198))\n                    (is-height 1 (shelf 198))\n                    (at bay (12 4) (shelf 194))\n                    (is-height 4 (shelf 194))\n                    (at bay (12 4) (shelf 197))\n                    (is-height 3 (shelf 197))\n                    (at bay (12 4) (shelf 195))\n                    (is-height 0 (shelf 195))\n                    (at bay (12 4) (shelf 196))\n                    (is-height 2 (shelf 196))\n                    (adjacent bay (12 13) patch (11 13))\n                    (adjacent bay (12 13) patch (13 13))\n                    (at bay (12 13) (shelf 46))\n                    (is-height 3 (shelf 46))\n                    (at bay (12 13) (shelf 45))\n                    (is-height 1 (shelf 45))\n                    (at bay (12 13) (shelf 48))\n                    (is-height 2 (shelf 48))\n                    (at bay (12 13) (shelf 44))\n                    (is-height 0 (shelf 44))\n                    (at bay (12 13) (shelf 47))\n                    (is-height 4 (shelf 47))\n                    (adjacent bay (4 11) patch (3 11))\n                    (adjacent bay (4 11) patch (5 11))\n                    (at bay (4 11) (shelf 118))\n                    (is-height 3 (shelf 118))\n                    (at bay (4 11) (shelf 116))\n                    (is-height 0 (shelf 116))\n                    (at bay (4 11) (shelf 115))\n                    (is-height 4 (shelf 115))\n                    (at bay (4 11) (shelf 114))\n                    (is-height 1 (shelf 114))\n                    (at bay (4 11) (shelf 117))\n                    (is-height 2 (shelf 117))\n                    (adjacent bay (4 6) patch (3 6))\n                    (adjacent bay (4 6) patch (5 6))\n                    (at bay (4 6) (shelf 61))\n                    (is-height 4 (shelf 61))\n                    (at bay (4 6) (shelf 62))\n                    (is-height 1 (shelf 62))\n                    (at bay (4 6) (shelf 59))\n                    (is-height 2 (shelf 59))\n                    (at bay (4 6) (shelf 63))\n                    (is-height 0 (shelf 63))\n                    (at bay (4 6) (shelf 60))\n                    (is-height 3 (shelf 60))\n                    (adjacent bay (8 10) patch (7 10))\n                    (adjacent bay (8 10) patch (9 10))\n                    (at bay (8 10) (shelf 223))\n                    (is-height 0 (shelf 223))\n                    (at bay (8 10) (shelf 221))\n                    (is-height 3 (shelf 221))\n                    (at bay (8 10) (shelf 222))\n                    (is-height 1 (shelf 222))\n                    (at bay (8 10) (shelf 219))\n                    (is-height 4 (shelf 219))\n                    (at bay (8 10) (shelf 220))\n                    (is-height 2 (shelf 220))\n                    (adjacent bay (12 5) patch (11 5))\n                    (adjacent bay (12 5) patch (13 5))\n                    (at bay (12 5) (shelf 56))\n                    (is-height 1 (shelf 56))\n                    (at bay (12 5) (shelf 58))\n                    (is-height 4 (shelf 58))\n                    (at bay (12 5) (shelf 54))\n                    (is-height 3 (shelf 54))\n                    (at bay (12 5) (shelf 57))\n                    (is-height 0 (shelf 57))\n                    (at bay (12 5) (shelf 55))\n                    (is-height 2 (shelf 55))\n                    (adjacent bay (4 13) patch (3 13))\n                    (adjacent bay (4 13) patch (5 13))\n                    (at bay (4 13) (shelf 230))\n                    (is-height 2 (shelf 230))\n                    (at bay (4 13) (shelf 231))\n                    (is-height 4 (shelf 231))\n                    (at bay (4 13) (shelf 233))\n                    (is-height 3 (shelf 233))\n                    (at bay (4 13) (shelf 232))\n                    (is-height 0 (shelf 232))\n                    (at bay (4 13) (shelf 229))\n                    (is-height 1 (shelf 229))\n                    (adjacent bay (4 7) patch (3 7))\n                    (adjacent bay (4 7) patch (5 7))\n                    (at bay (4 7) (shelf 142))\n                    (is-height 2 (shelf 142))\n                    (at bay (4 7) (shelf 140))\n                    (is-height 4 (shelf 140))\n                    (at bay (4 7) (shelf 139))\n                    (is-height 3 (shelf 139))\n                    (at bay (4 7) (shelf 143))\n                    (is-height 1 (shelf 143))\n                    (at bay (4 7) (shelf 141))\n                    (is-height 0 (shelf 141))\n                    (adjacent bay (12 12) patch (11 12))\n                    (adjacent bay (12 12) patch (13 12))\n                    (at bay (12 12) (shelf 121))\n                    (is-height 3 (shelf 121))\n                    (at bay (12 12) (shelf 120))\n                    (is-height 2 (shelf 120))\n                    (at bay (12 12) (shelf 119))\n                    (is-height 4 (shelf 119))\n                    (at bay (12 12) (shelf 123))\n                    (is-height 0 (shelf 123))\n                    (at bay (12 12) (shelf 122))\n                    (is-height 1 (shelf 122))\n                    (adjacent bay (12 6) patch (11 6))\n                    (adjacent bay (12 6) patch (13 6))\n                    (at bay (12 6) (shelf 134))\n                    (is-height 3 (shelf 134))\n                    (at bay (12 6) (shelf 136))\n                    (is-height 2 (shelf 136))\n                    (at bay (12 6) (shelf 135))\n                    (is-height 1 (shelf 135))\n                    (at bay (12 6) (shelf 137))\n                    (is-height 4 (shelf 137))\n                    (at bay (12 6) (shelf 138))\n                    (is-height 0 (shelf 138))\n                    (adjacent bay (4 4) patch (3 4))\n                    (adjacent bay (4 4) patch (5 4))\n                    (at bay (4 4) (shelf 113))\n                    (is-height 3 (shelf 113))\n                    (at bay (4 4) (shelf 109))\n                    (is-height 0 (shelf 109))\n                    (at bay (4 4) (shelf 110))\n                    (is-height 2 (shelf 110))\n                    (at bay (4 4) (shelf 112))\n                    (is-height 1 (shelf 112))\n                    (at bay (4 4) (shelf 111))\n                    (is-height 4 (shelf 111))\n                    (adjacent bay (12 11) patch (11 11))\n                    (adjacent bay (12 11) patch (13 11))\n                    (at bay (12 11) (shelf 49))\n                    (is-height 3 (shelf 49))\n                    (at bay (12 11) (shelf 50))\n                    (is-height 2 (shelf 50))\n                    (at bay (12 11) (shelf 53))\n                    (is-height 0 (shelf 53))\n                    (at bay (12 11) (shelf 52))\n                    (is-height 1 (shelf 52))\n                    (at bay (12 11) (shelf 51))\n                    (is-height 4 (shelf 51))\n                    (adjacent bay (12 9) patch (11 9))\n                    (adjacent bay (12 9) patch (13 9))\n                    (at bay (12 9) (shelf 77))\n                    (is-height 0 (shelf 77))\n                    (at bay (12 9) (shelf 74))\n                    (is-height 2 (shelf 74))\n                    (at bay (12 9) (shelf 78))\n                    (is-height 4 (shelf 78))\n                    (at bay (12 9) (shelf 76))\n                    (is-height 3 (shelf 76))\n                    (at bay (12 9) (shelf 75))\n                    (is-height 1 (shelf 75))\n                    (adjacent bay (8 13) patch (7 13))\n                    (adjacent bay (8 13) patch (9 13))\n                    (at bay (8 13) (shelf 68))\n                    (is-height 3 (shelf 68))\n                    (at bay (8 13) (shelf 64))\n                    (is-height 4 (shelf 64))\n                    (at bay (8 13) (shelf 66))\n                    (is-height 2 (shelf 66))\n                    (at bay (8 13) (shelf 67))\n                    (is-height 1 (shelf 67))\n                    (at bay (8 13) (shelf 65))\n                    (is-height 0 (shelf 65))\n                    (adjacent bay (4 14) patch (3 14))\n                    (adjacent bay (4 14) patch (5 14))\n                    (at bay (4 14) (shelf 185))\n                    (is-height 4 (shelf 185))\n                    (at bay (4 14) (shelf 188))\n                    (is-height 1 (shelf 188))\n                    (at bay (4 14) (shelf 186))\n                    (is-height 3 (shelf 186))\n                    (at bay (4 14) (shelf 187))\n                    (is-height 0 (shelf 187))\n                    (at bay (4 14) (shelf 184))\n                    (is-height 2 (shelf 184))\n                    (adjacent bay (8 14) patch (7 14))\n                    (adjacent bay (8 14) patch (9 14))\n                    (at bay (8 14) (shelf 87))\n                    (is-height 3 (shelf 87))\n                    (at bay (8 14) (shelf 86))\n                    (is-height 4 (shelf 86))\n                    (at bay (8 14) (shelf 88))\n                    (is-height 1 (shelf 88))\n                    (at bay (8 14) (shelf 84))\n                    (is-height 0 (shelf 84))\n                    (at bay (8 14) (shelf 85))\n                    (is-height 2 (shelf 85))\n                    (adjacent bay (12 7) patch (11 7))\n                    (adjacent bay (12 7) patch (13 7))\n                    (at bay (12 7) (shelf 125))\n                    (is-height 4 (shelf 125))\n                    (at bay (12 7) (shelf 126))\n                    (is-height 3 (shelf 126))\n                    (at bay (12 7) (shelf 124))\n                    (is-height 1 (shelf 124))\n                    (at bay (12 7) (shelf 127))\n                    (is-height 2 (shelf 127))\n                    (at bay (12 7) (shelf 128))\n                    (is-height 0 (shelf 128))\n                    (adjacent bay (4 9) patch (3 9))\n                    (adjacent bay (4 9) patch (5 9))\n                    (at bay (4 9) (shelf 105))\n                    (is-height 4 (shelf 105))\n                    (at bay (4 9) (shelf 108))\n                    (is-height 3 (shelf 108))\n                    (at bay (4 9) (shelf 104))\n                    (is-height 1 (shelf 104))\n                    (at bay (4 9) (shelf 106))\n                    (is-height 0 (shelf 106))\n                    (at bay (4 9) (shelf 107))\n                    (is-height 2 (shelf 107))\n                    (adjacent bay (8 2) patch (7 2))\n                    (adjacent bay (8 2) patch (9 2))\n                    (at bay (8 2) (shelf 162))\n                    (is-height 0 (shelf 162))\n                    (at bay (8 2) (shelf 160))\n                    (is-height 2 (shelf 160))\n                    (at bay (8 2) (shelf 161))\n                    (is-height 1 (shelf 161))\n                    (at bay (8 2) (shelf 163))\n                    (is-height 4 (shelf 163))\n                    (at bay (8 2) (shelf 159))\n                    (is-height 3 (shelf 159))\n                    (adjacent bay (4 10) patch (3 10))\n                    (adjacent bay (4 10) patch (5 10))\n                    (at bay (4 10) (shelf 153))\n                    (is-height 4 (shelf 153))\n                    (at bay (4 10) (shelf 152))\n                    (is-height 2 (shelf 152))\n                    (at bay (4 10) (shelf 149))\n                    (is-height 1 (shelf 149))\n                    (at bay (4 10) (shelf 151))\n                    (is-height 3 (shelf 151))\n                    (at bay (4 10) (shelf 150))\n                    (is-height 0 (shelf 150))\n                    (adjacent bay (12 8) patch (11 8))\n                    (adjacent bay (12 8) patch (13 8))\n                    (at bay (12 8) (shelf 166))\n                    (is-height 2 (shelf 166))\n                    (at bay (12 8) (shelf 165))\n                    (is-height 3 (shelf 165))\n                    (at bay (12 8) (shelf 164))\n                    (is-height 1 (shelf 164))\n                    (at bay (12 8) (shelf 168))\n                    (is-height 0 (shelf 168))\n                    (at bay (12 8) (shelf 167))\n                    (is-height 4 (shelf 167))\n                    (adjacent bay (8 3) patch (7 3))\n                    (adjacent bay (8 3) patch (9 3))\n                    (at bay (8 3) (shelf 144))\n                    (is-height 4 (shelf 144))\n                    (at bay (8 3) (shelf 146))\n                    (is-height 0 (shelf 146))\n                    (at bay (8 3) (shelf 148))\n                    (is-height 3 (shelf 148))\n                    (at bay (8 3) (shelf 145))\n                    (is-height 1 (shelf 145))\n                    (at bay (8 3) (shelf 147))\n                    (is-height 2 (shelf 147))\n                  })\n\n&quot;, :offset 32720, :ns &quot;core&quot;} {:command &quot;(ops-search sample '((holds (loading-bay ?b) (nails-crate ?n))) state-ops2 :world world-state :debug true)&quot;, :offset 106, :ns &quot;core&quot;} {:command &quot;(ops-search nl-injector/sample '((holds (loading-bay ?b) (nails-crate ?n))) state-ops2 :world world-state :debug true)&quot;, :offset 118, :ns &quot;core&quot;} {:command &quot;(def state-ops2\n'{\n  move{\n      ; (isa forklift ?f)\n       :pre (\n              (adjacent (?bay ?b) (forklift ?f))\n              (isa bay (?nbay ?nb))\n              )\n       :add ((adjacent (?nbay ?nb) (forklift ?f)))\n       :del (;(adjacent (?x ?y) (forklift ?f)) ;if coming from a shelf\n              (adjacent (?bay ?b) (forklift ?f))\n              )\n       :txt (Forklift moved from (?bay ?b) to (?nbay ?nb))\n       :cmd()};sock2.socket/socket-write s25 (str '(set-forklift-destination forklift ?f bay ?nb)))};Hard coded the socket here)\n\n  pickup{\n         :pre(\n               (adjacent (bay ?b) (forklift ?f))\n               (isa bay (bay ?b))\n               (on (bay ?b) (shelf ?s))\n               (holds (shelf ?s) (?object ?o))\n               (holds (forklift ?f) none)\n               )\n         :add((holds (forklift ?f) (?object ?o)))\n         :del( (holds (shelf ?s) (?object ?o))\n               (holds (forklift ?f) none)\n               )\n         :txt (Forklift ?f picks up ?object ?o from shelf ?s)\n         :cmd ();sock2.socket/socket-write s25 (str '(pickup-collectable forklift ?f collectable ?o)))\n  }\n\n  drop-off-loading-bay{\n                 :pre( (holds (forklift ?f) (?object ?o))\n                       (isa loading-bay (bay ?b))\n                      ; (adjacent (bay ?b) (forklift ?f))\n\n\n                       )\n                 :add((holds (loading-bay ?b) (?object ?o))\n                       (adjacent (?bay ?b) (forklift ?f))\n                       )\n                 :del((holds (forklift ?f) (?object ?o))\n ;                      (adjacent (loading bay) (forklift ?f))\n                       )\n                 :txt (forklift ?f dropped off ?object ?o at loading-bay)\n                 :cmd ();sock2.socket/socket-write s25 (str '(drop-off collectable ?o)))\n                 }\n})&quot;, :offset 1813, :ns &quot;core&quot;} {:command &quot;(-main 2222)&quot;, :offset 12, :ns &quot;core&quot;} {:command &quot;world-state&quot;, :offset 11, :ns &quot;core&quot;} {:command &quot;(ops-search nl-injector/dyn-sample '((holds (loading-bay ?b) (nails-crate ?n))) state-ops2 :world world-state :debug true)&quot;, :offset 122, :ns &quot;core&quot;} {:command &quot;(ops-search nl-injector/dyn-sample '((holds (loading-bay ?b) (nails-crate ?n))) state-ops2 :world world-state)&quot;, :offset 110, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (forklift ?f) (nails-crate ?n))) state-ops2 :world world-state)&quot;, :offset 98, :ns &quot;core&quot;} {:command &quot;(defn goal-creator [cmds]\n    \&quot;Should really be constructing a goal state but I've sacrificed this to put more time into the ops search\&quot;\n        (println \&quot;Attempting to create a goal state, with cmds :\&quot; cmds\n                 (let [_1 (ffirst cmds)\n                       _2 (first (rest (first cmds)))\n                       _3 (first (rest (rest (first cmds))))]\n                   (println \&quot;CMDS Split: 1: \&quot; _1 \&quot; 2:\&quot; _2 \&quot; 3:\&quot; _3)\n                   (cond (and (= _1 'move) (= (or(in? all-collectables _3)) (-&gt; _3 noun?)))\n                         (sock2.socket/socket-write s25  (str \&quot;set-forklift-destination one-of-forklifts \&quot; _3))\n                         (and (= _1 'pickup) = (or(in? all-collectables _3)(-&gt; _3 noun?)))\n                         (sock2.socket/socket-write s25  (str \&quot;pickup-collectable one-of forklifts \&quot; _3))\n                         ))))&quot;, :offset 862, :ns &quot;core&quot;} {:command &quot;(def state-ops2\n'{\n  move{\n      ; (isa forklift ?f)\n       :pre (\n              ;(adjacent (bay ?b) (forklift ?f))\n              (isa ?bay (bay ?b))\n              (isa forklift ?f); multi forklifts issue here\n              )\n       :add ((adjacent (?bay ?b) (forklift ?f)))\n       :del (;(adjacent (?x ?y) (forklift ?f)) ;if coming from a shelf\n              (adjacent (?bay ?b) (forklift ?f))\n              )\n       :txt (Forklift moved to (?bay ?b))\n       :cmd()};sock2.socket/socket-write s25 (str '(set-forklift-destination forklift ?f bay ?nb)))};Hard coded the socket here)\n\n  move-to-drop-off{\n       ; (isa forklift ?f)\n       :pre (\n              (isa ?bay (bay ?b))\n              (isa forklift ?f)\n              )\n       :add ((adjacent (bay ?b) (forklift ?f)))\n       :del (;(adjacent (?x ?y) (forklift ?f)) ;if coming from a shelf\n              (adjacent (?bay ?b) (forklift ?f))\n              )\n       :txt (Forklift moved from (?bay ?b) to (?nbay ?nb))\n       :cmd()};sock2.socket/socket-write s25 (str '(set-forklift-destination forklift ?f bay ?nb)))};Hard coded the socket here)\n\n\n  pickup{\n         :pre(\n               (adjacent (bay ?b) (forklift ?f))\n               (isa bay (bay ?b))\n               (on (bay ?b) (shelf ?s))\n               (holds (shelf ?s) (?object ?o))\n               (holds (forklift ?f) none)\n               )\n         :add((holds (forklift ?f) (?object ?o)))\n         :del( (holds (shelf ?s) (?object ?o))\n               (holds (forklift ?f) none)\n               )\n         :txt (Forklift ?f picks up ?object ?o from shelf ?s)\n         :cmd ();sock2.socket/socket-write s25 (str '(pickup-collectable forklift ?f collectable ?o)))\n  }\n\n  drop-off-loading-bay{\n                 :pre( (adjacent (bay ?b) (forklift ?f))\n                       (isa bay (bay ?b))\n                       (isa loading-bay (bay ?b))\n\n                       (holds (forklift ?f) (?object ?o))\n                       (adjacent (bay ?b) (forklift ?f))\n\n\n                       )\n                 :add((holds (loading-bay ?b) (?object ?o))\n                       (adjacent (?bay ?b) (forklift ?f))\n                       )\n                 :del((holds (forklift ?f) (?object ?o))\n ;                      (adjacent (loading bay) (forklift ?f))\n                       )\n                 :txt (forklift ?f dropped off ?object ?o at loading-bay)\n                 :cmd ();sock2.socket/socket-write s25 (str '(drop-off collectable ?o)))\n                 }\n})&quot;, :offset 2468, :ns &quot;ops&quot;} {:command &quot;(ops-search dynamic-state '((holds (loading-bay ?b) (nails-crate ?n))) state-ops2 :world world-state)&quot;, :offset 101, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (loading-bay ?b) (nails-crate ?n))) state-ops2 :world world-state :debug true)&quot;, :offset 113, :ns &quot;core&quot;} {:command &quot;(-main)&quot;, :offset 7, :ns &quot;core&quot;} {:command &quot;(def state-ops2\n'{\n  move{\n      ; (isa forklift ?f)\n       :pre (\n              (adjacent (bay ?b) (forklift ?f))\n              (isa ?bay (bay ?b))\n              (isa forklift ?f); multi forklifts issue here\n              )\n       :add ((adjacent (bay ?b) (forklift ?f)))\n       :del (;(adjacent (?x ?y) (forklift ?f)) ;if coming from a shelf\n              )\n       :txt (Forklift moved to (?bay ?b))\n       :cmd()};sock2.socket/socket-write s25 (str '(set-forklift-destination forklift ?f bay ?nb)))};Hard coded the socket here)\n\n  move-to-drop-off{\n       ; (isa forklift ?f)\n       :pre (\n              (isa ?bay (bay ?b))\n              (isa forklift ?f)\n              )\n       :add ((adjacent (bay ?b) (forklift ?f)))\n       :del (;(adjacent (?x ?y) (forklift ?f)) ;if coming from a shelf\n              (adjacent (bay ?b) (forklift ?f))\n              )\n       :txt (Forklift moved from (?bay ?b) to (?nbay ?nb))\n       :cmd()};sock2.socket/socket-write s25 (str '(set-forklift-destination forklift ?f bay ?nb)))};Hard coded the socket here)\n\n\n  pickup{\n         :pre(\n              ; (adjacent (bay ?b) (forklift ?f))\n               (isa bay (bay ?b))\n               (on (bay ?b) (shelf ?s))\n               (holds (shelf ?s) (?object ?o))\n               (holds (forklift ?f) none)\n               )\n         :add((holds (forklift ?f) (?object ?o))\n               (adjacent (?bay ?b) (forklift ?f)))\n         :del( (holds (shelf ?s) (?object ?o))\n               (holds (forklift ?f) none)\n               )\n         :txt (Forklift ?f picks up ?object ?o from shelf ?s)\n         :cmd ();sock2.socket/socket-write s25 (str '(pickup-collectable forklift ?f collectable ?o)))\n  }\n\n  drop-off-loading-bay{\n                 :pre( (adjacent (bay ?b) (forklift ?f))\n                       (isa bay (bay ?b))\n                       (isa loading-bay (bay ?b))\n\n                       (holds (forklift ?f) (?object ?o))\n                       (adjacent (bay ?b) (forklift ?f))\n\n\n                       )\n                 :add((holds (loading-bay ?b) (?object ?o))\n                       (adjacent (?bay ?b) (forklift ?f))\n                       )\n                 :del((holds (forklift ?f) (?object ?o))\n ;                      (adjacent (loading bay) (forklift ?f))\n                       )\n                 :txt (forklift ?f dropped off ?object ?o at loading-bay)\n                 :cmd ();sock2.socket/socket-write s25 (str '(drop-off collectable ?o)))\n                 }\n})&quot;, :offset 2467, :ns &quot;ops&quot;} {:command &quot;(-main 2223)&quot;, :offset 12, :ns &quot;core&quot;} {:command &quot;(+ 1 1)&quot;, :offset 7, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (loading-bay ?b) (?nails-crate ?n))(holds (loading-bay ?b) (?nails-wcrate ?wn))) state-ops2 :world world-state)&quot;, :offset 146, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (loading-bay ?b) (jacks-crate 97))(holds (loading-bay ?b) (nails-crate 101))) state-ops2 :world world-state)&quot;, :offset 143, :ns &quot;core&quot;} {:command &quot;0&quot;, :offset 1} {:command &quot;(def state-ops2\n'{\n  move{\n      ; (isa forklift ?f)\n       :pre (\n              (adjacent (?bay ?b) (forklift ?f))\n              (isa ?bay (bay ?nb))\n              (isa forklift ?f); multi forklifts issue here\n              )\n       :add ((adjacent (bay ?nb) (forklift ?f)))\n       :del ((adjacent (?bay ?b) (forklift ?f)))\n       :txt (Forklift moved to (?bay ?nb))\n       :cmd()};sock2.socket/socket-write s25 (str '(set-forklift-destination forklift ?f bay ?nb)))};Hard coded the socket here)\n\n\n  pickup{\n         :pre(\n               (adjacent (bay ?b) (forklift ?f))\n               (isa bay (bay ?b))\n               (on (bay ?b) (shelf ?s))\n               (holds (shelf ?s) (?object ?o))\n               (holds (forklift ?f) none)\n               )\n         :add((holds (forklift ?f) (?object ?o))\n               ;(adjacent (?bay ?b) (forklift ?f))\n               )\n         :del( (holds (shelf ?s) (?object ?o))\n               (holds (forklift ?f) none)\n               )\n         :txt (Forklift ?f picks up ?object ?o from shelf ?s)\n         :cmd ();sock2.socket/socket-write s25 (str '(pickup-collectable forklift ?f collectable ?o)))\n  }\n\n  drop-off-loading-bay{\n                 :pre( (adjacent (bay ?b2) (forklift ?f))\n                       (isa loading-bay (bay ?b))\n\n                       (holds (forklift ?f) (?object ?o))\n\n\n                       )\n                 :add((holds (loading-bay ?b) (?object ?o)))\n\n                 :del((holds (forklift ?f) (?object ?o))\n ;                      (adjacent (loading bay) (forklift ?f))\n                       )\n                 :txt (forklift ?f dropped off ?object ?o at loading-bay)\n                 :cmd ();sock2.socket/socket-write s25 (str '(drop-off collectable ?o)))\n                 }\n})&quot;, :offset 1755, :ns &quot;ops&quot;} {:command &quot;(def state-ops2\n'{\n  move{\n      ; (isa forklift ?f)\n       :pre (\n              (adjacent (?bay ?b) (forklift ?f))\n              (isa ?bay (bay ?nb))\n              (isa forklift ?f); multi forklifts issue here\n              )\n       :add ((adjacent (bay ?nb) (forklift ?f)))\n       :del ((adjacent (?bay ?b) (forklift ?f)))\n       :txt (Forklift moved to (?bay ?nb))\n       :cmd()};sock2.socket/socket-write s25 (str '(set-forklift-destination forklift ?f bay ?nb)))};Hard coded the socket here)\n\n\n  pickup{\n         :pre(\n               (adjacent (bay ?b) (forklift ?f))\n               (isa bay (bay ?b))\n               (on (bay ?b) (shelf ?s))\n               (holds (shelf ?s) (?object ?o))\n               (holds (forklift ?f) none)\n               )\n         :add((holds (forklift ?f) (?object ?o)))\n         :del( (holds (shelf ?s) (?object ?o))\n               (holds (forklift ?f) none)\n               )\n         :txt (Forklift ?f picks up ?object ?o from shelf ?s)\n         :cmd ();sock2.socket/socket-write s25 (str '(pickup-collectable forklift ?f collectable ?o)))\n  }\n\n  drop-off-loading-bay{\n                 :pre( (adjacent (bay ?b) (forklift ?f))\n                       (isa loading-bay (bay ?b))\n\n                       (holds (forklift ?f) (?object ?o))\n\n\n                       )\n                 :add((holds (?bay ?b) (?object ?o)))\n\n                 :del((holds (forklift ?f) (?object ?o))\n ;                      (adjacent (loading bay) (forklift ?f))\n                       )\n                 :txt (forklift ?f dropped off ?object ?o at loading-bay)\n                 :cmd ();sock2.socket/socket-write s25 (str '(drop-off collectable ?o)))\n                 }\n})&quot;, :offset 1680, :ns &quot;ops&quot;} {:command &quot;(in-ns 'core)&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;(-main 2224)&quot;, :offset 12, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (loading-bay ?b) (?nails-crate ?n))) state-ops2 :world world-state :debug true)&quot;, :offset 114, :ns &quot;core&quot;} {:command &quot;(ops-search dynamic-state '((holds (loading-bay ?b) (?nails-crate ?n))) state-ops2 :world world-state)&quot;, :offset 102, :ns &quot;core&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -779,6 +766,9 @@
       <workItem from="1501693180462" duration="25000" />
       <workItem from="1501718083457" duration="10288000" />
       <workItem from="1501888631465" duration="10861000" />
+      <workItem from="1501962135503" duration="30032000" />
+      <workItem from="1502031921102" duration="7379000" />
+      <workItem from="1502046692461" duration="12566000" />
     </task>
     <task id="LOCAL-00001" summary="Rules are now applied using a forward chain function.&#10; &#10; This has for now just been used to modify the world state, however the obvious next step is to make a rule for (is floor (6 0)) etc, rather than manually inputting them.&#10; &#10; Next up is to look at the feeding that rule applied world state into the ops-search.">
       <created>1499909931460</created>
@@ -847,7 +837,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270552000" />
+    <option name="totallyTimeSpent" value="320529000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -859,7 +849,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-28" width="1366" height="796" extended-state="6" />
+    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -869,14 +859,14 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.022047244" sideWeight="0.5102489" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="REPL" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32796487" sideWeight="0.6837482" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="REPL" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.352123" sideWeight="0.6837482" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2137628" sideWeight="0.37920937" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19912152" sideWeight="0.4945055" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.4945055" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -893,39 +883,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.022047244" sideWeight="0.5102489" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34846267" sideWeight="0.6837482" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.4897511" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66931635" sideWeight="0.4795022" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2137628" sideWeight="0.37920937" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33052632" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1068814" sideWeight="0.4945055" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.50549453" order="6" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -970,21 +927,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/warehouse_sim_clj_v2/core.clj" />
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj-v2.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/warehouse-sim-clj-v2.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/warehouse_sim_clj_v2/socket/socket.clj" />
     <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/warehouse_sim_clj_v2/old/sokoban/socket/socket.clj" />
     <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/warehouse_sim_clj_v2/old/sokoban/core.clj" />
@@ -1015,13 +957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="1053" column="3" lean-forward="true" selection-start-line="1053" selection-start-column="3" selection-end-line="1053" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nl_injector.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="470" column="41" lean-forward="false" selection-start-line="470" selection-start-column="41" selection-end-line="470" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1072,13 +1007,6 @@
       </provider>
     </entry>
     <entry file="file:///tmp/form-init7132774929341139758.clj" />
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/util.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-93">
-          <caret line="67" column="7" lean-forward="false" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/project.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
@@ -1090,7 +1018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2156">
           <caret line="291" column="0" lean-forward="false" selection-start-line="291" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1098,7 +1025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1001">
           <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1120,54 +1046,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///tmp/form-init6351233093436934486.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///tmp/form-init925420517996157583.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="678" lean-forward="false" selection-start-line="0" selection-start-column="678" selection-end-line="0" selection-end-column="678" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///tmp/form-init6351233093436934486.clj" />
+    <entry file="file:///tmp/form-init925420517996157583.clj" />
     <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/cgsx/tools/matcher.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/pragmaticprocessor.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <marker date="1501902399348" expanded="true" signature="0:158" ph="(ns nlp.pragmaticprocessor ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp/core.clj" />
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp/nlp_core.clj" />
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/lang_core.clj" />
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/util.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/shrdlu-stuff/shrdlu/definitions(1c).clj">
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/shrdlu-stuff/shrdlu/wrappers-1a.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="185" column="0" lean-forward="true" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
+        <state relative-caret-position="164">
+          <caret line="64" column="14" lean-forward="false" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
           <folding>
-            <marker date="1501902399572" expanded="true" signature="102:181" ph="(def settings ...)" />
-            <marker date="1501902399572" expanded="true" signature="297:634" ph="(def sentence-morph-rules ...)" />
-            <marker date="1501902399572" expanded="true" signature="637:1282" ph="(def word-match-rules ...)" />
-            <marker date="1501902399572" expanded="true" signature="1401:2106" ph="(def block-ops ...)" />
-            <marker date="1501902399572" expanded="true" signature="2214:5414" ph="(def goal-ops ...)" />
-            <marker date="1501902399572" expanded="true" signature="5528:6783" ph="(def exec-ops ...)" />
-            <marker date="1501902399572" expanded="true" signature="7088:7930" ph="(defmatch process-cmd ...)" />
-            <marker date="1501902399572" expanded="true" signature="8030:8739" ph="(let ...)" />
+            <marker date="1502020840212" expanded="true" signature="700:735" ph="(declare set-atom! ...)" />
+            <marker date="1502020840212" expanded="true" signature="799:1164" ph="(defn setup-ui-windows ...)" />
+            <marker date="1502020840212" expanded="true" signature="1167:1657" ph="(defn add-window ...)" />
+            <marker date="1502020840212" expanded="true" signature="1908:2361" ph="(defn ui-out ...)" />
+            <marker date="1502020840212" expanded="true" signature="2364:2489" ph="(defn ui-broadcast ...)" />
+            <marker date="1502020840212" expanded="true" signature="2493:2629" ph="(defn ui-set ...)" />
+            <marker date="1502020840212" expanded="true" signature="2632:2730" ph="(defn clear-ui ...)" />
+            <marker date="1502020840212" expanded="true" signature="3079:3494" ph="(defn startup-server ...)" />
+            <marker date="1502020840212" expanded="true" signature="3497:3609" ph="(defn socket-write ...)" />
+            <marker date="1502020840212" expanded="true" signature="4187:4418" ph="(defn nlogo-send-exec ...)" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/shrdlu-stuff/shrdlu/parsing-1a.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="197" column="42" lean-forward="true" selection-start-line="197" selection-start-column="42" selection-end-line="197" selection-end-column="42" />
+        <state relative-caret-position="2561">
+          <caret line="197" column="42" lean-forward="false" selection-start-line="197" selection-start-column="42" selection-end-line="197" selection-end-column="42" />
           <folding>
             <marker date="1501902399660" expanded="true" signature="24:135" ph="(declare word-check ...)" />
             <marker date="1501902399660" expanded="true" signature="371:1905" ph="(def lexicon ...)" />
@@ -1207,79 +1141,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/shrdlu-stuff/shrdlu/wrappers-1a.clj">
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/lexicon.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="68" column="33" lean-forward="false" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
-          <folding>
-            <marker date="1501902398868" expanded="true" signature="700:735" ph="(declare set-atom! ...)" />
-            <marker date="1501902398868" expanded="true" signature="799:1164" ph="(defn setup-ui-windows ...)" />
-            <marker date="1501902398868" expanded="true" signature="1167:1639" ph="(defn add-window ...)" />
-            <marker date="1501902398868" expanded="true" signature="1890:2343" ph="(defn ui-out ...)" />
-            <marker date="1501902398868" expanded="true" signature="2346:2471" ph="(defn ui-broadcast ...)" />
-            <marker date="1501902398868" expanded="true" signature="2475:2611" ph="(defn ui-set ...)" />
-            <marker date="1501902398868" expanded="true" signature="2614:2712" ph="(defn clear-ui ...)" />
-            <marker date="1501902398868" expanded="true" signature="3061:3476" ph="(defn startup-server ...)" />
-            <marker date="1501902398868" expanded="true" signature="3479:3591" ph="(defn socket-write ...)" />
-            <marker date="1501902398868" expanded="true" signature="4169:4400" ph="(defn nlogo-send-exec ...)" />
-          </folding>
+        <state relative-caret-position="325">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="31" column="33" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <marker date="1501902399516" expanded="true" signature="0:68" ph="(ns ops ...)" />
-            <marker date="1501902399516" expanded="true" signature="177:3063" ph="(def state-ops ...)" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="32" />
-          <folding>
-            <marker date="1501902399456" expanded="true" signature="346:1899" ph="(defn ops-search ...)" />
-            <marker date="1501902399456" expanded="true" signature="1902:2107" ph="(defn update-state-map ...)" />
-            <marker date="1501902399456" expanded="true" signature="2110:2416" ph="(defn finalise-results ...)" />
-            <marker date="1501902399456" expanded="true" signature="2419:2690" ph="(defn apply-op ...)" />
-            <marker date="1501902399456" expanded="true" signature="2693:2828" ph="(defn apply-all ...)" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/syntactical_analyser.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="41" column="95" lean-forward="true" selection-start-line="41" selection-start-column="95" selection-end-line="41" selection-end-column="95" />
-          <folding>
-            <marker date="1501902399308" expanded="true" signature="231:563" ph="(defn split-to-symbols ...)" />
-            <marker date="1501902399308" expanded="true" signature="573:763" ph="(defn word-check ...)" />
-            <marker date="1501902399308" expanded="true" signature="1151:2485" ph="(defmatch parse ...)" />
-            <marker date="1501902399308" expanded="true" signature="2489:2903" ph="(defn num-txt? ...)" />
-            <marker date="1501902399308" expanded="true" signature="2905:3046" ph="(defn get-word-type ...)" />
-            <marker date="1501902399308" expanded="true" signature="3396:3471" ph="(defn syn-analyser ...)" />
-            <marker date="1501902399308" expanded="true" signature="3474:3677" ph="(def semantic-rules ...)" />
-            <marker date="1501902399308" expanded="true" signature="3679:3990" ph="(defn apply-morph-rules ...)" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/pragmaticprocessor.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <marker date="1501902399348" expanded="true" signature="0:158" ph="(ns nlp.pragmaticprocessor ...)" />
-            <marker date="1501902399348" expanded="true" signature="499:684" ph="(def specify-crate? ...)" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp/utils.clj">
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/utils.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="25" />
@@ -1287,26 +1157,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp/core.clj">
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/shrdlu-stuff/shrdlu/definitions(1c).clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        <state relative-caret-position="0">
+          <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+          <folding>
+            <marker date="1501902399572" expanded="true" signature="102:181" ph="(def settings ...)" />
+            <marker date="1501902399572" expanded="true" signature="297:634" ph="(def sentence-morph-rules ...)" />
+            <marker date="1501902399572" expanded="true" signature="637:1282" ph="(def word-match-rules ...)" />
+            <marker date="1501902399572" expanded="true" signature="1401:2106" ph="(def block-ops ...)" />
+            <marker date="1501902399572" expanded="true" signature="2214:5414" ph="(def goal-ops ...)" />
+            <marker date="1501902399572" expanded="true" signature="5528:6783" ph="(def exec-ops ...)" />
+            <marker date="1501902399572" expanded="true" signature="7088:7930" ph="(defmatch process-cmd ...)" />
+            <marker date="1501902399572" expanded="true" signature="8030:8739" ph="(let ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/nlp_main.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="3" column="43" lean-forward="false" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/lexicon.clj">
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nlp/syntactical_analyser.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="114" column="101" lean-forward="true" selection-start-line="114" selection-start-column="101" selection-end-line="114" selection-end-column="101" />
+        <state relative-caret-position="897">
+          <caret line="69" column="18" lean-forward="false" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
+          <folding>
+            <marker date="1501969851951" expanded="true" signature="231:563" ph="(defn split-to-symbols ...)" />
+            <marker date="1501969851951" expanded="true" signature="573:763" ph="(defn word-check ...)" />
+            <marker date="1501969851951" expanded="true" signature="1151:2485" ph="(defmatch parse ...)" />
+            <marker date="1501969851951" expanded="true" signature="2489:2903" ph="(defn num-txt? ...)" />
+            <marker date="1501969851951" expanded="true" signature="2905:3046" ph="(defn get-word-type ...)" />
+            <marker date="1501969851951" expanded="true" signature="3396:3474" ph="(defn syn-analyser ...)" />
+            <marker date="1501969851951" expanded="true" signature="3477:3680" ph="(def semantic-rules ...)" />
+            <marker date="1501969851951" expanded="true" signature="3682:3993" ph="(defn apply-morph-rules ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/nl_injector.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="87" column="47" lean-forward="true" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="47" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops_search/ops_search.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding>
+            <marker date="1501985767154" expanded="true" signature="346:1940" ph="(defn ops-search ...)" />
+            <marker date="1501985767154" expanded="true" signature="1943:2148" ph="(defn update-state-map ...)" />
+            <marker date="1501985767154" expanded="true" signature="2151:2457" ph="(defn finalise-results ...)" />
+            <marker date="1501985767154" expanded="true" signature="2460:2731" ph="(defn apply-op ...)" />
+            <marker date="1501985767154" expanded="true" signature="2734:2869" ph="(defn apply-all ...)" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="7" column="45" lean-forward="false" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        <state relative-caret-position="24">
+          <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warehouse-sim-clj/src/ops.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="767">
+          <caret line="59" column="24" lean-forward="true" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
           <folding />
         </state>
       </provider>

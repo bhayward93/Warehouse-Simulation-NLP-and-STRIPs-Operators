@@ -13,13 +13,12 @@
   move{
       ; (isa forklift ?f)
        :pre (
-              ;(adjacent (?bay ?b) (forklift ?f))
+              (adjacent (bay ?b) (forklift ?f))
               (isa ?bay (bay ?nb))
               (isa forklift ?f); multi forklifts issue here
               )
        :add ((adjacent (bay ?nb) (forklift ?f)))
-       :del (;(adjacent (?x ?y) (forklift ?f)) ;if coming from a shelf
-              )
+       :del ((adjacent (bay ?b) (forklift ?f)))
        :txt (Forklift moved to (?bay ?nb))
        :cmd()};sock2.socket/socket-write s25 (str '(set-forklift-destination forklift ?f bay ?nb)))};Hard coded the socket here)
 
@@ -32,8 +31,7 @@
                (holds (shelf ?s) (?object ?o))
                (holds (forklift ?f) none)
                )
-         :add((holds (forklift ?f) (?object ?o))
-               (adjacent (?bay ?b) (forklift ?f)))
+         :add((holds (forklift ?f) (?object ?o)))
          :del( (holds (shelf ?s) (?object ?o))
                (holds (forklift ?f) none)
                )
@@ -42,16 +40,15 @@
   }
 
   drop-off-loading-bay{
-                 :pre( (adjacent (bay ?b2) (forklift ?f))
+                 :pre( (adjacent (bay ?b) (forklift ?f))
                        (isa loading-bay (bay ?b))
 
                        (holds (forklift ?f) (?object ?o))
 
 
                        )
-                 :add((holds (loading-bay ?b) (?object ?o))
-                       (adjacent (?bay ?b) (forklift ?f))
-                       )
+                 :add((holds (loading-bay ?b) (?object ?o)))
+
                  :del((holds (forklift ?f) (?object ?o))
  ;                      (adjacent (loading bay) (forklift ?f))
                        )
