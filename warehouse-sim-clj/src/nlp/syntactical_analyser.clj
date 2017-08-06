@@ -17,10 +17,10 @@
 
 ;Shrldu
 (defn word-check [wtype word]
-  (println "word-check : type = " wtype " / word = " word
+  (println "word-check : type = " wtype " / word = " word)
     (if-let [wdef (word lexicon)]
       (if (= (:cat wdef) wtype)
-        (or (:sem wdef) 'undef)))))
+        (or (:sem wdef) 'undef))))
 
 
 (defn adj?   [x] (word-check 'adj x))
@@ -87,7 +87,8 @@
          (remove '#{[and]}))))
 
 (defn syn-analyser [_str & [debug]]
-  (map parse (split-lis-at-and _str)))
+  (map parse (split-lis-at-and _str))
+  )
 
 
 

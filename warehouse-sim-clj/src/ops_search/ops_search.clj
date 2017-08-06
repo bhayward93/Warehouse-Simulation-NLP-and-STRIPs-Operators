@@ -1,4 +1,4 @@
-;Author Simon Lynch
+;Author Simon Lyncz
 
 (ns ops_search.ops_search)
 
@@ -18,7 +18,7 @@
                           world  #{}}}]
 
   ;(when (not(contains? start goal))
-  (let [start (cons (cons 'goal (rest (first goal))) start)])
+  ;(let [start (cons (cons 'goal (first start)) start)];(cons (cons 'goal (rest (first goal))) start)]
   ; using sets for state tuples...
   (let [start {:state (set start) :path () :cmds () :txt ()}
         world (set world)

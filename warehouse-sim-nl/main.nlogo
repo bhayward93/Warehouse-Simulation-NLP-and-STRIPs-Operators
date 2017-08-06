@@ -14,7 +14,7 @@ collectables-own [parent item-type #height at-shelf]
 shelves-own [at-bay #height]
 patches-own [visited-by-clojure]
 forklifts-own[#height destination-x destination-y]
-;bays-own []
+bays-own [loading-bay]
 
 
 to begin
@@ -29,8 +29,8 @@ end
 GRAPHICS-WINDOW
 295
 10
-694
-430
+540
+247
 -1
 -1
 22.9
@@ -44,9 +44,9 @@ GRAPHICS-WINDOW
 0
 1
 0
-16
+8
 0
-16
+8
 0
 0
 1

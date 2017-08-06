@@ -8,30 +8,89 @@
 ;state-ops
 ;:debug true :world mock-world)
 
+(def state-ops2
+'{
+  move{
+      ; (isa forklift ?f)
+       :pre (
+              ;(adjacent (?bay ?b) (forklift ?f))
+              (isa ?bay (bay ?nb))
+              (isa forklift ?f); multi forklifts issue here
+              )
+       :add ((adjacent (bay ?nb) (forklift ?f)))
+       :del (;(adjacent (?x ?y) (forklift ?f)) ;if coming from a shelf
+              )
+       :txt (Forklift moved to (?bay ?nb))
+       :cmd()};sock2.socket/socket-write s25 (str '(set-forklift-destination forklift ?f bay ?nb)))};Hard coded the socket here)
+
+
+  pickup{
+         :pre(
+               (adjacent (bay ?b) (forklift ?f))
+               (isa bay (bay ?b))
+               (on (bay ?b) (shelf ?s))
+               (holds (shelf ?s) (?object ?o))
+               (holds (forklift ?f) none)
+               )
+         :add((holds (forklift ?f) (?object ?o))
+               (adjacent (?bay ?b) (forklift ?f)))
+         :del( (holds (shelf ?s) (?object ?o))
+               (holds (forklift ?f) none)
+               )
+         :txt (Forklift ?f picks up ?object ?o from shelf ?s)
+         :cmd ();sock2.socket/socket-write s25 (str '(pickup-collectable forklift ?f collectable ?o)))
+  }
+
+  drop-off-loading-bay{
+                 :pre( (adjacent (bay ?b2) (forklift ?f))
+                       (isa loading-bay (bay ?b))
+
+                       (holds (forklift ?f) (?object ?o))
+
+
+                       )
+                 :add((holds (loading-bay ?b) (?object ?o))
+                       (adjacent (?bay ?b) (forklift ?f))
+                       )
+                 :del((holds (forklift ?f) (?object ?o))
+ ;                      (adjacent (loading bay) (forklift ?f))
+                       )
+                 :txt (forklift ?f dropped off ?object ?o at loading-bay)
+                 :cmd ();sock2.socket/socket-write s25 (str '(drop-off collectable ?o)))
+                 }
+})
+;(ops-search dynamic-state '((holds (forklift 335) (nails-crate 236))) state-ops2 :debug true :world world-state)
+;(ops-search dynamic-state '((adjacent (bay 4) (forklift ?f))) state-ops2 :debug true :world world-state)
+;(ops-search dynamic-state '((holds (loading-bay ?b) (?nails-crate ?n))) state-ops2 :world world-state)
+
+
+
 (def state-ops
   '{
 
     move-to-obj{
                 :pre
-                    (
-                      ;   (isa bay (?bx ?by))
-                      ;   (at bay (?bx ?by) (shelf ?s))
-                      (goal (?arg1 ?arg2) ?obj ?o)
-                      (isa forklift (forklift ?f)))
+                (
+                  ;   (isa bay (?bx ?by))
+                  ;   (at bay (?bx ?by) (shelf ?s))
+                  ;(goal stored-on (shelf 192) pistons-crate 284)
+                  ;(goal ?1 (?obj ?o)(forklift ?f))
+                  ;(isa forklift (forklift ?f)))
 
-                :add((at (?obj ?o)(forklift ?f)))
-                :del()
-                :txt(forklift ?f moves to ?obj ?o)
-                :cmd(sock2.socket/socket-write s25
-                                        (str '(set-forklift-destination forklift ?f collectable ?o)))};Hard coded the socket here)
-
+                  :add ((at (?obj ?o) (forklift ?f)))
+                  :del ()
+                  :txt (forklift ?f moves to ?obj ?o)
+                  :cmd () ;sock2.socket/socket-write s25
+                  ;(str '(set-forklift-destination forklift ?f collectable ?o))));Hard coded the socket here)
+                  )}
 
     pick-up {
              :pre
                  (
                    (at (?object ?o)(forklift ?f))
                    (stored-on (shelf ?s) ?object ?o)
-                   (at bay (?bx ?by) (shelf ?s)))
+                   ;(at bay (?bx ?by) (shelf ?s))
+                   )
                    ;(is-height ?h (shelf ?s)) ;(is-height 0 (shelf 116))
                    ;(is-height ?h (forklift ?f))
 
@@ -51,6 +110,7 @@
              :del ((holds (forklift ?f) ?object ?o))
              :txt (forklift ?f dropped off ?object ?o at the loading bay)
              :cmd (sock2.socket/socket-write s25 (str '(drop-off collectable ?o)))}})
+
 
     ;move-arm{
     ;         :pre(

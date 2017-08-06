@@ -13,7 +13,7 @@
 
 ;A lexicon of words that can be used; some taken from Shrldu
 
-(def lexicon '{box         {:cat noun :sem crate}
+(def lexicon '{box         {:cat noun :sem collectables}
                square      {:cat noun :sem crate}
                object      {:cat noun :sem crate}
                crate       {:cat noun :sem crate}
@@ -63,8 +63,8 @@
 
                to          {:cat det :sem drop-off}
                the         {:cat det :sem previous-noun}
-               a           {:cat det :sem '1}
-               an          {:cat det :sem '1}
+               a           {:cat det :sem 1}
+               an          {:cat det :sem 1}
                any         {:cat det :sem random}
                that        {:cat det :sem previous-noun}
                this        {:cat det :sem previous-noun}

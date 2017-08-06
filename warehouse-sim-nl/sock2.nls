@@ -67,12 +67,14 @@ end
 to send-world-state  
 let world-state "["; "#{"
 
-ask forklifts[set world-state (word world-state"(isa forklift " self")")]
+;ask forklifts[set world-state (word world-state"(isa forklift " self")")]
 ask bays[ 
-  let bx xcor
-  let by ycor
+let #bay self
+  ifelse loading-bay = true 
+     [set world-state (word world-state "(isa loading-bay "self")")]
+     [set world-state (word world-state "(isa bay "self")")] ;self should be (shelf x), bracketed
   ask shelves-here[
-     set world-state (word world-state "(at bay ("bx" "by") "self")") ;self should be (shelf x), bracketed
+     set world-state (word world-state "(on "at-bay" "self")") ;self should be (shelf x), bracketed
      set world-state (word world-state "(is-height "#height" "self")") ;self should be (shelf x), bracketed
   ] 
 ]
@@ -86,13 +88,15 @@ to send-dynamic-state
    ask patches[ 
       ask turtles-here[
          if is-collectable? self[
-           set dyn (word dyn "(stored-on "parent" "item-type" "who")")
+           set dyn (word dyn "(holds "[at-bay] of parent" ("item-type" "who"))")
+           set dyn (word dyn "(holds "parent" ("item-type" "who"))")
          ]  
          if is-forklift? self[
-           set dyn (word dyn"(on ("pxcor " " pycor ")" self")")
+           set dyn (word dyn"(adjacent (start loc)" self")")
+           set dyn (word dyn" (holds "self" none)")
     ;       set dyn (word dyn"(is-height "#height " " self")")
          ]
-         ]]
+]]
      
    set dyn (word dyn "]")
    send dyn
