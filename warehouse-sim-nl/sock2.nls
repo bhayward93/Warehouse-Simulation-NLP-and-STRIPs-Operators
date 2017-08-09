@@ -71,13 +71,15 @@ let world-state "["; "#{"
 ask bays[ 
 let #bay self
   ifelse loading-bay = true 
-     [set world-state (word world-state "(isa loading-bay "self")")]
+     [set world-state (word world-state "(isa loading-bay "self")(isa bay "self")")]
      [set world-state (word world-state "(isa bay "self")")] ;self should be (shelf x), bracketed
   ask shelves-here[
      set world-state (word world-state "(on "at-bay" "self")") ;self should be (shelf x), bracketed
      set world-state (word world-state "(is-height "#height" "self")") ;self should be (shelf x), bracketed
   ] 
 ]
+
+ask forklifts[set world-state (word world-state "(isa forklift "who")")]
   set world-state (word world-state "]")
   send world-state
 end
@@ -92,7 +94,8 @@ to send-dynamic-state
            set dyn (word dyn "(holds "parent" ("item-type" "who"))")
          ]  
          if is-forklift? self[
-           set dyn (word dyn"(adjacent (start loc)" self")")
+           set dyn (word dyn"(adjacent (bay start)" self")")
+           set dyn (word dyn "(isa bay (bay start))")
            set dyn (word dyn" (holds "self" none)")
     ;       set dyn (word dyn"(is-height "#height " " self")")
          ]

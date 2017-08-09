@@ -34,6 +34,31 @@
    (if (not (empty? (rest current)))                                   ;if is just not empty, recur with the rest
      (prefix-remover (into [] (rest current)) (conj found current)))   ;see above
    "> Finished | Found:" found))
+
+
+(def prefixes '{anti{:sem no};[:noun ]}
+                de {:sem reverse};[:verb :adverb]}
+                dis {:sem not};[:adjective :verb :noun]}
+                en {:sem within};[:adjective :noun]}       ;"to put (something/someone) into <noun>",
+                em {:sem within};[:noun :adjective]}       ;http://www.dictionary.com/browse/en-
+                fore {:sem already};[:noun :adjective]}       ;{:before
+                in {:sem in};[:verb :adjective :noun]}
+                im {:sem in};[:verb :adjective :noun]}
+                il {:sem not};[:noun :adjective :verb]}
+                ir {:sem not};[:noun :adjective :verb]}
+                inter{:sem interior};[:noun :adjective :verb :adverb]}
+                mid {:sem middle};[:verb :adjective :verb]}
+                mis {:sem wrong};[:verb :noun :adjective]}
+                non {:sem not};[:adjective :verb :noun]}
+                over {:sem overly};[:adjective :adverb :prep]}
+                pre {:sem prior};[:verb :adjective :adverb :noun]} ;do before :re {:again     [:verb :adjective :noun :adverb]} ;do again
+                semi{:sem part}; [:noun :adjective :verb :adverb :pronoun]}
+                sub {:sem underneath};[:noun :adjective :adverb]}
+                super{:sem greater};[:noun :adjective :adverb]}
+                trans{:sem cross};[:noun :adjective :adverb :adverb]}
+                un{:sem not};[:adjective :verb :pronoun :noun]}
+                under{:sem beneath}});[:adverb :prep]}
+
 ;
 ;(def remove-prefix [word & [debug]]
 ;  (if (not (lexicon word))

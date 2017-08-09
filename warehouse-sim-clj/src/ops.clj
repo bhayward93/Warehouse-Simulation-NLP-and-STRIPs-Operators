@@ -16,10 +16,11 @@
               (adjacent (bay ?b) (forklift ?f))
               (isa ?bay (bay ?nb))
               (isa forklift ?f); multi forklifts issue here
+
               )
        :add ((adjacent (bay ?nb) (forklift ?f)))
        :del ((adjacent (bay ?b) (forklift ?f)))
-       :txt (Forklift moved to (?bay ?nb))
+       :txt (forklift ?f moved to (?bay ?nb))
        :cmd()};sock2.socket/socket-write s25 (str '(set-forklift-destination forklift ?f bay ?nb)))};Hard coded the socket here)
 
 

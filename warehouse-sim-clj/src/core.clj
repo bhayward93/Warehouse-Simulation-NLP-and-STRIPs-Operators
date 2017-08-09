@@ -67,7 +67,53 @@
 
         (Thread/sleep 100)))))
 
-  ;(defn send-cmd [cmd]
+(defn time-returner [goal]
+    (with-out-str (time (ops-search  multi-fl goal state-ops2)))
+  )
+
+(defn timed-ops-search [runs]
+
+  (println "----------------------------------------------------------------")
+  (dotimes [i runs]
+    ;  (def single-fl-pickup )
+    (print "Test "i": single-fl-move => " (time-returner '((adjacent (bay 2) (forklift 1)))))
+    )
+  (println "\n")
+  (dotimes [i runs]
+    ;  (def single-fl-pickup )
+    (print "Test "i": two   -fl-move => " (time-returner '((adjacent (bay 2) (forklift 1))(adjacent (bay 1) (forklift 2)))))
+    )
+  (println "----------------------------------------------------------------")
+  (dotimes [i runs]
+          ;  (def single-fl-pickup )
+           (print "Test "i": single-fl-pickup => " (time-returner '((holds (forklift 2) (object 2)))))
+            )
+  (println "\n")
+  ;Testing the time for two forklifts to get seperate objects
+  (dotimes [i runs]
+           (print "Test "i": two-fl-pickup    => " (time-returner '((holds (forklift 1) (object 1)) (holds (forklift 2) (object 2)))))
+    )
+  (println "----------------------------------------------------------------")
+  (dotimes [i runs]
+     (print "Test "i": one-fl-drop-off =>" (time-returner '((holds (loading-bay 5) (object 1)))))
+    )
+  (println "\n")
+  (dotimes [i runs]
+      (print "Test "i": two-fl-drop-off =>" (time-returner '((holds (loading-bay 5) (object 1)) (holds (loading-bay 5) (object 2)))))
+      )
+  (println "\n")
+  (dotimes [i runs]
+      (print "Test "i": two-fl-4-drop-off =>"   (time-returner '((holds (loading-bay 5) (object 1)) (holds (loading-bay 5) (object 2))(holds (loading-bay 5) (object 3)) (holds (loading-bay 5) (object 4)))))
+      )
+  (println "----------------------------------------------------------------")
+  ;Testing time for two forklifts to take two different objects to the loading bay
+  ;(def two-fl-dropoff ( '((holds (loading-bay 5) (object 1)) (holds (loading-bay 5) (object 2)))))
+  )
+
+
+
+
+;(defn send-cmd [cmd]
   ;      (sock2.socket/socket-write s25 cmd)
   ;  G)
 

@@ -7,6 +7,15 @@
   [coll elm]
   (some #(= elm %) coll))
 
+(defmacro bench
+  "Times the execution of forms, discarding their output and returning
+  a long in nanoseconds.
+  Academic Note: Source - Cedric Greevey @
+  http://grokbase.com/t/gg/clojure/11cv6b1mdq/extracting-the-execution-time-of-a-function"
+  ([& forms]
+   `(let [start# (System/nanoTime)]
+      ~@forms
+      (- (System/nanoTime) start#))))
 
 
 ;x:  quote

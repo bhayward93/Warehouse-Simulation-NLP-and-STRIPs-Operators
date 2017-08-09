@@ -109,28 +109,6 @@
 ;           should we be storing the values of these symbols in a map, with the value being the meaning
 ;      format:  {prefix {reworded [word type]}} - note word type feild may be off, and also require ordering.
 
-(def prefixes '{anti{:sem no};[:noun ]}
-                de {:sem reverse};[:verb :adverb]}
-               dis {:sem not};[:adjective :verb :noun]}
-                en {:sem within};[:adjective :noun]}       ;"to put (something/someone) into <noun>",
-                em {:sem within};[:noun :adjective]}       ;http://www.dictionary.com/browse/en-
-              fore {:sem already};[:noun :adjective]}       ;{:before
-                in {:sem in};[:verb :adjective :noun]}
-                im {:sem in};[:verb :adjective :noun]}
-                il {:sem not};[:noun :adjective :verb]}
-                ir {:sem not};[:noun :adjective :verb]}
-              inter{:sem interior};[:noun :adjective :verb :adverb]}
-               mid {:sem middle};[:verb :adjective :verb]}
-               mis {:sem wrong};[:verb :noun :adjective]}
-               non {:sem not};[:adjective :verb :noun]}
-              over {:sem overly};[:adjective :adverb :prep]}
-               pre {:sem prior};[:verb :adjective :adverb :noun]} ;do before :re {:again     [:verb :adjective :noun :adverb]} ;do again
-               semi{:sem part}; [:noun :adjective :verb :adverb :pronoun]}
-               sub {:sem underneath};[:noun :adjective :adverb]}
-              super{:sem greater};[:noun :adjective :adverb]}
-              trans{:sem cross};[:noun :adjective :adverb :adverb]}
-                 un{:sem not};[:adjective :verb :pronoun :noun]}
-              under{:sem beneath}});[:adverb :prep]}
 
 
 ;see Dictionary.com. Look up "re-" for the prefix re.

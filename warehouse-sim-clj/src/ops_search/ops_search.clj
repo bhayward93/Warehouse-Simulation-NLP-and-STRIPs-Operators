@@ -5,9 +5,7 @@
 (require '[cgsx.tools.matcher :refer :all])
 (require '[clojure.set :refer :all])
 (require '[clojure.pprint :refer :all])
-(require '[util :refer :all]
-         '[nl-injector :refer :all]
-         '[rules :refer :all]) ;bad coupling
+(require '[util :refer :all])
 
 (declare finalise-results update-state-map apply-op apply-all)
 
