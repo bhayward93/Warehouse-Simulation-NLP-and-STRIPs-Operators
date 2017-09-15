@@ -1,6 +1,6 @@
 (ns nlp.syntactical-analyser
   (:gen-class)
-  (:require [clojure.string :as str]
+  (:require [clojure.srm -rtring :as str]
             [cgsx.tools.matcher :refer :all]
             [rules :refer :all]
             [nlp.lexicon :refer :all]

@@ -38,7 +38,7 @@
   ; (println "reading")
 
   (defn goal-creator [cmds]
-    "Should really be constructing a goal state but I've sacrificed this to put more time into the ops search"
+
         (println "Attempting to create a goal state, with cmds :" cmds
                  (let [_1 (ffirst cmds)
                        _2 (first (rest (first cmds)))
@@ -68,7 +68,7 @@
         (Thread/sleep 100)))))
 
 (defn time-returner [goal]
-    (with-out-str (time (ops-search  multi-fl goal state-ops2)))
+    (with-out-str (time ))
   )
 
 (defn timed-ops-search [runs]
